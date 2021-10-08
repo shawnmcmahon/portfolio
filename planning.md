@@ -1,6 +1,6 @@
 # Iteration 1 
 - It should include my contact information. 
-  - Name. Email. LinkedIn. Github. 
+  - Name. Email. LinkedIn. Github. Twitter.
 
 - It should include my tech stack I work with. 
   - Proficency rating with tech stack group or each tech?  
@@ -23,7 +23,7 @@
 
 # Iteration 2 
 
-- It should include my resume 
+- It should included a downloadable copy of my resume 
 
 - It should include hover states on buttons 
 
