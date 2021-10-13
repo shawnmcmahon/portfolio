@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import Header from '..Header/Header';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header /> 
