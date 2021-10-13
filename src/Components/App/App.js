@@ -1,7 +1,7 @@
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Projects from '../Projects/Projects';
-import ErrorComponent from '../ErrorComponent/ErrorComponent';
+import Error from '../Error/Error';
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import './App.css';
@@ -28,7 +28,7 @@ const App = () => {
         <Route
           path='*'
           render={() => (
-            <ErrorComponent />
+            <Error />
           )}
         />
       </Switch>

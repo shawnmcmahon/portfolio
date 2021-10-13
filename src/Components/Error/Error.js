@@ -1,10 +1,10 @@
-import './ErrorComponent.css';
+import './Error.css';
 
-const ErrorComponent = () => {
+const Error = () => {
   return (
     <div>
     </div>
   );
 }
 
-export default ErrorComponent;
+export default Error;
