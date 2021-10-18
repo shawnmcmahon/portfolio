@@ -3,9 +3,13 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div>
-      Hello
       <section className="contact-container"> 
-        Hello World
+        <div className="name"> 
+          Contact Shawn
+        </div>
+        <div className="contact-info"> 
+
+        </div>
       </section>
     </div>
   );
