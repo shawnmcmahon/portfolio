@@ -5,10 +5,13 @@ const Contact = () => {
     <div>
       <section className="contact-container"> 
         <div className="name"> 
-          Contact Shawn
+          CONTACT SHAWN
         </div>
         <div className="contact-info"> 
-
+          <div className="email-container"> 
+            Email
+          </div>
+        
         </div>
       </section>
     </div>

@@ -8,13 +8,31 @@
 
 .name {
   font-family: 'Prompt', sans-serif;
-  font-size: 4em;
+  font-size: 48px;
+  font-weight: 600;
   line-height: 1;
   border: 2px green solid;
   width: 50%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info {
+  font-family: 'Prompt', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
   border: 2px blue solid;
   width: 50%;
+  margin-top: 50px;
+  display: flex;
+  text-align: start;
+  padding-left: 50px;
+}
+
+.email-container {
+  border-bottom: 1px solid #000;
+  width: 75%;
+  height: 30px;
 }
