@@ -1,5 +1,5 @@
 import './Header.css';
-import Contact from '../Contact/Contact';
+// import Contact from '../Contact/Contact';
 import { Link }  from 'react-router-dom';
 
 const Header = () => {

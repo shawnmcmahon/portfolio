@@ -12,34 +12,43 @@ const App = () => {
       <div className="App">
         <Header /> 
         <Switch> 
-          <Route 
-            exact 
+          <Route
+            exact
             path='/'
-            render={() => (
-              <Home />
-            )}
-          />
-          <Route 
-            exact 
-            path='/:projects/'
-            render={() => (
-              <Projects />
-            )}
-          />
-          <Route 
-            exact 
-            path='/contact/'
-            render={() => (
-              <Contact />
-            )}
+            render={() => {
+              return (
+                <Home />
+              )
+            }}
           />
           <Route
-            path='*'
-            render={() => (
-              <Error />
-            )}
+            exact
+            path='/contact/'
+            render={() => {
+              return (
+                <Contact />
+              )
+          }}
           />
-        </Switch>
+          <Route
+            exact
+            path='/contact/'
+            render={() => {
+              return (
+                <Contact />
+              )
+            }}
+          />
+          <Route
+            exact
+            path='/contact/'
+            render={() => {
+              return (
+                <Contact />
+              )
+            }}
+          />
+          </Switch>
       </div>
   );
 }
