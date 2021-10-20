@@ -1,10 +1,11 @@
 import './Contact.css';
+import valley from '../../assets/valley.jpeg';
 
 const Contact = () => {
   return (
     <div>
       <section className="contact-container"> 
-        <div className="name"> 
+        <div className="contact-name"> 
           CONTACT SHAWN
         </div>
         <div className="contact-info"> 
@@ -25,10 +26,16 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/shawnpmcmahon/" className="contact">
                 <li>LinkedIn</li>
             </a>
+            <a href="https://twitter.com/DOPE_A_MEAN" className="contact">
+              <li>Twitter</li>
+            </a>
           </ul>
           </div>
         </div>
       </section>
+      <div className="contact-image-container">
+        <img src={valley} className="contact-image" />
+      </div>
     </div>
   );
 }
