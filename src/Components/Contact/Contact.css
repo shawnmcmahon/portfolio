@@ -47,4 +47,15 @@
 
 .contact {
   width: 100%;
+  margin:3%;
+}
+
+ul, li {
+  list-style: none;
+  list-style-position: inside;
+  margin:1%;
+  margin-left: 0;
+  padding:0;
+  text-decoration: none;
+  color: #000;
 }
