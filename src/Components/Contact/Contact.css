@@ -36,26 +36,35 @@
   width: 75%;
   height: 30px;
   font-size: 30px;
+  padding: 10px 0 10px 0;
 }
 
 .contact-container {
   font-size: 18px;
   font-weight: 200;
-  margin: 10px;
   display: flex;
 }
 
 .contact {
-  width: 100%;
-  margin:3%;
+  width: 80%;
+  padding: 10px 0 10px 0;
 }
 
 ul, li {
   list-style: none;
   list-style-position: inside;
-  margin:1%;
   margin-left: 0;
-  padding:0;
+  padding: 10px 0 10px 0;
+  text-decoration: none;
+  color: #000;
+  transition: .3s;
+}
+
+ul:active, li:active {
+  list-style: none;
+  list-style-position: inside;
+  margin-left: 0;
+  padding: 10px 0 10px 0;
   text-decoration: none;
   color: #000;
 }

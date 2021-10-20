@@ -11,7 +11,7 @@ const Contact = () => {
           <div className="label-container"> 
             EMAIL
           </div>
-          <div clasName="contact-container">
+          <div clasName="contact">
             shawnmcmahon17@gmail.com
           </div>
           <div className="label-container"> 
