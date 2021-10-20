@@ -11,19 +11,21 @@ const Contact = () => {
           <div className="label-container"> 
             EMAIL
           </div>
-          <div clasName="contact-container">
+          <div className="contact">
             shawnmcmahon17@gmail.com
           </div>
           <div className="label-container"> 
             SOCIAL MEDIA
           </div>
           <div clasName="contact-container">
-          <a href="https://github.com/shawnmcmahon" className="contact">
-              Github
-          </a>
-          <a href="https://www.linkedin.com/in/shawnpmcmahon/" className="contact">
-              LinkedIn
-          </a>
+          <ul> 
+            <a href="https://github.com/shawnmcmahon" className="contact">
+                <li>Github</li>
+            </a>
+            <a href="https://www.linkedin.com/in/shawnpmcmahon/" className="contact">
+                <li>LinkedIn</li>
+            </a>
+          </ul>
           </div>
         </div>
       </section>
