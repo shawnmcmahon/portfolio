@@ -13,4 +13,14 @@
   border: 2px white solid;
   width: 80%;
   height: 90%;
+  font-family: 'Prompt', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.contact-label-container {
+  border: 2px grey solid;
+  padding: 10px 0px 10px 0px;
 }
