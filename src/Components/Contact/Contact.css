@@ -3,14 +3,14 @@
   height: 50vh;
   display: flex;
   flex-direction: row;
+  margin: 20px
 }
 
-.name {
+.contact-name {
   font-family: 'Prompt', sans-serif;
   font-size: 48px;
   font-weight: 600;
   line-height: 1;
-  border: 2px green solid;
   width: 50%;
   margin-top: 50px;
   display: flex;
@@ -21,7 +21,6 @@
   font-family: 'Prompt', sans-serif;
   font-weight: 600;
   line-height: 1;
-  border: 2px blue solid;
   width: 50%;
   margin-top: 50px;
   display: flex;
@@ -73,7 +72,6 @@ ul:active, li:active {
 }
 
 .contact-image-container {
-  border: 2px red solid;
   width: 100%;
   height: 75vh;
 }

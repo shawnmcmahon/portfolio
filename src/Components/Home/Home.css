@@ -14,9 +14,11 @@
 
 .name {
   font-family: 'Prompt', sans-serif;
-  font-size: 7em;
+  font-size: 8em;
   line-height: 1;
   margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .introduction-container {
@@ -30,8 +32,8 @@
 
 .name-container {
   box-sizing: border-box;
-  border: 5px solid green;
-  text-align: end;
+  width: auto;
+  justify-content: center;
 }
 
 .tagline {
@@ -42,15 +44,15 @@
 
 .social-button {
   border: none;
-    background: none;
-    background-color: #000;
-    color: #fff;
-    font-size: 16px;
-    margin: 15px;
-    margin-right: 0px;
-    padding: 14px 20px;
-    font-family: 'Prompt', sans-serif;
-    cursor: pointer;
-    font-weight: 500;
-    width: 125px;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  margin: 15px;
+  margin-right: 0px;
+  padding: 14px 20px;
+  font-family: 'Prompt', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  width: 125px;
 }
