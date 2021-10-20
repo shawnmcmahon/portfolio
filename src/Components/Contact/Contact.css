@@ -53,8 +53,8 @@
 ul, li {
   list-style: none;
   list-style-position: inside;
-  margin-left: 0;
-  padding: 10px 0 10px 0;
+  margin: 0;
+  padding: 5px 0 5px 0;
   text-decoration: none;
   color: #000;
   transition: .3s;
@@ -63,7 +63,7 @@ ul, li {
 ul:active, li:active {
   list-style: none;
   list-style-position: inside;
-  margin-left: 0;
+  margin: 0;
   padding: 10px 0 10px 0;
   text-decoration: none;
   color: #000;
