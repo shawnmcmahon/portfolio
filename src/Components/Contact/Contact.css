@@ -33,7 +33,7 @@
 
 .label-container {
   border-bottom: 1px solid #000;
-  width: 75%;
+  width: 50%;
   height: 30px;
   font-size: 30px;
   padding: 10px 0 10px 0;
@@ -50,11 +50,15 @@
   padding: 10px 0 10px 0;
 }
 
+li {
+  text-decoration: none;
+}
+
 ul, li {
   list-style: none;
   list-style-position: inside;
   margin: 0;
-  padding: 5px 0 5px 0;
+  padding: 10px 0 10px 0;
   text-decoration: none;
   color: #000;
   transition: .3s;
