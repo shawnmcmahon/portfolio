@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="https://github.com/shawnmcmahon">
             <img src={githubLogo} className="social-logo" /> 
           </a>
-          <a href="https://github.com/shawnmcmahon">
+          <a href="https://twitter.com/DOPE_A_MEAN">
             <img src={twitterLogo} className="social-logo" /> 
           </a>
         </div>
