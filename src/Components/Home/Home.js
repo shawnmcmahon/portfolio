@@ -2,14 +2,19 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div>
+    <section className="home-container">
       <div className="introduction-container">
-        <div className="name-container"> 
+        <section className="section-container home-name"> 
           <h1 className="name">Shawn McMahon</h1>
           <h3 className="tagline">Front-End Developer</h3>
-        </div>
+        </section>
+        <section className="section-container about" id="about">  
+          About Me  
+
+          This is the About Me Section
+        </section>
       </div>
-    </div>
+    </section>
   );
 }
 

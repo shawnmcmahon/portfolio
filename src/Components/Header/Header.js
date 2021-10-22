@@ -1,5 +1,5 @@
 import './Header.css';
-// import Contact from '../Contact/Contact';
+import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 
 const Header = () => {
@@ -10,8 +10,8 @@ const Header = () => {
           <Link to="/"> 
             <button className="nav-button">Home</button>
           </Link>
-          <Link to="/about/" >
-           <button className="nav-button">About</button></Link>
+          <ScrollLink smooth to="/#about" >
+           <button className="nav-button">About</button></ScrollLink>
           <Link to="/projects/" > 
            <button className="nav-button">Projects</button></Link>
           <Link to="/contact/">

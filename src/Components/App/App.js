@@ -4,6 +4,8 @@ import Projects from '../Projects/Projects';
 import Error from '../Error/Error';
 import Footer from '../Footer/Footer';
 import React, { useEffect, useState } from 'react';
+// import { Link } from 'react-scroll';
+// import { HashLink } from 'react-router-hash-link';
 import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -24,12 +26,12 @@ const App = () => {
           />
           <Route
             exact
-            path='/contact/'
+            path='/projects/'
             render={() => {
               return (
-                <Contact />
+                <Projects />
               )
-          }}
+            }}
           />
           <Route
             exact
@@ -42,10 +44,10 @@ const App = () => {
           />
           <Route
             exact
-            path='/contact/'
+            path='*'
             render={() => {
               return (
-                <Contact />
+                <Error />
               )
             }}
           />
