@@ -8,7 +8,7 @@ const Home = () => {
           <h1 className="name">Shawn McMahon</h1>
           <h3 className="tagline">Front-End Developer</h3>
         </section>
-        <section className="section-container about"> 
+        <section className="section-container about" id="about">  
           About Me  
 
           This is the About Me Section
