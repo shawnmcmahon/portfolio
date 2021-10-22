@@ -22,7 +22,7 @@
 
 # Iteration 2 
 
-- It should included a downloadable copy of my resume 
+- It should include a downloadable copy of my resume 
 
 - It should include hover states on buttons 
 
