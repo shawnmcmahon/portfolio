@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 150vh;
   border: 10px solid red;
 }
 
@@ -34,6 +34,22 @@
   box-sizing: border-box;
   width: auto;
   justify-content: center;
+  border: 5px solid green;
+}
+
+.home-name {
+  width: 90%;
+  height: 100vh;
+}
+
+.home-container {
+  width: 100%; 
+  height: auto;
+}
+
+.about {
+  width: 90%;
+  height: 100vh;
 }
 
 .tagline {
