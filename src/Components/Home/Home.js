@@ -4,10 +4,12 @@ const Home = () => {
   return (
     <div>
       <div className="introduction-container">
-        <div className="name-container"> 
+        <section className="section-container"> 
           <h1 className="name">Shawn McMahon</h1>
           <h3 className="tagline">Front-End Developer</h3>
-        </div>
+        </section>
+        <section className="section-container"> 
+        </section>
       </div>
     </div>
   );
