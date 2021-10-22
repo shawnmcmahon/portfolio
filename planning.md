@@ -9,7 +9,6 @@
   - I am a front end developer
   - Why I love to code
   - Industries I am passionate about 
-  - why you should hire me
 
 - It should include a list of 4 featured projects. 
   - Project summary should include: 
@@ -27,9 +26,9 @@
 
 - It should include hover states on buttons 
 
-- It should include a switch that toggles between light and dark mode 
-
 # Iteration 3 
+
+- It should include a switch that toggles between light and dark mode 
 
 - It should include a button that lets the user decide between three different UX styles 
   - Retro: Skeumorphism (90's - mid 00's style) 
