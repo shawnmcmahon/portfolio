@@ -24,19 +24,10 @@ const App = () => {
           />
           <Route
             exact
-            path='/contact/'
+            path='/projects/'
             render={() => {
               return (
-                <Contact />
-              )
-          }}
-          />
-          <Route
-            exact
-            path='/contact/'
-            render={() => {
-              return (
-                <Contact />
+                <Projects />
               )
             }}
           />
