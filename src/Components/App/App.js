@@ -40,6 +40,15 @@ const App = () => {
               )
             }}
           />
+          <Route
+            exact
+            path='*'
+            render={() => {
+              return (
+                <Error />
+              )
+            }}
+          />
           </Switch>
           <Footer />
       </div>
