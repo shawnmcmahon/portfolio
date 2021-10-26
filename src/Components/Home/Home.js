@@ -13,9 +13,13 @@ const Home = () => {
 
           <p className="bio-intro-second">...and I am on a mission to create beautiful, engaging websites. </p>
 
-          <p> You have exactly 7 seconds to engage your audience. How do grab attention with so little time? With exceptional design that speaks to your brand you make it hard for people to look away.</p>
-
-          <p> </p>
+          <p>You have exactly 7 seconds to engage your audience. How do grab attention with so little time?</p>
+            
+          <p>You do it with exceptional design that speaks to your brand.</p>
+  
+          <p>I focus on helping content creators and business owners engage with their audience. Whether you are a musician, photographer, Twitch streamer, Youtuber, or any other solopenuer trying to reach the next level -</p>
+              
+          <p>Let's build something beautiful together. </p>
         </section>
       </div>
     </section>

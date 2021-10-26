@@ -10,6 +10,7 @@
 
 .bio-intro-second {
   font-size: 18px;
+  font-weight: bold;
 }
 
 
@@ -55,8 +56,10 @@
 }
 
 .about {
-  width: 90%;
+  width: 60%;
   height: 100vh;
+  justify-content: flex-start;
+  font-size: 18px;
 }
 
 .tagline {
