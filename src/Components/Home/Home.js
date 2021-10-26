@@ -9,9 +9,11 @@ const Home = () => {
           <h3 className="tagline">Front-End Developer</h3>
         </section>
         <section className="section-container about" id="about">  
-          About Me  
+          <h3 className="bio-intro">My name is Shawn...</h3>
 
-          This is the About Me Section
+          <p className="bio-intro-second">...and I am on a mission to create beautiful, engaging websites. </p>
+
+          <p> </p>
         </section>
       </div>
     </section>
