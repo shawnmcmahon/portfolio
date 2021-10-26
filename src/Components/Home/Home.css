@@ -4,9 +4,18 @@
   justify-content: center;
 }
 
+.bio-intro {
+  font-size: 48px;
+}
+
+.bio-intro-second {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 
-.nav {
+
+.nav-bar {
   width: 100%; 
   height: 12.5vh;
   background-color: #000;
@@ -16,9 +25,9 @@
   font-family: 'Prompt', sans-serif;
   font-size: 8em;
   line-height: 1;
-  margin: 0;
   padding: 0;
   text-align: center;
+  align-items: center;
 }
 
 .introduction-container {
@@ -26,20 +35,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150vh;
-  border: 10px solid red;
+  height: 175vh;
 }
 
 .section-container {
   box-sizing: border-box;
   width: auto;
   justify-content: center;
-  border: 5px solid green;
+  border-bottom: 1px black solid;
 }
 
 .home-name {
   width: 90%;
   height: 100vh;
+  margin-top: 100px;
 }
 
 .home-container {
@@ -48,8 +57,11 @@
 }
 
 .about {
-  width: 90%;
+  width: 60%;
   height: 100vh;
+  justify-content: flex-start;
+  font-size: 18px;
+  padding-top: 100px;
 }
 
 .tagline {
@@ -71,4 +83,16 @@
   cursor: pointer;
   font-weight: 500;
   width: 125px;
+}
+
+.image-container {
+  width: 100%;
+  height: 75vh;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 60%;
 }

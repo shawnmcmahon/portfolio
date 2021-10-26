@@ -2,8 +2,9 @@ import './Projects.css';
 
 const Projects = () => {
   return (
-    <div>
-    </div>
+    <section className="projects-outter">
+      <h2 className="portfolio-title">Portfolio</h2>
+    </section>
   );
 }
 
