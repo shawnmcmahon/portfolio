@@ -1,3 +1,4 @@
+import city from '../../assets/city1.jpeg';
 import './Home.css';
 
 const Home = () => {
@@ -21,6 +22,9 @@ const Home = () => {
               
           <p>Let's build something beautiful together. </p>
         </section>
+      </div>
+      <div className="image-container">
+        <img src={city} className="image" />
       </div>
     </section>
   );
