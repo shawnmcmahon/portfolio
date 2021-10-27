@@ -1,4 +1,4 @@
-import './Projects.css';
+import './Portfolio.css';
 import { useState } from 'react';
 import bj1 from '../../assets/better-jeopardy/bj1.png';
 import bj2 from '../../assets/better-jeopardy/bj2.png';
