@@ -1,6 +1,6 @@
 import Header from '../Header/Header';
 import Home from '../Home/Home';
-import Projects from '../Projects/Projects';
+import Portfolio from '../Portfolio/Portfolio';
 import Error from '../Error/Error';
 import Footer from '../Footer/Footer';
 import React, { useEffect, useState } from 'react';
@@ -26,10 +26,10 @@ const App = () => {
           />
           <Route
             exact
-            path='/projects/'
+            path='/portfolio/'
             render={() => {
               return (
-                <Projects />
+                <Portfolio />
               )
             }}
           />

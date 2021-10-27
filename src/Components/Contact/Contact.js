@@ -3,8 +3,8 @@ import valley from '../../assets/valley.jpeg';
 
 const Contact = () => {
   return (
-    <div>
-      <section className="contact-container"> 
+    <div id="contact">
+      <section className="contact-container extra-top-padding"> 
         <div className="contact-name"> 
           CONTACT SHAWN
         </div>
@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="label-container"> 
             SOCIAL MEDIA
           </div>
-          <div clasName="contact-container">
+          <div className="contact-container">
           <ul> 
             <a href="https://github.com/shawnmcmahon" className="contact">
                 <li>Github</li>
