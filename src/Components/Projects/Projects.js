@@ -7,7 +7,9 @@ const Projects = () => {
         <div className='portfolio-container'> 
           <article className="project-outter-container"> 
             <div className="project-description-container"> 
-              Hello World 
+              <h3 className="project-title">Better Jeopardy</h3>
+                <p className="label">Project Scope Time</p>
+                  <p className="value">60 Hours / 2 Weeks</p>
             </div>
             <div className="project-images-container"> 
               Hi world

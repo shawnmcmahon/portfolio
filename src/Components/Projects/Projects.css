@@ -19,13 +19,13 @@
 
 .project-description-container {
   border: 2px blue dotted;
-  width: 50%;
+  width: 45%;
   height: 100%;
 }
 
 .project-images-container {
   border: 2px pink dotted;
-  width: 50%;
+  width: 45%;
   height: 100%;
 }
 
@@ -35,4 +35,22 @@
   border: 2px green solid;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
+
+.project-title {
+  font-size: 24px;
+  margin: 10px 0 10px 0;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.value {
+  font-size: 16px;
+  margin: 0 0 0 10px;
+}
+
