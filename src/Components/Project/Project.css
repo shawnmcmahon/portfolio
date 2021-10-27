@@ -11,6 +11,7 @@
   width: 150px;
   height: 50px;
   margin: 0 25px 0 25px;
+  cursor: pointer;
 }
 
 .project-button-container {
