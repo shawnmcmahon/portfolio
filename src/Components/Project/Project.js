@@ -19,8 +19,8 @@ const Project = ({project}) => {
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
         <div className="button-container"> 
-          <a href="https://github.com/shawnmcmahon/better-jeopardy"><button className="project-button">Github Repo </button></a>
-          <a href="https://better-jeopardy.herokuapp.com/"><button className="project-button">Deployed Site</button></a>
+          <a href={project.githubRepo}><button className="project-button">Github Repo </button></a>
+          <a href={project.deployedSite}><button className="project-button">Deployed Site</button></a>
         </div>
           <p className="label">Project Scope Time</p>
             <p className="value">{project.time}</p>
