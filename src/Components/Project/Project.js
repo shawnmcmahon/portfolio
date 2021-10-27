@@ -26,8 +26,8 @@ const Project = ({project}) => {
             <p className="value">{project.dateCompleted}</p>
           <p className="label">Project Scope Time</p>
             <p className="value">{project.time}</p>
-          <p className="label">Collaborators</p>
-            <p className="value">{project.collaborators}</p>
+          <p className="label">Application Type</p>
+            <p className="value">{project.applicationType}</p>
           <p className="label">Technologies Used</p>
             <ul className="tech-stack-list">
               <li className="tech">{project.technologiesUsed[0]}</li>
@@ -46,6 +46,8 @@ const Project = ({project}) => {
             {project.learningGoals[1]}
             </li>
           </ul>
+          <p className="label">Collaborators</p>
+            <p className="value">{project.collaborators}</p>
       </div>
       <div className="project-images-container"> 
         <div className="photo-display"> 
