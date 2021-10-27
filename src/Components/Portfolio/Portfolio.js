@@ -4,6 +4,15 @@ import { useState, useEffect } from 'react';
 import bj1 from '../../assets/better-jeopardy/bj1.png';
 import bj2 from '../../assets/better-jeopardy/bj2.png';
 import bj3 from '../../assets/better-jeopardy/bj3.png';
+import ch1 from '../../assets/codeherd/ch1.png';
+import ch2 from '../../assets/codeherd/ch2.png';
+import ch3 from '../../assets/codeherd/ch3.png';
+import rt1 from '../../assets/rancid-tomatillos/rt1.png';
+import rt2 from '../../assets/rancid-tomatillos/rt2.png';
+import rt3 from '../../assets/rancid-tomatillos/rt3.png';
+import wc1 from '../../assets/whats-cookin/wc1.png';
+import wc2 from '../../assets/whats-cookin/wc2.png';
+import wc3 from '../../assets/whats-cookin/wc3.png';
 
 
 const Portfolio = () => {
@@ -19,7 +28,7 @@ const Portfolio = () => {
         description: 'CodeHerd is a project management app where Turing students can store all the links to their projects. They can keep track of project collaborators and resources they may use for each individual project. And they can go back in time to view resources they have collected for previous projects.',
         learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data on the backend', '2. Apply continous integration with CircleCI'], 
         pictures: [
-        bj1, bj2, bj3],
+        ch1, ch2, ch3],
         githubRepo: 'https://github.com/shawnmcmahon/CodeHerd',
         deployedSite: 'https://codeherd.herokuapp.com/'
     },
@@ -49,7 +58,7 @@ const Portfolio = () => {
       description: 'The goal of this partner project was to create a website where users can view movie information hosted from a Heroku API.',
       learningGoals: ['1. Build a solid understanding of React fundamentals', '2. Incorporate Cypress to test React components and asynchronous JS'], 
       pictures: [
-      bj1, bj2, bj3],
+      rt1, rt2, rt3],
       githubRepo: 'https://github.com/shawnmcmahon/rancid-tomatillos',
       deployedSite: 'https://rancid-tomatillos-smbv.herokuapp.com/'
     },
@@ -64,7 +73,7 @@ const Portfolio = () => {
       description: 'The purpose of the app is to create a recipe helper that assists the user in understanding what they can cook based on the contents of their pantry.',
       learningGoals: ['1. Refactor a pre-existing, broken code base into a functional application', '2. Incorporate Sass/SCSS framework to dry up CSS'], 
       pictures: [
-      bj1, bj2, bj3],
+      wc1, wc2, wc3],
       githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
       deployedSite: ''
   }

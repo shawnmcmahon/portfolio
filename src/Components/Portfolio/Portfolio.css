@@ -1,7 +1,6 @@
 .projects-outter {
   width: 100%;
   height: 4000px;
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
