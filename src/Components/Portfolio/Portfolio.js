@@ -20,11 +20,22 @@ const Portfolio = () => {
         bj1, bj2, bj3],
         githubRepo: 'https://github.com/shawnmcmahon/better-jeopardy',
         deployedSite: 'https://better-jeopardy.herokuapp.com/'
-    }
+    }, 
+    {
+      number: 2, 
+      title: "Rancid Tomatillos",
+      time: "60 Hours / 2 weeks",
+      collaborators: ["Bobby Vasquez"],
+      technologiesUsed: ["React", "CSS3", "Github", "Cypress", "Heroku"], 
+      description: "The goal of this partner project was to create a website where users can view movie information hosted from a Heroku API.",
+      learningGoals: ["1. Build a solid understanding of React fundamentals", "2. Incorporate Cypress to test React components and asynchronous JS"], 
+      pictures: [
+      bj1, bj2, bj3],
+      githubRepo: 'https://github.com/shawnmcmahon/rancid-tomatillos',
+      deployedSite: 'https://rancid-tomatillos-smbv.herokuapp.com/'
+  }
 ])
 
-
-console.log('portfolio', portfolio)
 
   const projectPreviews = portfolio.map((currentProject, index) => {
     return (
