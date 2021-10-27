@@ -14,12 +14,22 @@ const Projects = () => {
                   <p className="value">Bobby H,  Dean C. </p>
                 <p className="label">Technologies Used</p>
                   <ul className="tech-stack-list">
-                    <li>React</li>
-                    <li>Express</li>
-                    <li>PostgreSQL</li>
-                    <li>Cypress</li>
-                    <li>Heroku</li>
+                    <li className="tech">React</li>
+                    <li className="tech">Express</li>
+                    <li className="tech">PostgreSQL</li>
+                    <li className="tech">Cypress</li>
+                    <li className="tech">Heroku</li>
                   </ul>
+                <p className="label">Description</p>
+                  <p className="value">Better Jeopardy is a trivia game geared towards users who aren't very good at Jeopardy. This nod to the classic game show includes questions from the show. The multiple-choice feature for each question allows users to enjoy the game without needing to be a walking encyclopedia. Users can save their scores and compete for the top spot on the high school board.</p>
+                <ul className="label">Learning Goals
+                  <li className="value"> 
+                    1. Create a custom API utilizing Express JS
+                  </li>
+                  <li className="value"> 
+                    2. Use PostgreSQL to create a database to store questions and saved games
+                  </li>
+                </ul>
             </div>
             <div className="project-images-container"> 
               Hi world
