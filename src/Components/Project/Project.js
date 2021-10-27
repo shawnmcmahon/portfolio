@@ -18,10 +18,12 @@ const Project = ({project}) => {
     <article className="project-outter-container"> 
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
-        <div className="button-container"> 
+        <div className="project-button-container"> 
           <a href={project.githubRepo}><button className="project-button">Github Repo </button></a>
           <a href={project.deployedSite}><button className="project-button">Deployed Site</button></a>
         </div>
+        <p className="label">Date Completed</p>
+            <p className="value">{project.dateCompleted}</p>
           <p className="label">Project Scope Time</p>
             <p className="value">{project.time}</p>
           <p className="label">Collaborators</p>
