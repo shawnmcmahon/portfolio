@@ -37,7 +37,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 175vh;
 }
 
 .section-container {
@@ -49,7 +48,6 @@
 
 .home-name {
   width: 90%;
-  height: 100vh;
   margin-top: 100px;
 }
 
@@ -60,10 +58,9 @@
 
 .about {
   width: 60%;
-  height: 100vh;
   justify-content: flex-start;
   font-size: 18px;
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
 }
 
 .tagline {
