@@ -12,10 +12,10 @@ const Header = () => {
           </Link>
           <ScrollLink smooth to="/#about" >
            <button className="nav-button">About</button></ScrollLink>
-          <Link to="/projects/" > 
-           <button className="nav-button">Portfolio</button></Link>
-          <Link to="/contact/">
-          <button className="nav-button">Contact</button></Link>
+          <ScrollLink to="/projects/#portfolio" > 
+           <button className="nav-button">Portfolio</button></ScrollLink>
+          <ScrollLink to="/contact/#contact">
+          <button className="nav-button">Contact</button></ScrollLink>
         </div>
       </nav>
     </header>

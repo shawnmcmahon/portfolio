@@ -3,7 +3,7 @@ import valley from '../../assets/valley.jpeg';
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <section className="contact-container"> 
         <div className="contact-name"> 
           CONTACT SHAWN
