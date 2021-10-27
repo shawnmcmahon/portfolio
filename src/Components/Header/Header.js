@@ -7,9 +7,9 @@ const Header = () => {
     <header className="header">
       <nav className="nav-bar">
         <div className="button-container">
-          <Link to="/"> 
+          <ScrollLink to="/#home"> 
             <button className="nav-button">Home</button>
-          </Link>
+          </ScrollLink>
           <ScrollLink smooth to="/#about" >
            <button className="nav-button">About</button></ScrollLink>
           <ScrollLink to="/projects/#portfolio" > 
