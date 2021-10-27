@@ -6,8 +6,10 @@ const Home = () => {
     <section className="home-container" id="home">
       <div className="introduction-container">
         <section className="section-container home-name"> 
-          <h1 className="name">Shawn McMahon</h1>
-          <h3 className="tagline">Front-End Developer</h3>
+          <div className="name-container"> 
+            <h1 className="name">Shawn McMahon</h1>
+            <h3 className="tagline">Front-End Developer</h3>
+          </div>
         </section>
         <section className="section-container about" id="about">  
           <h3 className="bio-intro">My name is Shawn...</h3>
