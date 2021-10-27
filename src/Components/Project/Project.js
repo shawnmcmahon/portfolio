@@ -1,8 +1,5 @@
 import './Project.css';
 import { useState, useEffect } from 'react';
-import bj1 from '../../assets/better-jeopardy/bj1.png';
-import bj2 from '../../assets/better-jeopardy/bj2.png';
-import bj3 from '../../assets/better-jeopardy/bj3.png';
 
 const Project = ({project}) => {
   console.log('project in project', project.pictures[0])
@@ -21,6 +18,10 @@ const Project = ({project}) => {
     <article className="project-outter-container"> 
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
+        <div className="button-container"> 
+          <a href="https://github.com/shawnmcmahon/better-jeopardy"><button className="project-button">Github Repo </button></a>
+          <a href="https://better-jeopardy.herokuapp.com/"><button className="project-button">Deployed Site</button></a>
+        </div>
           <p className="label">Project Scope Time</p>
             <p className="value">{project.time}</p>
           <p className="label">Collaborators</p>
