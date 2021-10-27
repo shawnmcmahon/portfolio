@@ -5,8 +5,8 @@ import bj2 from '../../assets/better-jeopardy/bj2.png';
 import bj3 from '../../assets/better-jeopardy/bj3.png';
 
 const Project = ({project}) => {
-  console.log('project in project', project)
-  const [photoPreview, setPhotoPreview] = useState('');
+  console.log('project in project', project.pictures[0])
+  const [photoPreview, setPhotoPreview] = useState(project.pictures[0]);
 
   // useEffect(() => {
  
@@ -14,6 +14,7 @@ const Project = ({project}) => {
 
   const changePhoto = (event) => {
     setPhotoPreview(event.target.id)
+    console.log(event.target.id)
   }
 
   return (
@@ -26,20 +27,20 @@ const Project = ({project}) => {
             <p className="value">{project.collaborators}</p>
           <p className="label">Technologies Used</p>
             <ul className="tech-stack-list">
-              <li className="tech">React</li>
-              <li className="tech">Express</li>
-              <li className="tech">PostgreSQL</li>
-              <li className="tech">Cypress</li>
-              <li className="tech">Heroku</li>
+              <li className="tech">{project.technologiesUsed[0]}</li>
+              <li className="tech">{project.technologiesUsed[1]}</li>
+              <li className="tech">{project.technologiesUsed[2]}</li>
+              <li className="tech">{project.technologiesUsed[3]}</li>
+              <li className="tech">{project.technologiesUsed[4]}</li>
             </ul>
           <p className="label">Description</p>
             <p className="value">{project.description}</p>
           <ul className="label">Learning Goals
             <li className="value"> 
-              1. Create a custom API utilizing Express JS
+              {project.learningGoals[0]}
             </li>
             <li className="value"> 
-              2. Use PostgreSQL to create a database to store questions and saved games
+            {project.learningGoals[1]}
             </li>
           </ul>
       </div>
