@@ -1,9 +1,20 @@
 import './Projects.css';
+import { useState } from 'react';
+import bj1 from '../../assets/better-jeopardy/bj1.png';
+import bj2 from '../../assets/better-jeopardy/bj2.png';
+import bj3 from '../../assets/better-jeopardy/bj3.png';
+
 
 const Projects = () => {
+  const [photoPreview, setPhotoPreview] = useState(bj1);
+
+  const changePhoto = (event) => {
+    setPhotoPreview(event.target.id)
+  }
+
   return (
-    <section className="projects-outter" id="portfolio">
-      <h2 className="portfolio-title">Portfolio</h2>
+    <section className="projects-outter" id="projects">
+      <h2 className="portfolio-title">Projects</h2>
         <div className='portfolio-container'> 
           <article className="project-outter-container"> 
             <div className="project-description-container"> 
@@ -32,7 +43,18 @@ const Projects = () => {
                 </ul>
             </div>
             <div className="project-images-container"> 
-              Hi world
+              <div className="photo-display"> 
+                <img src={photoPreview} className="preview-photo" />
+              </div>
+              <div className="project-thumbnail-container">
+                  <img src={bj1} className="thumbnail" id={bj1} onClick={changePhoto} />
+              </div> 
+              <div className="project-thumbnail-container">
+                  <img src={bj2} className="thumbnail" id={bj2} onClick={changePhoto}  />
+              </div> 
+              <div className="project-thumbnail-container">
+                  <img src={bj3} className="thumbnail" id={bj3} onClick={changePhoto}  />
+              </div>
             </div>
           </article>
         </div>

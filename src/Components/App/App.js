@@ -26,7 +26,7 @@ const App = () => {
           />
           <Route
             exact
-            path='/projects/'
+            path='/portfolio/'
             render={() => {
               return (
                 <Projects />

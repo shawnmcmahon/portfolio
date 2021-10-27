@@ -3,6 +3,9 @@
   height: 50vh;
   display: flex;
   flex-direction: row;
+}
+
+.extra-top-padding {
   padding-top: 100px;
 }
 
