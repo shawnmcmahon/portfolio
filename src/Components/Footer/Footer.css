@@ -2,7 +2,7 @@
   color: #fff;
   background-color: #000;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +30,19 @@
 .contact-value-container {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  padding: 10px 0px 20px;
+  padding: 10px 0px 10px;
   font-weight: 400;
+}
+
+.meeting-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.meeting-value {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px 10px;
 
 }
 

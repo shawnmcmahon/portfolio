@@ -14,6 +14,17 @@ const Footer = () => {
           shawnmcmahon17@gmail.com
         </div>
         <div className="contact-label-container"> 
+          MEET SHAWN
+        </div>
+        <div className="contact-value-container meeting-container"> 
+            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className="meeting-value">
+              Schedule a Phone Call
+            </a>
+            <a href="https://calendly.com/shawnmcmahon/30min" className="meeting-value">
+              Schedule a Zoom Meeting
+            </a>
+        </div>
+        <div className="contact-label-container"> 
           FOLLOW SHAWN
         </div>
         <div className="contact-value-container"> 
