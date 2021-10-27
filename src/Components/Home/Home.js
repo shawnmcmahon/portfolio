@@ -14,13 +14,11 @@ const Home = () => {
 
           <p className="bio-intro-second">...and I am on a mission to create beautiful, engaging websites. </p>
 
-          <p>You have exactly 7 seconds to engage your audience. How do grab attention with so little time?</p>
-            
-          <p>You do it with exceptional design that speaks to your brand.</p>
+          <p className="bio-text">Introduced to programming when I was 16, I found my passion for front-end design during the days of Myspace. I spent countless hours as a bored teenager designing profile overlays using HTML / CSS, Adobe Dreamweaver, and Photoshop. In 2021 I decided to reignite this passion for logic and design by studying at Turing School of Software and Design.</p>
   
-          <p>I focus on helping content creators and business owners engage with their audience. Whether you are a musician, photographer, Twitch streamer, Youtuber, or any other solopenuer trying to reach the next level -</p>
+          <p className="bio-text">I am a front-end developer who specializes in Javascript and loves coding with React. I excel in client-centered, fast-paced environments. I am excited to utilize my past experience in management and real estate to bring strong leadership skills and an adventurous spirit into a new career as a software developer.</p>
               
-          <p>Let's build something beautiful together. </p>
+          <p className="bio-text">Let's build something beautiful together. </p>
         </section>
       </div>
       <div className="image-container">
