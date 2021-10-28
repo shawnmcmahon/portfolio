@@ -4,3 +4,15 @@
   flex-direction: $direction;
   justify-content: center;
 }
+
+// Fonts 
+@font-face {
+  font-family: 'Prompt', sans-serif;
+  src: url('../assets/fonts/Prompt/Prompt-Regular.ttf') format ('opentype'),
+}
+
+// Colors  
+$black: black;
+$white: white;
+$lightTeal: #29f3c3;
+$darkTeal: #285850;
