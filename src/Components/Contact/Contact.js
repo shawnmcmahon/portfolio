@@ -1,4 +1,4 @@
-import '../../styles/desktop/contact.css';
+import '../../styles/desktop/Contact.css';
 import valley from '../../assets/valley.jpeg';
 
 const Contact = () => {
