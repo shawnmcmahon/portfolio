@@ -14,13 +14,21 @@ const Project = ({project}) => {
     console.log(event.target.id)
   }
 
+  const visitRepo = () => {
+    window.open(project.githubRepo)
+  }
+
+  const visitSite = () => {
+    window.open(project.deployedSite)
+  }
+
   return (
     <article className="project-outter-container"> 
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
         <div className="project-button-container"> 
-          <a href={project.githubRepo}><button className="project-button">Github Repo </button></a>
-          {!!project.deployedSite && <a href={project.deployedSite}><button className="project-button">Deployed Site</button></a>}
+          <button className="project-button" onClick={visitRepo}>Github Repo </button>
+          {!!project.deployedSite && <button className="project-button" onClick={visitSite}>Deployed Site</button>}
         </div>
         <p className="label">Date Completed</p>
             <p className="value">{project.dateCompleted}</p>

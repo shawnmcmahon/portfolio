@@ -2,6 +2,11 @@ import city from '../../assets/city1.jpeg';
 import './Home.css';
 
 const Home = () => {
+
+  const openResumeTab = () => {
+    window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing')
+  }
+
   return (
     <section className="home-container" id="home">
       <div className="introduction-container">
@@ -9,6 +14,7 @@ const Home = () => {
           <div className="name-container"> 
             <h1 className="name">Shawn McMahon</h1>
             <h3 className="tagline">Front-End Developer</h3>
+            <button className="resume-button" onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
         <section className="section-container about" id="about">  

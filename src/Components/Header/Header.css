@@ -39,3 +39,9 @@ header {
   position: fixed;
 }
 
+
+.scrolling-active {
+  background-color: rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 3px 1rem black;
+}
+
