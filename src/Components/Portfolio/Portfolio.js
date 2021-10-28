@@ -91,7 +91,7 @@ const Portfolio = () => {
 
   return (
     <section className="projects-outter" id="projects">
-      <h2 className="portfolio-title">Projects</h2>
+      <h2 className="portfolio-title">PROJECTS</h2>
         <div className='portfolio-container'> 
           {!!portfolio && projectPreviews}
         </div>
