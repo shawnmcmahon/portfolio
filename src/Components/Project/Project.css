@@ -81,6 +81,12 @@
   font-weight: normal;
 }
 
+.warning {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
 .tech {
   background-color: black;
   display: inline-flex;

@@ -96,6 +96,12 @@
   border: none;
 }
 
+.resume-button:hover {
+  background-color: #29f3c3;
+  color: #000;
+  cursor: pointer;
+}
+
 
 .social-button {
   border: none;
