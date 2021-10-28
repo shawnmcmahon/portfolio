@@ -15,7 +15,7 @@
 .portfolio-container {
   /* border: 2px red solid; */
   width: 90%; 
-  height: 3500px;
+  height: 3750px;
   display: flex;
   flex-direction: column;
 }

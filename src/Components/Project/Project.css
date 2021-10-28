@@ -12,6 +12,8 @@
   height: 50px;
   margin: 0 25px 0 25px;
   cursor: pointer;
+  font-size: 16px;
+
 }
 
 .project-button-container {
@@ -58,7 +60,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 25px 0 25px 0;
+  padding: 50px 0 50px 0;
   border-top: 1px solid black;
 }
 
@@ -90,6 +92,8 @@
   line-height: 1;
   font-size: 16px;
   padding: 10px 10px 10px 10px;
+  margin: 5px 0 5px 0;
+
 }
 
 .tech-stack-list {
