@@ -1,8 +1,5 @@
 import './Project.css';
 import { useState, useEffect } from 'react';
-import bj1 from '../../assets/better-jeopardy/bj1.png';
-import bj2 from '../../assets/better-jeopardy/bj2.png';
-import bj3 from '../../assets/better-jeopardy/bj3.png';
 
 const Project = ({project}) => {
   console.log('project in project', project.pictures[0])
@@ -17,14 +14,28 @@ const Project = ({project}) => {
     console.log(event.target.id)
   }
 
+  const visitRepo = () => {
+    window.open(project.githubRepo)
+  }
+
+  const visitSite = () => {
+    window.open(project.deployedSite)
+  }
+
   return (
     <article className="project-outter-container"> 
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
+        <div className="project-button-container"> 
+          <button className="project-button" onClick={visitRepo}>Github Repo </button>
+          {!!project.deployedSite && <button className="project-button" onClick={visitSite}>Deployed Site</button>}
+        </div>
+        <p className="label">Date Completed</p>
+            <p className="value">{project.dateCompleted}</p>
           <p className="label">Project Scope Time</p>
             <p className="value">{project.time}</p>
-          <p className="label">Collaborators</p>
-            <p className="value">{project.collaborators}</p>
+          <p className="label">Application Type</p>
+            <p className="value">{project.applicationType}</p>
           <p className="label">Technologies Used</p>
             <ul className="tech-stack-list">
               <li className="tech">{project.technologiesUsed[0]}</li>
@@ -43,6 +54,8 @@ const Project = ({project}) => {
             {project.learningGoals[1]}
             </li>
           </ul>
+          <p className="label">Collaborators</p>
+            <p className="value">{project.collaborators}</p>
       </div>
       <div className="project-images-container"> 
         <div className="photo-display"> 

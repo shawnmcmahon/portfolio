@@ -16,6 +16,17 @@ const Contact = () => {
             shawnmcmahon17@gmail.com
           </div>
           <div className="label-container"> 
+            CONNECT
+          </div>
+          <ul> 
+            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className="contact meeting">
+                <li>Schedule a Phone Call</li>
+            </a>
+            <a href="https://calendly.com/shawnmcmahon/30min" className="contact meeting">
+                <li>Schedule a Zoom Meeting</li>
+            </a>
+          </ul>
+          <div className="label-container"> 
             SOCIAL MEDIA
           </div>
           <div className="contact-container">
