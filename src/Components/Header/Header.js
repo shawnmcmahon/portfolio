@@ -1,4 +1,4 @@
-import './Header.css';
+import '../../styles/desktop/Header.css';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';

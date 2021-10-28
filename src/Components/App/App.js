@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 // import { HashLink } from 'react-router-hash-link';
 import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import '../../styles/desktop/App.css';
 
 const App = () => {
   return (

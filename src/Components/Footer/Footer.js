@@ -1,4 +1,4 @@
-import './Footer.css';
+import '../../styles/desktop/Footer.css';
 import linkedInLogo from '../../assets/li.png';
 import githubLogo from '../../assets/gh.png';
 import twitterLogo from '../../assets/twitter.png';
