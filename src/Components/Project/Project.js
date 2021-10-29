@@ -1,8 +1,7 @@
-import './Project.css';
+import '../../styles/desktop/Project.scss';
 import { useState, useEffect } from 'react';
 
-const Project = ({project}) => {
-  console.log('project in project', project.pictures[0])
+const Project = ({project, pageStyle}) => {
   const [photoPreview, setPhotoPreview] = useState(project.pictures[0]);
 
   // useEffect(() => {
@@ -23,12 +22,12 @@ const Project = ({project}) => {
   }
 
   return (
-    <article className="project-outter-container"> 
+    <article className={pageStyle === "Light Mode" ? " light-background project-outter-container " : "dark-background project-outter-container "}> 
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
         <div className="project-button-container"> 
-          <button className="project-button" onClick={visitRepo}>Github Repo </button>
-          {!!project.deployedSite && <button className="project-button" onClick={visitSite}>Deployed Site</button>}
+          <button className={pageStyle === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"} onClick={visitRepo}>Github Repo </button>
+          {!!project.deployedSite && <button className={pageStyle === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"} onClick={visitSite}>Deployed Site</button>}
         </div>
         <p className="label">Date Completed</p>
             <p className="value">{project.dateCompleted}</p>
@@ -38,11 +37,11 @@ const Project = ({project}) => {
             <p className="value">{project.applicationType}</p>
           <p className="label">Technologies Used</p>
             <ul className="tech-stack-list">
-              <li className="tech">{project.technologiesUsed[0]}</li>
-              <li className="tech">{project.technologiesUsed[1]}</li>
-              <li className="tech">{project.technologiesUsed[2]}</li>
-              <li className="tech">{project.technologiesUsed[3]}</li>
-              <li className="tech">{project.technologiesUsed[4]}</li>
+              <li className={pageStyle === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[0]}</li>
+              <li className={pageStyle === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[1]}</li>
+              <li className={pageStyle === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[2]}</li>
+              <li className={pageStyle === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[3]}</li>
+              <li className={pageStyle === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[4]}</li>
             </ul>
           <p className="label">Description</p>
             <p className="value">{project.description}</p>

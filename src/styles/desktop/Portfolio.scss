@@ -1,0 +1,56 @@
+@import '../variables';
+
+
+.projects-outter {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: $magnolia;
+}
+
+.portfolio-title {
+  margin-top: 150px;
+}
+
+
+.portfolio-container {
+  /* border: 2px red solid; */
+  width: 90%; 
+  height: 4000px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Light and Dark mode styles 
+.light-background {
+  background-color: $magnolia;
+  color: $black
+}
+
+.dark-background {
+  background-color: $grey;
+  color: $white;
+}
+
+.light-mode-button {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-mode-button {
+  background-color: $magnolia;
+  color: $black;
+}
+
+.accent-text-light {
+  color: $black;
+}
+
+.accent-text-dark {
+  color: $seaGreen;
+}

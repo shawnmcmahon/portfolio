@@ -1,3 +1,6 @@
+@import '../variables';
+
+
 .project-description-container {
   /* border: 2px blue dotted; */
   width: 45%;
@@ -6,14 +9,19 @@
 
 .project-button {
   border: none;
-  background-color: black;
-  color: white;
+  // background-color: $black;
+  // color: $white;
   width: 150px;
   height: 50px;
   margin: 0 25px 0 25px;
   cursor: pointer;
   font-size: 16px;
+}
 
+.project-button:hover {
+  background-color: $seaGreen;
+  color: $black;
+  cursor: pointer;
 }
 
 .project-button-container {
@@ -46,6 +54,7 @@
 .thumbnail {
   width: 100%;
   cursor: pointer;
+  margin: 10px 0 10px 0;
 }
 
 .photo-display {
@@ -61,7 +70,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   padding: 50px 0 50px 0;
-  border-top: 1px solid black;
+  border-top: 1px solid $black;
+  background-color: $magnolia;
 }
 
 .project-title {
@@ -81,25 +91,62 @@
   font-weight: normal;
 }
 
+.warning {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
 .tech {
-  background-color: black;
+  // background-color: $black;
+  // color: $white;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   font-weight: 400;
   line-height: 1;
   font-size: 14px;
   padding: 10px 20px 10px 20px;
   margin: 5px 0 5px 0;
   width: 50px;
-
 }
+
+
+
 
 .tech-stack-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+// Light and Dark mode styles 
+.light-background {
+  background-color: $magnolia;
+  color: $black
+}
+
+.dark-background {
+  background-color: $grey;
+  color: $white;
+}
+
+.light-mode-button {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-mode-button {
+  background-color: $magnolia;
+  color: $black;
+}
+
+.accent-text-light {
+  color: $black;
+}
+
+.accent-text-dark {
+  color: $seaGreen;
 }

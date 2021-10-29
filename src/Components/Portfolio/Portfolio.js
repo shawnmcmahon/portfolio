@@ -1,4 +1,4 @@
-import './Portfolio.css';
+import '../../styles/desktop/Portfolio.scss';
 import Project from '../Project/Project';
 import { useState, useEffect } from 'react';
 import bj1 from '../../assets/better-jeopardy/bj1.png';
@@ -15,7 +15,7 @@ import wc2 from '../../assets/whats-cookin/wc2.png';
 import wc3 from '../../assets/whats-cookin/wc3.png';
 
 
-const Portfolio = () => {
+const Portfolio = ({ pageStyle }) => {
   const [portfolio, setPortfolio] = useState([
       {
         number: 1, 
@@ -85,13 +85,15 @@ const Portfolio = () => {
       <Project 
         project={currentProject}
         key={index}
+        pageStyle={pageStyle}
       />
     )
   })
 
   return (
-    <section className="projects-outter" id="projects">
+    <section className={pageStyle === "Light Mode" ? " light-background projects-outter " : "dark-background projects-outter"} id="projects">
       <h2 className="portfolio-title">PROJECTS</h2>
+      <p className={pageStyle === "Light Mode" ? " accent-text-light warning " : "accent-text-dark warning"}>(Please be patient while Heroku loads the deployed sites)</p>
         <div className='portfolio-container'> 
           {!!portfolio && projectPreviews}
         </div>

@@ -8,19 +8,31 @@ import React, { useEffect, useState } from 'react';
 // import { HashLink } from 'react-router-hash-link';
 import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import '../../styles/desktop/App.scss';
 
 const App = () => {
+  const [pageStyle, setPageStyle] = useState(localStorage.getItem('pageStyle') || 'Light Mode');
+
+  const handleStyleSwitch = (event) => {
+    if (event.target.value === 'Light Mode') {
+      setPageStyle('Dark Mode')
+      localStorage.setItem('pageStyle', 'Dark Mode')
+    } else if (event.target.value === 'Dark Mode'){
+      setPageStyle('Light Mode')
+      localStorage.setItem('pageStyle', 'Light Mode')
+    }
+  }
+
   return (
       <div className="App">
-        <Header /> 
+        <Header pageStyle={pageStyle} handleStyleSwitch={handleStyleSwitch} /> 
         <Switch> 
           <Route
             exact
             path='/'
             render={() => {
               return (
-                <Home />
+                <Home pageStyle={pageStyle} />
               )
             }}
           />
@@ -29,7 +41,7 @@ const App = () => {
             path='/portfolio/'
             render={() => {
               return (
-                <Portfolio />
+                <Portfolio pageStyle={pageStyle}/>
               )
             }}
           />
@@ -38,7 +50,7 @@ const App = () => {
             path='/contact/'
             render={() => {
               return (
-                <Contact />
+                <Contact pageStyle={pageStyle}/>
               )
             }}
           />
@@ -47,7 +59,7 @@ const App = () => {
             path='*'
             render={() => {
               return (
-                <Error />
+                <Error pageStyle={pageStyle}/>
               )
             }}
           />

@@ -1,0 +1,32 @@
+// Mixins 
+@mixin flex-center($direction) {
+  display: flex; 
+  flex-direction: $direction;
+  justify-content: center;
+}
+
+@mixin flex-middle($direction) {
+  display: flex; 
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+// Fonts 
+@font-face {
+  font-family: 'Prompt';
+  src: url('../assets/fonts/Prompt/Prompt-Regular.ttf') format ('opentype'),
+}
+
+// Colors  
+$black: #000000;
+$white: #ffffff;
+$magnolia: #f5f5ff;
+$seaGreen: #29f3c3;
+$darkGreen: #285850;
+$grey: #272729;
+
+// Switch 
+$width: 60px;
+$padding: 7px;
+$height: $width / 2 + $padding;
