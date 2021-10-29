@@ -1,5 +1,5 @@
 import city from '../../assets/city1.jpeg';
-import '../../styles/desktop/Home.css';
+import '../../styles/desktop/Home.scss';
 
 const Home = () => {
 
