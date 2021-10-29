@@ -1,4 +1,4 @@
-import '../../styles/desktop/Header.css';
+import '../../styles/desktop/Header.scss';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
@@ -13,6 +13,10 @@ const Header = () => {
           </ScrollLink>
         </div>
         <div className="button-container">
+        <label class="switch-wrap">
+          <input type="checkbox" />
+          <div class="switch"></div>
+        </label>
           <ScrollLink smooth to="/#about" >
           <button className="nav-button">About</button></ScrollLink>
           <ScrollLink to="/portfolio/#projects" > 

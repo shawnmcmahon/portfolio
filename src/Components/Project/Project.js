@@ -1,4 +1,4 @@
-import '../../styles/desktop/Project.css';
+import '../../styles/desktop/Project.scss';
 import { useState, useEffect } from 'react';
 
 const Project = ({project}) => {

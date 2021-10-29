@@ -1,4 +1,4 @@
-import '../../styles/desktop/Portfolio.css';
+import '../../styles/desktop/Portfolio.scss';
 import Project from '../Project/Project';
 import { useState, useEffect } from 'react';
 import bj1 from '../../assets/better-jeopardy/bj1.png';
