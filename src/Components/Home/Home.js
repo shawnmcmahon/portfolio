@@ -13,14 +13,14 @@ const Home = ({ pageStyle }) => {
         <section className={pageStyle === "Light Mode" ? " light-background section-container home-name " : "dark-background section-container home-name"}> 
           <div className="name-container"> 
             <h1 className="name">Shawn McMahon</h1>
-            <h3 className="tagline">Front-End Developer</h3>
-            <button className="resume-button" onClick={openResumeTab}>Download Resume</button>
+            <h3 className={pageStyle === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
+            <button className={pageStyle === "Light Mode" ? " light-mode-button resume-button " : "dark-mode-background resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
         <section className="section-container about" id="about">  
           <h3 className="bio-intro">My name is Shawn...</h3>
 
-          <p className="bio-intro-second">...and I am on a mission to create beautiful, engaging websites. </p>
+          <p className={pageStyle === "Light Mode" ? " accent-text-light bio-intro-second " : "accent-text-dark bio-intro-second"}>...and I am on a mission to create beautiful, engaging websites. </p>
 
           <p className="bio-text">Introduced to programming when I was 16, I found my passion for front-end design during the days of Myspace. I spent countless hours as a bored teenager designing profile overlays using HTML / CSS, Adobe Dreamweaver, and Photoshop. In 2021 I decided to reignite this passion for logic and design by studying at Turing School of Software and Design.</p>
   

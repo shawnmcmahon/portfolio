@@ -11,6 +11,23 @@
   color: $white;
 }
 
+.light-mode-button {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-mode-button {
+  background-color: $magnolia;
+  color: $black;
+}
+
+.accent-text-light {
+  color: $black;
+}
+
+.accent-text-dark {
+  color: $seaGreen;
+}
 
 .header {
   display: flex;
@@ -95,13 +112,13 @@
 }
 
 .resume-button {
-  background-color: $black;
+  // background-color: $black;
+  // color: $white;
   display: flex;
   justify-content: center;
   align-self: center;
   align-items: center;
   text-align: center;
-  color: $white;
   font-weight: 400;
   line-height: 1;
   font-size: 18px;
