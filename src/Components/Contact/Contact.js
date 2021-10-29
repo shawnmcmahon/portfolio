@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="contact-container">
           <ul> 
             <a href="https://github.com/shawnmcmahon" className="contact">
-                <li>Github</li>
+                <li className="contact">Github</li>
             </a>
             <a href="https://www.linkedin.com/in/shawnpmcmahon/" className="contact">
                 <li>LinkedIn</li>

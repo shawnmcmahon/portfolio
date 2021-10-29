@@ -25,3 +25,32 @@
   flex-direction: column;
 }
 
+
+// Light and Dark mode styles 
+.light-background {
+  background-color: $magnolia;
+  color: $black
+}
+
+.dark-background {
+  background-color: $grey;
+  color: $white;
+}
+
+.light-mode-button {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-mode-button {
+  background-color: $magnolia;
+  color: $black;
+}
+
+.accent-text-light {
+  color: $black;
+}
+
+.accent-text-dark {
+  color: $seaGreen;
+}
