@@ -4,16 +4,7 @@ import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
 
-const Header = () => {
-  const [pageStyle, setPageStyle] = useState('Light Mode');
-
-  const handleStyleSwitch = (event) => {
-    if (event.target.value === 'Light Mode') {
-      setPageStyle('DarkMode')
-    } else {
-      setPageStyle('Light Mode')
-    }
-  }
+const Header = ({ pageStyle, handleStyleSwitch}) => {
 
   return (
     <header className="header">

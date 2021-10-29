@@ -2,7 +2,6 @@ import '../../styles/desktop/Project.scss';
 import { useState, useEffect } from 'react';
 
 const Project = ({project}) => {
-  console.log('project in project', project.pictures[0])
   const [photoPreview, setPhotoPreview] = useState(project.pictures[0]);
 
   // useEffect(() => {

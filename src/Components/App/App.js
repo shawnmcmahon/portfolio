@@ -11,9 +11,21 @@ import { Route, Switch } from 'react-router-dom';
 import '../../styles/desktop/App.scss';
 
 const App = () => {
+  const [pageStyle, setPageStyle] = useState('Light Mode');
+
+  const handleStyleSwitch = (event) => {
+    if (event.target.value === 'Light Mode') {
+      setPageStyle('DarkMode')
+      console.log('d')
+    } else {
+      setPageStyle('Light Mode')
+      console.log('l')
+    }
+  }
+
   return (
       <div className="App">
-        <Header /> 
+        <Header pageStyle={pageStyle} handleStyleSwitch={handleStyleSwitch} /> 
         <Switch> 
           <Route
             exact
