@@ -13,7 +13,7 @@ const Header = () => {
           </ScrollLink>
         </div>
         <div className="button-container">
-        <label class="switch-wrap">
+        <label class="switch-wrap switch-html">
           <input type="checkbox" />
           <div class="switch"></div>
         </label>
