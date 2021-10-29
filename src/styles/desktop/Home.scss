@@ -23,6 +23,16 @@
   line-height: 1.25;
 }
 
+.tech-icon {
+  width: 100px; 
+  height: auto;
+  margin: 0 10px 0 10px;
+}
+
+.center-text {
+  text-align: center;
+}
+
 
 
 .name {
@@ -45,9 +55,12 @@
 
 .section-container {
   box-sizing: border-box;
-  width: auto;
+  width: 90%;
   justify-content: center;
   border-bottom: 1px $black solid;
+  padding: 50px 0 50px 0;
+  display: flex;
+  @include flex-middle(column);
   // background-color: $magnolia;
 }
 
@@ -58,6 +71,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container {
+  @include flex-middle(row);
 }
 
 .home-name {
@@ -73,9 +90,10 @@
 
 .about {
   width: 60%;
-  justify-content: flex-start;
+  // justify-content: flex-start;
   font-size: 18px;
-  padding: 100px 0 100px 0;
+  padding: 0px 0 50px 0;
+  @include flex-center(column);
 }
 
 .tagline {
