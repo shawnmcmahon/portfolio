@@ -1,9 +1,20 @@
 import '../../styles/desktop/Header.scss';
+import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
 
 const Header = () => {
+  const [pageStyle, setPageStyle] = useState('Light Mode');
+
+  const handleStyleSwitch = (event) => {
+    if (event.target.value === 'Light Mode') {
+      setPageStyle('DarkMode')
+    } else {
+      setPageStyle('Light Mode')
+    }
+  }
+
   return (
     <header className="header">
       <nav className="nav-bar">
@@ -14,7 +25,7 @@ const Header = () => {
         </div>
         <div className="button-container">
         <label class="switch-wrap switch-html">
-          <input type="checkbox" />
+          <input type="checkbox" value={pageStyle} onChange={handleStyleSwitch} />
           <div class="switch"></div>
         </label>
           <ScrollLink smooth to="/#about" >
