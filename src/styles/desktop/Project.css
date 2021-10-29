@@ -13,7 +13,12 @@
   margin: 0 25px 0 25px;
   cursor: pointer;
   font-size: 16px;
+}
 
+.project-button:hover {
+  background-color: #29f3c3;
+  color: #000;
+  cursor: pointer;
 }
 
 .project-button-container {
@@ -100,8 +105,10 @@
   padding: 10px 20px 10px 20px;
   margin: 5px 0 5px 0;
   width: 50px;
-
 }
+
+
+
 
 .tech-stack-list {
   display: flex;
