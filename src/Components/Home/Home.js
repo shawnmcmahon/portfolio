@@ -1,7 +1,7 @@
 import city from '../../assets/city1.jpeg';
 import '../../styles/desktop/Home.scss';
 
-const Home = () => {
+const Home = ({ pageStyle }) => {
 
   const openResumeTab = () => {
     window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing')
@@ -9,8 +9,8 @@ const Home = () => {
 
   return (
     <section className="home-container" id="home">
-      <div className="introduction-container">
-        <section className="section-container home-name"> 
+      <div className={pageStyle === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container "} >
+        <section className={pageStyle === "Light Mode" ? " light-background section-container home-name " : "dark-background section-container home-name"}> 
           <div className="name-container"> 
             <h1 className="name">Shawn McMahon</h1>
             <h3 className="tagline">Front-End Developer</h3>

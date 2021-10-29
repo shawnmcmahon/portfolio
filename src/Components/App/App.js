@@ -32,7 +32,7 @@ const App = () => {
             path='/'
             render={() => {
               return (
-                <Home />
+                <Home pageStyle={pageStyle} />
               )
             }}
           />
@@ -41,7 +41,7 @@ const App = () => {
             path='/portfolio/'
             render={() => {
               return (
-                <Portfolio />
+                <Portfolio pageStyle={pageStyle}/>
               )
             }}
           />
@@ -50,7 +50,7 @@ const App = () => {
             path='/contact/'
             render={() => {
               return (
-                <Contact />
+                <Contact pageStyle={pageStyle}/>
               )
             }}
           />
@@ -59,7 +59,7 @@ const App = () => {
             path='*'
             render={() => {
               return (
-                <Error />
+                <Error pageStyle={pageStyle}/>
               )
             }}
           />
