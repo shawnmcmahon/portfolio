@@ -16,7 +16,7 @@ const Header = ({ pageStyle, handleStyleSwitch}) => {
         </div>
         <div className="button-container">
         <label class="switch-wrap switch-html">
-          <input type="checkbox" value={pageStyle} onChange={handleStyleSwitch} />
+          <input type="checkbox" value={pageStyle} onChange={handleStyleSwitch} checked={pageStyle === "Dark Mode" ? true : false}/>
           <div class="switch"></div>
         </label>
           <ScrollLink smooth to="/#about" >

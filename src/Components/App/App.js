@@ -11,15 +11,15 @@ import { Route, Switch } from 'react-router-dom';
 import '../../styles/desktop/App.scss';
 
 const App = () => {
-  const [pageStyle, setPageStyle] = useState('Light Mode');
+  const [pageStyle, setPageStyle] = useState(localStorage.getItem('pageStyle') || 'Light Mode');
 
   const handleStyleSwitch = (event) => {
     if (event.target.value === 'Light Mode') {
-      setPageStyle('DarkMode')
-      console.log('d')
-    } else {
+      setPageStyle('Dark Mode')
+      localStorage.setItem('pageStyle', 'Dark Mode')
+    } else if (event.target.value === 'Dark Mode'){
       setPageStyle('Light Mode')
-      console.log('l')
+      localStorage.setItem('pageStyle', 'Light Mode')
     }
   }
 
