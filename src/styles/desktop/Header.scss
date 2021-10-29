@@ -64,9 +64,7 @@ header {
   box-shadow: 0 3px 1rem black;
 }
 
-$width: 60px;
-$padding: 7px;
-$height: $width / 2 + $padding;
+
 
 //boring layout stuff:
 .switch-html { box-sizing: border-box; height: 100% } *, *::before, *::after { box-sizing: inherit; }

@@ -28,11 +28,11 @@ const Footer = () => {
           FOLLOW SHAWN
         </div>
         <div className="contact-value-container"> 
-          <a href="https://www.linkedin.com/in/shawnpmcmahon/">
-            <img src={linkedInLogo} className="social-logo" /> 
-          </a>
           <a href="https://github.com/shawnmcmahon">
             <img src={githubLogo} className="social-logo" /> 
+          </a>
+          <a href="https://www.linkedin.com/in/shawnpmcmahon/">
+            <img src={linkedInLogo} className="social-logo" /> 
           </a>
           <a href="https://twitter.com/DOPE_A_MEAN">
             <img src={twitterLogo} className="social-logo" /> 
