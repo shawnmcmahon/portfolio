@@ -93,7 +93,7 @@ const Portfolio = ({ pageStyle }) => {
   return (
     <section className={pageStyle === "Light Mode" ? " light-background projects-outter " : "dark-background projects-outter "} id="projects">
       <h2 className="portfolio-title">PROJECTS</h2>
-      <p className="warning">(Please be patient while Heroku wakes up the deployed sites)</p>
+      <p className={pageStyle === "Light Mode" ? " accent-text-light warning " : "accent-text-dark warning"}>(Please be patient while Heroku loads the deployed sites)</p>
         <div className='portfolio-container'> 
           {!!portfolio && projectPreviews}
         </div>

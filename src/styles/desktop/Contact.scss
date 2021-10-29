@@ -6,11 +6,10 @@
   height: 500px;
   display: flex;
   flex-direction: row;
+  padding: 150px 0 100px 0;
 }
 
-.extra-top-padding {
-  padding-top: 150px;
-}
+
 
 .contact-name {
   font-family: 'Prompt', sans-serif;
@@ -53,11 +52,15 @@
 .contact {
   width: 80%;
   height: auto;
-  padding: 20px 0 20px 0;
   font-weight: 300;
   text-decoration: none;
   background-color: $magnolia;
 }
+
+.email {
+  padding: 20px 0 20px 0;
+}
+
 
 li {
   text-decoration: none;
@@ -89,4 +92,33 @@ ul:active, li:active {
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+// Light and Dark mode styles 
+.light-background {
+  background-color: $magnolia;
+  color: $black
+}
+
+.dark-background {
+  background-color: $grey;
+  color: $white;
+}
+
+.light-mode-button {
+  background-color: $black;
+  color: $white;
+}
+
+.dark-mode-button {
+  background-color: $magnolia;
+  color: $black;
+}
+
+.accent-text-light {
+  color: $black;
+}
+
+.accent-text-dark {
+  color: $seaGreen;
 }

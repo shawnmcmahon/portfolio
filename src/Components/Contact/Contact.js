@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="label-container"> 
             EMAIL
           </div>
-          <div className="contact">
+          <div className="contact email">
             shawnmcmahon17@gmail.com
           </div>
           <div className="label-container"> 
@@ -29,16 +29,16 @@ const Contact = () => {
           <div className="label-container"> 
             SOCIAL MEDIA
           </div>
-          <div className="contact-container">
+          <div className="contact">
           <ul> 
             <a href="https://github.com/shawnmcmahon" className="contact">
                 <li className="contact">Github</li>
             </a>
             <a href="https://www.linkedin.com/in/shawnpmcmahon/" className="contact">
-                <li>LinkedIn</li>
+                <li className="contact">LinkedIn</li>
             </a>
             <a href="https://twitter.com/DOPE_A_MEAN" className="contact">
-              <li>Twitter</li>
+              <li className="contact">Twitter</li>
             </a>
           </ul>
           </div>
