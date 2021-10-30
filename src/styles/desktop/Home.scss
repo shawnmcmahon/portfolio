@@ -238,7 +238,7 @@
   background: $grey;
   box-shadow:  10px 10px 30px $black,
               -10px -10px 30px $shadowGrey;
-  margin-top: 175px;
+  margin: 50px 0 50px 0;
 }
 
 .neo-text {
@@ -273,5 +273,21 @@
   box-shadow: inset  10px 10px 30px $black,
               inset -10px -10px 30px $shadowGrey;
   margin-top: 50px;
+}
+
+.neo-section-container-concave {
+  box-sizing: border-box;
+  width: 90%;
+  justify-content: center;
+  border-bottom: 1px $black solid;
+  padding: 0 0 50px 0;
+  display: flex;
+  @include flex-middle(column);
+  border-radius: 50px;
+  background: linear-gradient(145deg, $grey, $shadowGrey);
+  box-shadow:  10px 10px 30px $black,
+              -10px -10px 30px $shadowGrey;
+  margin: 50px 0 50px 0;
+
 }
 

@@ -32,7 +32,7 @@ const Home = ({ pageStyle }) => {
             <p className="bio-text">Let's build something beautiful together. </p>
           </div> 
         </section>
-        <section className="section-container"> 
+        <section className="neo-section-container"> 
           <p className={pageStyle === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technolgies I Use</p>
 
           <p className="bio-text center-text"> Front-end</p>
