@@ -12,14 +12,14 @@ const Home = ({ pageStyle }) => {
   return (
     <section className="home-container" id="home">
       <div className={pageStyle === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container "} >
-        <section className={pageStyle === "Light Mode" ? " light-background section-container home-name " : "dark-background section-container home-name"}> 
+        <section className={pageStyle === "Light Mode" ? " light-background section-container home-name " : "dark-background neo-section-container home-name"}> 
           <div className="name-container"> 
-            <h1 className="name">Shawn McMahon</h1>
+            <h1 className="neo-text name">Shawn McMahon</h1>
             <h3 className={pageStyle === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
             <button className={pageStyle === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
-        <section className="section-container " id="about"> 
+        <section className="neo-section-container-inner " id="about"> 
           <div className="about"> 
             <h3 className="bio-intro">My name is Shawn...</h3>
 
