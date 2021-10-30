@@ -11,28 +11,28 @@ import { Route, Switch } from 'react-router-dom';
 import '../../styles/desktop/App.scss';
 
 const App = () => {
-  const [pageStyle, setPageStyle] = useState(localStorage.getItem('pageStyle') || 'Light Mode');
+  const [pageMode, setPageMode] = useState(localStorage.getItem('pageMode') || 'Light Mode');
 
   const handleStyleSwitch = (event) => {
     if (event.target.value === 'Light Mode') {
-      setPageStyle('Dark Mode')
-      localStorage.setItem('pageStyle', 'Dark Mode')
+      setPageMode('Dark Mode')
+      localStorage.setItem('pageMode', 'Dark Mode')
     } else if (event.target.value === 'Dark Mode'){
-      setPageStyle('Light Mode')
-      localStorage.setItem('pageStyle', 'Light Mode')
+      setPageMode('Light Mode')
+      localStorage.setItem('pageMode', 'Light Mode')
     }
   }
 
   return (
       <div className="App">
-        <Header pageStyle={pageStyle} handleStyleSwitch={handleStyleSwitch} /> 
+        <Header pageMode={pageMode} handleStyleSwitch={handleStyleSwitch} /> 
         <Switch> 
           <Route
             exact
             path='/'
             render={() => {
               return (
-                <Home pageStyle={pageStyle} />
+                <Home pageMode={pageMode} />
               )
             }}
           />
@@ -41,7 +41,7 @@ const App = () => {
             path='/portfolio/'
             render={() => {
               return (
-                <Portfolio pageStyle={pageStyle}/>
+                <Portfolio pageMode={pageMode}/>
               )
             }}
           />
@@ -50,7 +50,7 @@ const App = () => {
             path='/contact/'
             render={() => {
               return (
-                <Contact pageStyle={pageStyle}/>
+                <Contact pageMode={pageMode}/>
               )
             }}
           />
@@ -59,7 +59,7 @@ const App = () => {
             path='*'
             render={() => {
               return (
-                <Error pageStyle={pageStyle}/>
+                <Error pageMode={pageMode}/>
               )
             }}
           />

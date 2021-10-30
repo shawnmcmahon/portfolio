@@ -3,7 +3,7 @@ import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
 
 
-const Home = ({ pageStyle }) => {
+const Home = ({ pageMode }) => {
 
   const openResumeTab = () => {
     window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing')
@@ -11,19 +11,19 @@ const Home = ({ pageStyle }) => {
 
   return (
     <section className="home-container" id="home">
-      <div className={pageStyle === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container "} >
-        <section className={pageStyle === "Light Mode" ? " light-background section-container home-name " : "dark-background neo-section-container home-name"}> 
+      <div className={pageMode === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container "} >
+        <section className={pageMode === "Light Mode" ? " light-background section-container home-name " : "dark-background neo-section-container home-name"}> 
           <div className="name-container"> 
             <h1 className="neo-text name">Shawn McMahon</h1>
-            <h3 className={pageStyle === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
-            <button className={pageStyle === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
+            <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
+            <button className={pageMode === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
         <section className="neo-section-container-inner " id="about"> 
           <div className="about"> 
             <h3 className="bio-intro">My name is Shawn...</h3>
 
-            <p className={pageStyle === "Light Mode" ? " accent-text-light bio-intro-second " : "accent-text-dark bio-intro-second"}>...and I am on a mission to create beautiful, engaging websites. </p>
+            <p className={pageMode === "Light Mode" ? " accent-text-light bio-intro-second " : "accent-text-dark bio-intro-second"}>...and I am on a mission to create beautiful, engaging websites. </p>
 
             <p className="bio-text">Introduced to programming when I was 16, I found my passion for front-end design during the days of Myspace. I spent countless hours as a bored teenager designing profile overlays using HTML / CSS, Adobe Dreamweaver, and Photoshop. In 2021 I decided to reignite this passion for logic and design by studying at Turing School of Software and Design.</p>
     
@@ -33,7 +33,7 @@ const Home = ({ pageStyle }) => {
           </div> 
         </section>
         <section className="neo-section-container"> 
-          <p className={pageStyle === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technolgies I Use</p>
+          <p className={pageMode === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technolgies I Use</p>
 
           <p className="bio-text center-text"> Front-end</p>
           <div className="icon-container"> 

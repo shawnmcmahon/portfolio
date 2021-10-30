@@ -1,10 +1,10 @@
 import '../../styles/desktop/Contact.scss';
 import valley from '../../assets/valley.jpeg';
 
-const Contact = ({pageStyle}) => {
+const Contact = ({pageMode}) => {
   return (
     <div id="contact">
-      <section className={pageStyle === "Light Mode" ? " light-background contact-container " : "dark-background contact-container"}> 
+      <section className={pageMode === "Light Mode" ? " light-background contact-container " : "dark-background contact-container"}> 
         <div className="contact-name"> 
           CONTACT SHAWN
         </div>
@@ -19,10 +19,10 @@ const Contact = ({pageStyle}) => {
             CONNECT
           </div>
           <ul> 
-            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className={pageStyle === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
+            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
                 <li>Schedule a Phone Call</li>
             </a>
-            <a href="https://calendly.com/shawnmcmahon/30min" className={pageStyle === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
+            <a href="https://calendly.com/shawnmcmahon/30min" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
                 <li>Schedule a Zoom Meeting</li>
             </a>
           </ul>
@@ -31,13 +31,13 @@ const Contact = ({pageStyle}) => {
           </div>
           <div className="contact">
           <ul> 
-            <a href="https://github.com/shawnmcmahon" className={pageStyle === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
+            <a href="https://github.com/shawnmcmahon" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
                 <li>Github</li>
             </a>
-            <a href="https://www.linkedin.com/in/shawnpmcmahon/" className={pageStyle === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
+            <a href="https://www.linkedin.com/in/shawnpmcmahon/" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
                 <li >LinkedIn</li>
             </a>
-            <a href="https://twitter.com/DOPE_A_MEAN" className={pageStyle === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
+            <a href="https://twitter.com/DOPE_A_MEAN" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
               <li >Twitter</li>
             </a>
           </ul>
