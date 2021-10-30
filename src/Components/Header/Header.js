@@ -5,7 +5,7 @@ import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
 import brush from '../../assets/brush.svg';
 
-const Header = ({ pageMode, handleModeSwitch}) => {
+const Header = ({ pageMode, handleModeSwitch, handleDesignSwitch}) => {
   const [navBar, setNavBar] = useState(false);
 
   const changeBackground = () => {
@@ -32,7 +32,7 @@ const Header = ({ pageMode, handleModeSwitch}) => {
           <input type="checkbox" value={pageMode} onChange={handleModeSwitch} checked={pageMode === "Dark Mode" ? true : false}/>
           <div className="switch"></div>
         </label>
-          <img src={brush} className="brush" />
+          <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button>
           <ScrollLink smooth to="/#about" >
           <button className="nav-button">About</button></ScrollLink>
           <ScrollLink to="/portfolio/#projects" > 

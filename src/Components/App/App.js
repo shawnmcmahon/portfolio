@@ -12,7 +12,7 @@ import '../../styles/desktop/App.scss';
 
 const App = () => {
   const [pageMode, setPageMode] = useState(localStorage.getItem('pageMode') || 'Light Mode');
-  const [pageStyle, setPageStyle] = useState(localStorage.getItem('pageStyle' || 'Flat Style'))
+  const [pageDesign, setPageDesign] = useState(localStorage.getItem('pageDesign') || 'Flat')
 
   const handleModeSwitch = (event) => {
     if (event.target.value === 'Light Mode') {
@@ -24,10 +24,20 @@ const App = () => {
     }
   }
 
+  const handleDesignSwitch = () => {
+    if (pageDesign === 'Flat') {
+      setPageDesign('Neomorphism');
+      localStorage.setItem('pageDesign', 'Neomorphism');
+    } else if (pageDesign === 'Neomorphism') {
+      setPageDesign('Flat') 
+      localStorage.setItem('pageDesign', 'Flat')
+    }
+  }
+
 
   return (
       <div className="App">
-        <Header pageMode={pageMode} handleModeSwitch={handleModeSwitch} /> 
+        <Header pageMode={pageMode} handleModeSwitch={handleModeSwitch} handleDesignSwitch={handleDesignSwitch} /> 
         <Switch> 
           <Route
             exact
