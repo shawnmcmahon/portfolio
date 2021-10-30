@@ -12,8 +12,9 @@ import '../../styles/desktop/App.scss';
 
 const App = () => {
   const [pageMode, setPageMode] = useState(localStorage.getItem('pageMode') || 'Light Mode');
+  const [pageStyle, setPageStyle] = useState(localStorage.getItem('pageStyle' || 'Flat Style'))
 
-  const handleStyleSwitch = (event) => {
+  const handleModeSwitch = (event) => {
     if (event.target.value === 'Light Mode') {
       setPageMode('Dark Mode')
       localStorage.setItem('pageMode', 'Dark Mode')
@@ -23,9 +24,10 @@ const App = () => {
     }
   }
 
+
   return (
       <div className="App">
-        <Header pageMode={pageMode} handleStyleSwitch={handleStyleSwitch} /> 
+        <Header pageMode={pageMode} handleModeSwitch={handleModeSwitch} /> 
         <Switch> 
           <Route
             exact
