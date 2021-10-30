@@ -16,7 +16,7 @@ const Home = ({ pageStyle }) => {
           <div className="name-container"> 
             <h1 className="name">Shawn McMahon</h1>
             <h3 className={pageStyle === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
-            <button className={pageStyle === "Light Mode" ? " light-mode-button resume-button " : "dark-mode-background resume-button"} onClick={openResumeTab}>Download Resume</button>
+            <button className={pageStyle === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
         <section className="section-container " id="about"> 

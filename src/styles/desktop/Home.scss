@@ -184,3 +184,34 @@
 .accent-text-dark {
   color: $seaGreen;
 }
+
+.neo-light {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #dddde6);
+  box-shadow:  20px 20px 60px #d0d0d9,
+              -20px -20px 60px #ffffff;
+  color: $grey;
+}
+
+.neo-light:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #dddde6, #ffffff);
+  box-shadow:  20px 20px 60px #d0d0d9,
+              -20px -20px 60px #ffffff;
+}
+
+.neo-dark {
+  border-radius: 50px;
+  background: linear-gradient(145deg, $grey, $black);
+  box-shadow:  10px 10px 30px $black,
+              -10px -10px 30px $shadowGrey;
+  color: $shadowGrey;
+}
+
+.neo-dark:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, $black, $grey);
+  box-shadow:  10px 10px 30px $black,
+              -10px -10px 30px $shadowGrey;
+  color: $seaGreen;
+}

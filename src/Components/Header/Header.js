@@ -9,7 +9,7 @@ const Header = ({ pageStyle, handleStyleSwitch}) => {
 
   const changeBackground = () => {
     console.log(window.scrollY)
-    if (window.scrollY >= 125) {
+    if (window.scrollY >= 50) {
       setNavBar(true);
     } else {
       setNavBar(false);
