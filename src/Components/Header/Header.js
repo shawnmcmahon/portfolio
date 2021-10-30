@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
+import brush from '../../assets/brush.svg';
 
 const Header = ({ pageStyle, handleStyleSwitch}) => {
   const [navBar, setNavBar] = useState(false);
@@ -31,6 +32,7 @@ const Header = ({ pageStyle, handleStyleSwitch}) => {
           <input type="checkbox" value={pageStyle} onChange={handleStyleSwitch} checked={pageStyle === "Dark Mode" ? true : false}/>
           <div className="switch"></div>
         </label>
+          <img src={brush} className="brush" />
           <ScrollLink smooth to="/#about" >
           <button className="nav-button">About</button></ScrollLink>
           <ScrollLink to="/portfolio/#projects" > 
