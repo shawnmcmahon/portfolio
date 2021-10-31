@@ -3,27 +3,95 @@ import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
 
 
-const Home = ({ pageStyle }) => {
+const Home = ({ pageMode, pageDesign }) => {
 
   const openResumeTab = () => {
     window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing')
   }
 
+  const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
+    //introduction container - flat 
+    if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "introduction-container") {
+      return 'light-background introduction-container'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "introduction-container") {
+      return 'dark-background introduction-container'
+    }
+
+    // section container - top / flat 
+    if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "section-container") {
+      return 'light-background section-container home-name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "section-container") {
+      return 'dark-background section-container home-name'
+    }
+
+    // section container - top / neo 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container") {
+      return 'light-background neo-section-container home-name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "section-container") {
+      return 'dark-background neo-section-container home-name'
+    }
+
+    // section container - middle / neo 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container-inner") {
+      return 'light-background neo-section-container-inner'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "section-container-inner") {
+      return 'dark-background neo-section-container-inner'
+    }
+
+    // section container - last / neo 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container-concave") {
+      return 'light-background neo-section-container-concave'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "section-container-concave") {
+      return 'dark-background neo-section-container-concave'
+    }
+
+    // Name - flat
+
+    if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "name") {
+      return 'name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "name") {
+      return 'name'
+    }
+
+    // name - neo
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "name") {
+      return 'neo-text-light name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "name") {
+      return 'neo-text name'
+    }
+
+
+  }
+
   return (
     <section className="home-container" id="home">
-      <div className={pageStyle === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container "} >
-        <section className={pageStyle === "Light Mode" ? " light-background section-container home-name " : "dark-background section-container home-name"}> 
+      <div className="introduction-container">
+        <section className={findStyleAndDesign(pageMode, pageDesign, "section-container")}> 
           <div className="name-container"> 
-            <h1 className="name">Shawn McMahon</h1>
-            <h3 className={pageStyle === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
-            <button className={pageStyle === "Light Mode" ? " light-mode-button resume-button " : "dark-mode-background resume-button"} onClick={openResumeTab}>Download Resume</button>
+            <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
+            <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
+            <button className={pageMode === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
-        <section className="section-container " id="about"> 
+        <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-inner")} id="about"> 
           <div className="about"> 
             <h3 className="bio-intro">My name is Shawn...</h3>
 
-            <p className={pageStyle === "Light Mode" ? " accent-text-light bio-intro-second " : "accent-text-dark bio-intro-second"}>...and I am on a mission to create beautiful, engaging websites. </p>
+            <p className={pageMode === "Light Mode" ? " accent-text-light bio-intro-second " : "accent-text-dark bio-intro-second"}>...and I am on a mission to create beautiful, engaging websites. </p>
 
             <p className="bio-text">Introduced to programming when I was 16, I found my passion for front-end design during the days of Myspace. I spent countless hours as a bored teenager designing profile overlays using HTML / CSS, Adobe Dreamweaver, and Photoshop. In 2021 I decided to reignite this passion for logic and design by studying at Turing School of Software and Design.</p>
     
@@ -32,8 +100,8 @@ const Home = ({ pageStyle }) => {
             <p className="bio-text">Let's build something beautiful together. </p>
           </div> 
         </section>
-        <section className="section-container"> 
-          <p className={pageStyle === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technolgies I Use</p>
+        <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-concave")}> 
+          <p className={pageMode === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technolgies I Use</p>
 
           <p className="bio-text center-text"> Front-end</p>
           <div className="icon-container"> 

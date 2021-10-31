@@ -3,23 +3,36 @@ import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
+import brush from '../../assets/brush.svg';
 
-const Header = ({ pageStyle, handleStyleSwitch}) => {
+const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
   const [navBar, setNavBar] = useState(false);
 
   const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 125) {
-      setNavBar(true);
-    } else {
-      setNavBar(false);
+    if (pageDesign === 'Flat' && window.scrollY >= 50) {
+        setNavBar(true);
+      } else {
+        setNavBar(false);
+      }
     }
-  }
+    
+    if (pageDesign === 'Flat') {
+      window.addEventListener('scroll', changeBackground)
+    }
 
-    window.addEventListener('scroll', changeBackground)
+
+    const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
+
+      if (pageDesign === 'Flat') {
+        return 'header';
+      } else {
+        return 'neo-header';
+      }
+
+    }
 
   return (
-    <header className="header">
+    <header className={findStyleAndDesign(pageMode, pageDesign)}>
       <nav className={navBar ? 'nav-bar-active' : 'nav-bar'}>
         <div className="logo-container"> 
           <ScrollLink to="/#home"> 
@@ -28,9 +41,10 @@ const Header = ({ pageStyle, handleStyleSwitch}) => {
         </div>
         <div className="button-container">
         <label className="switch-wrap switch-html">
-          <input type="checkbox" value={pageStyle} onChange={handleStyleSwitch} checked={pageStyle === "Dark Mode" ? true : false}/>
+          <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
           <div className="switch"></div>
         </label>
+          <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button>
           <ScrollLink smooth to="/#about" >
           <button className="nav-button">About</button></ScrollLink>
           <ScrollLink to="/portfolio/#projects" > 

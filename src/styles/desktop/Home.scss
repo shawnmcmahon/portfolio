@@ -45,6 +45,13 @@
   align-items: center;
 }
 
+.brush {
+  margin: 0 50px 0 50px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
 .introduction-container {
   display: flex;
   flex-direction: column;
@@ -184,3 +191,150 @@
 .accent-text-dark {
   color: $seaGreen;
 }
+
+/* Neo Morphism */
+
+.neo-light {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #dddde6);
+  box-shadow:  20px 20px 60px #d0d0d9,
+              -20px -20px 60px #ffffff;
+  color: $grey;
+}
+
+.neo-light:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #dddde6, #ffffff);
+  box-shadow:  20px 20px 60px #d0d0d9,
+              -20px -20px 60px #ffffff;
+}
+
+.neo-dark {
+  border-radius: 50px;
+  background: linear-gradient(145deg, $grey, $black);
+  box-shadow:  10px 10px 30px $black,
+              -10px -10px 30px $shadowGrey;
+  color: $shadowGrey;
+}
+
+.neo-dark:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, $black, $grey);
+  box-shadow:  10px 10px 30px $black,
+              -10px -10px 30px $shadowGrey;
+  color: $shadowGrey;
+}
+
+.neo-dark:active {
+  border-radius: 50px;
+  background: linear-gradient(145deg, $black, $grey);
+  box-shadow:  10px 10px 30px $shadowGrey,
+              -10px -10px 30px $black;
+  color: $shadowGrey;
+}
+
+
+.neo-text {
+  // font-family: 'Prompt', sans-serif;
+  // font-size: 7em;
+  // line-height: 1;
+  // padding: 0;
+  // margin: 0;
+  // text-align: center;
+  // align-items: center;
+  color: $grey;
+  text-shadow: -4px -4px 8px $shadowGrey,
+  4px  4px 8px $black; 
+}
+
+.neo-text-light {
+  // font-family: 'Prompt', sans-serif;
+  // font-size: 7em;
+  // line-height: 1;
+  // padding: 0;
+  // margin: 0;
+  // text-align: center;
+  // align-items: center;
+  // color: $black;
+  // text-shadow: -4px -4px 8px $white,
+  //               4px  4px 8px $magnolia; 
+  color: #dddddd;
+  text-shadow: 3px 3px 7px #b1b1b1,
+  -3px -3px 7px #ffffff;
+}
+
+.neo-accent-text {
+  color: $magnolia;
+  text-shadow: 4px -4px -8px $shadowGrey,
+  4px  -4px 8px $black; 
+}
+
+.neo-section-container {
+  box-sizing: border-box;
+  width: 90%;
+  justify-content: center;
+  border-bottom: 1px $black solid;
+  padding: 50px 0 50px 0;
+  display: flex;
+  @include flex-middle(column);
+  border-radius: 50px;
+  background: $grey;
+  box-shadow:  10px 10px 30px $lightGrey,
+              -10px -10px 30px $magnolia;
+  margin: 50px 50px 50px 50px;
+}
+
+.neo-section-container-inner {
+  box-sizing: border-box;
+  width: 90%;
+  justify-content: center;
+  border-bottom: 1px $black solid;
+  padding: 0 0 50px 0;
+  display: flex;
+  @include flex-middle(column);
+  border-radius: 50px;
+  background: $grey;
+  box-shadow: inset  10px 10px 30px $black,
+              inset -10px -10px 30px $shadowGrey;
+  margin-top: 50px;
+  height: auto;
+}
+
+.neo-section-container-concave {
+  box-sizing: border-box;
+  width: 90%;
+  justify-content: center;
+  border-bottom: 1px $black solid;
+  padding: 0 0 50px 0;
+  display: flex;
+  @include flex-middle(column);
+  border-radius: 50px;
+  box-shadow:  10px 10px 30px $black,
+              -10px -10px 30px $shadowGrey;
+  margin: 50px 0 50px 0;
+}
+
+
+/* Expiremental classes */
+.light-flat-background {
+  background-color: $magnolia;
+}
+
+.dark-flat-background {
+  background-color: $shadowGrey;
+}
+
+.light-flat-text {
+  color: $black; 
+}
+
+.dark-flat-text {
+  color: $magnolia;
+}
+
+.neo-light-box-shadow{
+
+}
+
+
+
