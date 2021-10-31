@@ -1,5 +1,5 @@
 import '../../styles/desktop/Contact.scss';
-import valley from '../../assets/valley.jpeg';
+import valley from '../../Assets/valley.jpeg';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
