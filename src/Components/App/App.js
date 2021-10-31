@@ -58,7 +58,7 @@ const App = () => {
 
       <div className="App">
         <GlobalStyles />
-        <Header pageMode={pageMode}  handleDesignSwitch={handleDesignSwitch} toggleTheme={toggleTheme} /> 
+        <Header pageMode={pageMode} pageDesign={pageDesign} handleDesignSwitch={handleDesignSwitch} toggleTheme={toggleTheme} /> 
         <Switch> 
           <Route
             exact

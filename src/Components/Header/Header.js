@@ -5,21 +5,34 @@ import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
 import brush from '../../assets/brush.svg';
 
-const Header = ({ pageMode, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
+const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
   const [navBar, setNavBar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 50) {
-      setNavBar(true);
-    } else {
-      setNavBar(false);
+    if (pageDesign === 'Flat' && window.scrollY >= 50) {
+        setNavBar(true);
+      } else {
+        setNavBar(false);
+      }
     }
-  }
+    
+    if (pageDesign === 'Flat') {
+      window.addEventListener('scroll', changeBackground)
+    }
 
-    window.addEventListener('scroll', changeBackground)
+
+    const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
+
+      if (pageDesign === 'Flat') {
+        return 'header';
+      } else {
+        return 'neo-header';
+      }
+
+    }
 
   return (
-    <header className="header">
+    <header className={findStyleAndDesign(pageMode, pageDesign)}>
       <nav className={navBar ? 'nav-bar-active' : 'nav-bar'}>
         <div className="logo-container"> 
           <ScrollLink to="/#home"> 
