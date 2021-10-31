@@ -4,8 +4,7 @@ import { HashLink as ScrollLink } from 'react-router-hash-link';
 import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
 import brush from '../../assets/brush.svg';
-import { findStyleAndDesign } from '../findStyleAndDesign.js';
-
+import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
   const [navBar, setNavBar] = useState(false);

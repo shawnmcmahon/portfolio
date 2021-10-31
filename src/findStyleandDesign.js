@@ -1,4 +1,4 @@
- export default findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
+const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
   //introduction container - flat 
   if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "introduction-container") {
     return 'light-background introduction-container'
@@ -71,3 +71,5 @@
 
 
 }
+
+export default findStyleAndDesign;

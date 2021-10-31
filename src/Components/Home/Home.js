@@ -1,7 +1,7 @@
 import city from '../../assets/city1.jpeg';
 import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
-import { findStyleAndDesign } from '../findStyleAndDesign.js';
+import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
 const Home = ({ pageMode, pageDesign }) => {
