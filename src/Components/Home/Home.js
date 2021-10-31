@@ -61,7 +61,7 @@ const Home = ({ pageMode, pageDesign }) => {
 
   return (
     <section className="home-container" id="home">
-      <div className={pageMode === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container"} >
+      <div className={findStyleAndDesign(pageMode, pageDesign, "introduction-container")}>
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container")}> 
           <div className="name-container"> 
             <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>

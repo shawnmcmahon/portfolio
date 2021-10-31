@@ -5,7 +5,7 @@ import { Link }  from 'react-router-dom';
 import sm_logo from '../../assets/sm_logo.png';
 import brush from '../../assets/brush.svg';
 
-const Header = ({ pageMode, handleModeSwitch, handleDesignSwitch}) => {
+const Header = ({ pageMode, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
   const [navBar, setNavBar] = useState(false);
 
   const changeBackground = () => {
@@ -28,7 +28,7 @@ const Header = ({ pageMode, handleModeSwitch, handleDesignSwitch}) => {
         </div>
         <div className="button-container">
         <label className="switch-wrap switch-html">
-          <input type="checkbox" value={pageMode} onChange={handleModeSwitch} checked={pageMode === "Dark Mode" ? true : false}/>
+          <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
           <div className="switch"></div>
         </label>
           <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button>

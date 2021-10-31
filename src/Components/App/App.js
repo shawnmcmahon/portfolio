@@ -10,19 +10,24 @@ import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
 import '../../styles/desktop/App.scss';
 
+
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from '../theme';
+import { GlobalStyles } from '../global';
+
 const App = () => {
   const [pageMode, setPageMode] = useState(localStorage.getItem('pageMode') || 'Light Mode');
   const [pageDesign, setPageDesign] = useState(localStorage.getItem('pageDesign') || 'Flat')
 
-  const handleModeSwitch = (event) => {
-    if (event.target.value === 'Light Mode') {
-      setPageMode('Dark Mode')
-      localStorage.setItem('pageMode', 'Dark Mode')
-    } else if (event.target.value === 'Dark Mode'){
-      setPageMode('Light Mode')
-      localStorage.setItem('pageMode', 'Light Mode')
-    }
-  }
+  // const handleModeSwitch = (event) => {
+  //   if (event.target.value === 'Light Mode') {
+  //     setPageMode('Dark Mode')
+  //     localStorage.setItem('pageMode', 'Dark Mode')
+  //   } else if (event.target.value === 'Dark Mode'){
+  //     setPageMode('Light Mode')
+  //     localStorage.setItem('pageMode', 'Light Mode')
+  //   }
+  // }
 
   const handleDesignSwitch = () => {
     if (pageDesign === 'Flat') {
@@ -36,50 +41,65 @@ const App = () => {
     }
   }
 
+  const toggleTheme = () => {
+    if (pageMode === 'Light Mode') {
+      setPageMode('Dark Mode');
+      localStorage.setItem('pageMode', 'Dark Mode')
+    } else {
+      setPageMode('Light Mode');
+      localStorage.setItem('pageMode', 'Light Mode')
+    }
+  }
+
 
   return (
+    <ThemeProvider theme={lightTheme} th
+    eme={pageMode === 'Light Mode' ? lightTheme : darkTheme}> 
+
       <div className="App">
-        <Header pageMode={pageMode} handleModeSwitch={handleModeSwitch} handleDesignSwitch={handleDesignSwitch} /> 
+        <GlobalStyles />
+        <Header pageMode={pageMode}  handleDesignSwitch={handleDesignSwitch} toggleTheme={toggleTheme} /> 
         <Switch> 
           <Route
             exact
             path='/'
             render={() => {
               return (
-                <Home pageMode={pageMode} pageStyle={pageDesign} />
-              )
-            }}
-          />
+                <Home pageMode={pageMode} pageDesign={pageDesign} />
+                )
+              }}
+              />
           <Route
             exact
             path='/portfolio/'
             render={() => {
               return (
                 <Portfolio pageMode={pageMode}/>
-              )
-            }}
-          />
+                )
+              }}
+              />
           <Route
             exact
             path='/contact/'
             render={() => {
               return (
                 <Contact pageMode={pageMode}/>
-              )
-            }}
-          />
+                )
+              }}
+              />
           <Route
             exact
             path='*'
             render={() => {
               return (
                 <Error pageMode={pageMode}/>
-              )
-            }}
-          />
+                )
+              }}
+              />
           </Switch>
           <Footer />
       </div>
+    </ThemeProvider>
   );
 }
 
