@@ -1,7 +1,7 @@
 import '../../styles/desktop/Footer.scss';
-import linkedInLogo from '../../assets/li.png';
-import githubLogo from '../../assets/gh.png';
-import twitterLogo from '../../assets/twitter.png';
+import linkedInLogo from '../../Assets/li.png';
+import githubLogo from '../../Assets/gh.png';
+import twitterLogo from '../../Assets/twitter.png';
 
 const Footer = () => {
   return (
