@@ -1,4 +1,4 @@
-import city from '../../assets/city1.jpeg';
+import city from '../../Assets/city1.jpeg';
 import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
