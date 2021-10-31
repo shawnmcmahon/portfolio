@@ -17,10 +17,10 @@ const Footer = () => {
           MEET SHAWN
         </div>
         <div className="contact-value-container meeting-container"> 
-            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className="meeting-value">
+            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className="meeting-value accent-text-dark">
               Schedule a Phone Call
             </a>
-            <a href="https://calendly.com/shawnmcmahon/30min" className="meeting-value">
+            <a href="https://calendly.com/shawnmcmahon/30min" className="meeting-value accent-text-dark">
               Schedule a Zoom Meeting
             </a>
         </div>
