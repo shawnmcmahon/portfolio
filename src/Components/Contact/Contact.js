@@ -5,7 +5,7 @@ import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 const Contact = ({pageMode, pageDesign}) => {
   return (
-    <div id={findStyleAndDesign(pageMode, pageDesign, "contact")}>
+    <div id={findStyleAndDesign(pageMode, pageDesign, "contact")} id="contact">
       <section className={findStyleAndDesign(pageMode, pageDesign, "contact-container")}>
         <div className="contact-name"> 
           CONTACT SHAWN

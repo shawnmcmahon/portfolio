@@ -233,6 +233,40 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
     return 'neo-header'
   }
 
+  // Header - nav bar 
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === 'nav-bar') {
+    return 'nav-bar'
+  } 
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass === 'nav-bar') {
+    return 'nav-bar'
+  } 
+
+  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+    return 'nav-bar'
+  }
+
+  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+    return 'nav-bar'
+  }
+
+  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar' ) {
+    return 'neo-nav-bar'
+  }
+
+  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar' ) {
+    return 'neo-nav-bar'
+  }  
+
+  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+    return 'neo-nav-bar'
+  }
+
+  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+    return 'neo-nav-bar'
+  }  
+
   
   
 

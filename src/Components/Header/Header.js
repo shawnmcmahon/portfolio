@@ -21,6 +21,14 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
       window.addEventListener('scroll', changeBackground)
     }
 
+  const handleNavBarDesign = () => {
+    if (navBar) {
+      return findStyleAndDesign(pageMode, pageDesign, 'nav-bar-active')
+    } else {
+      return findStyleAndDesign(pageMode, pageDesign, 'nav-bar')
+    }
+  } 
+
 
   
 
@@ -37,7 +45,7 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
           <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
           <div className="switch"></div>
         </label>
-          <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button>
+          {/* <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button> */}
           <ScrollLink smooth to="/#about" >
           <button className="nav-button">About</button></ScrollLink>
           <ScrollLink to="/portfolio/#projects" > 
