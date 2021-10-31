@@ -1,4 +1,18 @@
 const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
+  // Portfolio 
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "projects-outter") {
+    return 'light-background projects-outter'
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "projects-outter") {
+    return 'dark-background projects-outter'
+  }
+  
+
+  
+  
+  
+  // Home
   // introduction container - flat 
   if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "introduction-container") {
     return 'light-background introduction-container'
@@ -15,8 +29,6 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
   if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "introduction-container") {
     return 'dark-background introduction-container'
   }
-
-
 
   // section container - top / flat 
   if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "section-container") {
@@ -52,8 +64,6 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
   if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "resume-button") {
     return 'neo-dark resume-button'
   }
-
-
 
 
   // section container - middle 
@@ -110,11 +120,26 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
     return 'neo-text name'
   }
 
-  if (pageDesign === 'Flat' && cssClass === 'header') {
-    return 'header';
-  } else {
-    return 'neo-header';
+  // Header 
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === 'header') {
+    return 'header'
+  } 
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass === 'header') {
+    return 'header'
+  } 
+
+  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'header') {
+    return 'neo-header'
   }
+
+  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'header') {
+    return 'neo-header'
+  }
+
+  
+  
 
 
 }

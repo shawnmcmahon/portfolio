@@ -74,7 +74,7 @@ const App = () => {
             path='/portfolio/'
             render={() => {
               return (
-                <Portfolio pageMode={pageMode}/>
+                <Portfolio pageMode={pageMode} pageDesign={pageDesign}/>
                 )
               }}
               />

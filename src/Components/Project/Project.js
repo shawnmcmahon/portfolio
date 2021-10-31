@@ -1,5 +1,7 @@
 import '../../styles/desktop/Project.scss';
 import { useState, useEffect } from 'react';
+import findStyleAndDesign from '../../findStyleAndDesign.js';
+
 
 const Project = ({project, pageMode}) => {
   const [photoPreview, setPhotoPreview] = useState(project.pictures[0]);
