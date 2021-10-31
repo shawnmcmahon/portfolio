@@ -9,6 +9,19 @@
   padding: 150px 0 100px 0;
 }
 
+.neo-contact-container {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  padding: 150px 0 100px 0;
+  border-radius: 50px;
+  background: $grey;
+  box-shadow: inset  5px 5px 15px $shadowGrey,
+              inset -5px -5px 15px $white;
+  margin: 100px 100px 100px 100px;
+}
+
 
 
 .contact-name {
@@ -114,10 +127,39 @@ ul:active, li:active {
   color: $black;
 }
 
+
+.light-neo-box-shadow {
+  box-shadow:  10px 10px 30px $lightGrey,
+  -10px -10px 30px $magnolia;
+}
+
+.dark-neo-box-shadow {
+  box-shadow:  10px 10px 30px $shadowGrey,
+                -10px -10px 30px $black;
+}
+
 .accent-text-light {
   color: $black;
 }
 
 .accent-text-dark {
   color: $seaGreen;
+}
+
+.neo-text {
+  color: $grey;
+  text-shadow: -4px -4px 8px $shadowGrey,
+  4px  4px 8px $black; 
+}
+
+.neo-text-light {
+  color: #dddddd;
+  text-shadow: 3px 3px 7px #b1b1b1,
+  -3px -3px 7px #ffffff;
+}
+
+.neo-accent-text {
+  color: $magnolia;
+  text-shadow: 4px -4px -8px $shadowGrey,
+  4px  -4px 8px $black; 
 }

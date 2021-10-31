@@ -1,10 +1,12 @@
 import '../../styles/desktop/Contact.scss';
 import valley from '../../assets/valley.jpeg';
+import findStyleAndDesign from '../../findStyleAndDesign.js';
 
-const Contact = ({pageMode}) => {
+
+const Contact = ({pageMode, pageDesign}) => {
   return (
-    <div id="contact">
-      <section className={pageMode === "Light Mode" ? " light-background contact-container " : "dark-background contact-container"}> 
+    <div id={findStyleAndDesign(pageMode, pageDesign, "contact")}>
+      <section className={findStyleAndDesign(pageMode, pageDesign, "contact-container")}>
         <div className="contact-name"> 
           CONTACT SHAWN
         </div>
