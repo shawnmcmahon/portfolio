@@ -13,9 +13,11 @@ import rt3 from '../../assets/rancid-tomatillos/rt3.png';
 import wc1 from '../../assets/whats-cookin/wc1.png';
 import wc2 from '../../assets/whats-cookin/wc2.png';
 import wc3 from '../../assets/whats-cookin/wc3.png';
+import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
-const Portfolio = ({ pageMode }) => {
+
+const Portfolio = ({ pageMode, pageDesign }) => {
   const [portfolio, setPortfolio] = useState([
       {
         number: 1, 
@@ -86,12 +88,13 @@ const Portfolio = ({ pageMode }) => {
         project={currentProject}
         key={index}
         pageMode={pageMode}
+        pageDesign={pageDesign}
       />
     )
   })
 
   return (
-    <section className={pageMode === "Light Mode" ? " light-background projects-outter " : "dark-background projects-outter"} id="projects">
+    <section className={findStyleAndDesign(pageMode, pageDesign, "projects-outter")} id="projects">
       <h2 className="portfolio-title">PROJECTS</h2>
       <p className={pageMode === "Light Mode" ? " accent-text-light warning " : "accent-text-dark warning"}>(Please be patient while Heroku loads the deployed sites)</p>
         <div className='portfolio-container'> 
