@@ -28,9 +28,11 @@ const App = () => {
     if (pageDesign === 'Flat') {
       setPageDesign('Neomorphism');
       localStorage.setItem('pageDesign', 'Neomorphism');
+      console.log('neo')
     } else if (pageDesign === 'Neomorphism') {
       setPageDesign('Flat') 
       localStorage.setItem('pageDesign', 'Flat')
+      console.log('flat')
     }
   }
 
@@ -44,7 +46,7 @@ const App = () => {
             path='/'
             render={() => {
               return (
-                <Home pageMode={pageMode} />
+                <Home pageMode={pageMode} pageStyle={pageDesign} />
               )
             }}
           />

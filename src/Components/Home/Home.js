@@ -3,18 +3,68 @@ import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
 
 
-const Home = ({ pageMode }) => {
+const Home = ({ pageMode, pageDesign }) => {
 
   const openResumeTab = () => {
     window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing')
   }
 
+  const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
+    //introduction container - flat 
+    if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "introduction-container") {
+      return 'light-background introduction-container'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "introduction-container") {
+      return 'dark-background introduction-container'
+    }
+
+    // section container - top / flat 
+    if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "section-container") {
+      return 'light-background section-container home-name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "section-container") {
+      return 'dark-background section-container home-name'
+    }
+
+    // section container - top / flat 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container") {
+      return 'light-background neo-section-container home-name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "section-container") {
+      return 'dark-background neo-section-container home-name'
+    }
+
+    // Name 
+
+    if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "name") {
+      return 'name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "name") {
+      return 'name'
+    }
+
+    // section container - top / flat 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "name") {
+      return 'neo-text name'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "name") {
+      return 'neo-text name'
+    }
+
+
+  }
+
   return (
     <section className="home-container" id="home">
-      <div className={pageMode === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container "} >
-        <section className={pageMode === "Light Mode" ? " light-background section-container home-name " : "dark-background neo-section-container home-name"}> 
+      <div className={pageMode === "Light Mode" ? " light-background introduction-container " : "dark-background introduction-container"} >
+        <section className={findStyleAndDesign(pageMode, pageDesign, "section-container")}> 
           <div className="name-container"> 
-            <h1 className="neo-text name">Shawn McMahon</h1>
+            <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
             <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
             <button className={pageMode === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
