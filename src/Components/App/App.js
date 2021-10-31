@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 // import { HashLink } from 'react-router-hash-link';
 import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
-// import findStyleAndDesign from '../../findStyleAndDesign';
+import findStyleAndDesign from '../../findStyleAndDesign';
 
 import '../../styles/desktop/App.scss';
 
@@ -59,7 +59,7 @@ const App = () => {
     <ThemeProvider theme={lightTheme} th
     eme={pageMode === 'Light Mode' ? lightTheme : darkTheme}> 
 
-      <div className={"app"}>
+      <div className={findStyleAndDesign(pageMode, pageDesign, "app")}>
         <GlobalStyles />
         <Header pageMode={pageMode} pageDesign={pageDesign} handleDesignSwitch={handleDesignSwitch} toggleTheme={toggleTheme} /> 
         <Switch> 
