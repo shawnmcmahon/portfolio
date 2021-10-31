@@ -28,7 +28,7 @@ const Home = ({ pageMode, pageDesign }) => {
       return 'dark-background section-container home-name'
     }
 
-    // section container - top / flat 
+    // section container - top / neo 
     if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container") {
       return 'light-background neo-section-container home-name'
     }
@@ -37,7 +37,25 @@ const Home = ({ pageMode, pageDesign }) => {
       return 'dark-background neo-section-container home-name'
     }
 
-    // Name 
+    // section container - middle / neo 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container-inner") {
+      return 'light-background neo-section-container-inner'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "section-container-inner") {
+      return 'dark-background neo-section-container-inner'
+    }
+
+    // section container - last / neo 
+    if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container-concave") {
+      return 'light-background neo-section-container-concave'
+    }
+
+    if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "section-container-concave") {
+      return 'dark-background neo-section-container-concave'
+    }
+
+    // Name - flat
 
     if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "name") {
       return 'name'
@@ -47,9 +65,9 @@ const Home = ({ pageMode, pageDesign }) => {
       return 'name'
     }
 
-    // section container - top / flat 
+    // name - neo
     if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "name") {
-      return 'neo-text name'
+      return 'neo-text-light name'
     }
 
     if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "name") {
@@ -61,7 +79,7 @@ const Home = ({ pageMode, pageDesign }) => {
 
   return (
     <section className="home-container" id="home">
-      <div className={findStyleAndDesign(pageMode, pageDesign, "introduction-container")}>
+      <div className="introduction-container">
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container")}> 
           <div className="name-container"> 
             <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
@@ -69,7 +87,7 @@ const Home = ({ pageMode, pageDesign }) => {
             <button className={pageMode === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
           </div>
         </section>
-        <section className="neo-section-container-inner " id="about"> 
+        <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-inner")} id="about"> 
           <div className="about"> 
             <h3 className="bio-intro">My name is Shawn...</h3>
 
@@ -82,7 +100,7 @@ const Home = ({ pageMode, pageDesign }) => {
             <p className="bio-text">Let's build something beautiful together. </p>
           </div> 
         </section>
-        <section className="neo-section-container"> 
+        <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-concave")}> 
           <p className={pageMode === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technolgies I Use</p>
 
           <p className="bio-text center-text"> Front-end</p>

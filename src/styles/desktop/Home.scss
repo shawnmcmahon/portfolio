@@ -233,20 +233,6 @@
   color: $shadowGrey;
 }
 
-.neo-section-container {
-  box-sizing: border-box;
-  width: 90%;
-  justify-content: center;
-  border-bottom: 1px $black solid;
-  padding: 50px 0 50px 0;
-  display: flex;
-  @include flex-middle(column);
-  border-radius: 50px;
-  background: $grey;
-  box-shadow:  10px 10px 30px $black,
-              -10px -10px 30px $shadowGrey;
-  margin: 50px 50px 50px 50px;
-}
 
 .neo-text {
   // font-family: 'Prompt', sans-serif;
@@ -258,13 +244,44 @@
   // align-items: center;
   color: $grey;
   text-shadow: -4px -4px 8px $shadowGrey,
-                4px  4px 8px $black; 
+  4px  4px 8px $black; 
+}
+
+.neo-text-light {
+  // font-family: 'Prompt', sans-serif;
+  // font-size: 7em;
+  // line-height: 1;
+  // padding: 0;
+  // margin: 0;
+  // text-align: center;
+  // align-items: center;
+  // color: $black;
+  // text-shadow: -4px -4px 8px $white,
+  //               4px  4px 8px $magnolia; 
+  color: #dddddd;
+  text-shadow: 3px 3px 7px #b1b1b1,
+  -3px -3px 7px #ffffff;
 }
 
 .neo-accent-text {
   color: $magnolia;
-  text-shadow: 4px 4px 8px $shadowGrey,
-                -4px  -4px 8px $black; 
+  text-shadow: 4px -4px -8px $shadowGrey,
+  4px  -4px 8px $black; 
+}
+
+.neo-section-container {
+  box-sizing: border-box;
+  width: 90%;
+  justify-content: center;
+  border-bottom: 1px $black solid;
+  padding: 50px 0 50px 0;
+  display: flex;
+  @include flex-middle(column);
+  border-radius: 50px;
+  background: $grey;
+  box-shadow:  10px 10px 30px $lightGrey,
+              -10px -10px 30px $magnolia;
+  margin: 50px 50px 50px 50px;
 }
 
 .neo-section-container-inner {
@@ -280,6 +297,7 @@
   box-shadow: inset  10px 10px 30px $black,
               inset -10px -10px 30px $shadowGrey;
   margin-top: 50px;
+  height: auto;
 }
 
 .neo-section-container-concave {
@@ -291,10 +309,32 @@
   display: flex;
   @include flex-middle(column);
   border-radius: 50px;
-  background: linear-gradient(145deg, $grey, $shadowGrey);
   box-shadow:  10px 10px 30px $black,
               -10px -10px 30px $shadowGrey;
   margin: 50px 0 50px 0;
+}
+
+
+/* Expiremental classes */
+.light-flat-background {
+  background-color: $magnolia;
+}
+
+.dark-flat-background {
+  background-color: $shadowGrey;
+}
+
+.light-flat-text {
+  color: $black; 
+}
+
+.dark-flat-text {
+  color: $magnolia;
+}
+
+.neo-light-box-shadow{
 
 }
+
+
 
