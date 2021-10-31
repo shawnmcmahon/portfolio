@@ -26,6 +26,27 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
     return 'dark-background neo-section-container home-name'
   }
 
+
+  // Resume button  
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "resume-button") {
+    return 'light-mode-button resume-button'
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass === "resume-button") {
+    return 'dark-mode-button resume-button'
+  }
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "resume-button") {
+    return 'neo-light resume-button'
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass ===  "resume-button") {
+    return 'neo-dark resume-button'
+  }
+
+
+
+
   // section container - middle / neo 
   if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "section-container-inner") {
     return 'light-background neo-section-container-inner'

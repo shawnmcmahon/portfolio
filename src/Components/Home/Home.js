@@ -19,7 +19,7 @@ const Home = ({ pageMode, pageDesign }) => {
           <div className="name-container"> 
             <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
             <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
-            <button className={pageMode === "Light Mode" ? " neo-light resume-button " : "neo-dark resume-button"} onClick={openResumeTab}>Download Resume</button>
+            <button className={findStyleAndDesign(pageMode, pageDesign, "resume-button")}>Download Resume</button>
           </div>
         </section>
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-inner")} id="about"> 
