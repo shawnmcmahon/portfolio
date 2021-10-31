@@ -161,6 +161,10 @@
   object-position: 50% 60%;
 }
 
+.extra-top-margin {
+  margin-top: 150px;
+}
+
 
 // Light and Dark mode styles
 
@@ -294,8 +298,8 @@
   @include flex-middle(column);
   border-radius: 50px;
   background: $grey;
-  box-shadow: inset  10px 10px 30px $black,
-              inset -10px -10px 30px $shadowGrey;
+  box-shadow: inset  5px 5px 15px $shadowGrey,
+              inset -5px -5px 15px $white;
   margin-top: 50px;
   height: auto;
 }
@@ -309,8 +313,8 @@
   display: flex;
   @include flex-middle(column);
   border-radius: 50px;
-  box-shadow:  10px 10px 30px $black,
-              -10px -10px 30px $shadowGrey;
+  box-shadow:  10px 10px 30px $shadowGrey,
+              -10px -10px 30px $white;
   margin: 50px 0 50px 0;
 }
 
@@ -321,7 +325,7 @@
 }
 
 .dark-flat-background {
-  background-color: $shadowGrey;
+  background-color: $grey;
 }
 
 .light-flat-text {
@@ -332,9 +336,6 @@
   color: $magnolia;
 }
 
-.neo-light-box-shadow{
-
-}
 
 
 
