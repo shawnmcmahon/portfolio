@@ -1,11 +1,30 @@
 const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
   // Portfolio 
-  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "projects-outter") {
+  if (pageMode === 'Light Mode' && (pageDesign === 'Flat' || 'Neomorphism') && cssClass === "projects-outter") {
     return 'light-background projects-outter'
   }
 
-  if (pageMode === 'Dark Mode' && pageDesign === 'Flat' && cssClass ===  "projects-outter") {
+  if (pageMode === 'Dark Mode' && (pageDesign === 'Flat' || 'Neomorphism') && cssClass ===  "projects-outter") {
     return 'dark-background projects-outter'
+  }
+
+
+  // Project 
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === "project-outter-container") {
+    return 'light-background project-outter-container project-divider'
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat'  && cssClass ===  "project-outter-container") {
+    return 'dark-background project-outter-container project-divider'
+  }
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === "project-outter-container") {
+    return 'light-background neo-project-outter-container '
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism'  && cssClass ===  "project-outter-container") {
+    return 'dark-background neo-project-outter-container '
   }
   
 

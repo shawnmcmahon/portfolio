@@ -88,6 +88,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         project={currentProject}
         key={index}
         pageMode={pageMode}
+        pageDesign={pageDesign}
       />
     )
   })

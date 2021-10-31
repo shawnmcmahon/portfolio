@@ -1,5 +1,17 @@
 @import '../variables';
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.neo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .nav-button {
   color: #fff;
   background-color: inherit;

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
-const Project = ({project, pageMode}) => {
+const Project = ({project, pageMode, pageDesign}) => {
   const [photoPreview, setPhotoPreview] = useState(project.pictures[0]);
 
   // useEffect(() => {
@@ -24,7 +24,7 @@ const Project = ({project, pageMode}) => {
   }
 
   return (
-    <article className={pageMode === "Light Mode" ? " light-background project-outter-container " : "dark-background project-outter-container "}> 
+    <article className={findStyleAndDesign(pageMode, pageDesign, "project-outter-container")}>
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
         <div className="project-button-container"> 
