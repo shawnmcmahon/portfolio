@@ -46,8 +46,8 @@ const Contact = ({pageMode, pageDesign}) => {
           </div>
         </div>
       </section>
-      <div className="contact-image-container">
-        <img src={valley} className="contact-image" />
+      <div className={findStyleAndDesign(pageMode, pageDesign, "contact-image-container")}>
+        <img src={valley} className={findStyleAndDesign(pageMode, pageDesign, "contact-image")}></img>
       </div>
     </div>
   );

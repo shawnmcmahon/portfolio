@@ -36,6 +36,43 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
   if (pageMode === 'Dark Mode' && (pageDesign === 'Flat' || 'Neomorphism') && cssClass ===  'contact') {
     return 'dark-background contact'
   }
+
+  // Contact - image container 
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === 'contact-image-container') {
+    return 'light-background contact-image-container'
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat'  && cssClass ===  'contact-image-container') {
+    return 'dark-background contact-image-container'
+  }
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'contact-image-container') {
+    return 'light-background contact-image-container '
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism'  && cssClass ===  'contact-image-container') {
+    return 'dark-background contact-image-container'
+  }
+
+  // Contact - contact image
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Flat' && cssClass === 'contact-image') {
+    return 'light-background contact-image'
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Flat'  && cssClass ===  'contact-image') {
+    return 'dark-background contact-image'
+  }
+
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'contact-image') {
+    return 'light-background contact-image '
+  }
+
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism'  && cssClass ===  'contact-image') {
+    return 'dark-background contact-image '
+  }
+  
   
   
   // Portfolio 

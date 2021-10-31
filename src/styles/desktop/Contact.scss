@@ -67,6 +67,9 @@
   height: auto;
   font-weight: 300;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .email {
@@ -97,6 +100,26 @@ ul:active, li:active {
 .contact-image-container {
   width: 100%;
   height: 500px;
+}
+
+.neo-contact-image-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  border-radius: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.neo-contact-image {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 100%;
+
 }
 
 .contact-image {
