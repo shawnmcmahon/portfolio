@@ -1,18 +1,18 @@
 import '../../styles/desktop/Portfolio.scss';
 import Project from '../Project/Project';
 import { useState, useEffect } from 'react';
-import bj1 from '../../assets/better-jeopardy/bj1.png';
-import bj2 from '../../assets/better-jeopardy/bj2.png';
-import bj3 from '../../assets/better-jeopardy/bj3.png';
-import ch1 from '../../assets/codeherd/ch1.png';
-import ch2 from '../../assets/codeherd/ch2.png';
-import ch3 from '../../assets/codeherd/ch3.png';
-import rt1 from '../../assets/rancid-tomatillos/rt1.png';
-import rt2 from '../../assets/rancid-tomatillos/rt2.png';
-import rt3 from '../../assets/rancid-tomatillos/rt3.png';
-import wc1 from '../../assets/whats-cookin/wc1.png';
-import wc2 from '../../assets/whats-cookin/wc2.png';
-import wc3 from '../../assets/whats-cookin/wc3.png';
+import bj1 from '../../Assets/better-jeopardy/bj1.png';
+import bj2 from '../../Assets/better-jeopardy/bj2.png';
+import bj3 from '../../Assets/better-jeopardy/bj3.png';
+import ch1 from '../../Assets/codeherd/ch1.png';
+import ch2 from '../../Assets/codeherd/ch2.png';
+import ch3 from '../../Assets/codeherd/ch3.png';
+import rt1 from '../../Assets/rancid-tomatillos/rt1.png';
+import rt2 from '../../Assets/rancid-tomatillos/rt2.png';
+import rt3 from '../../Assets/rancid-tomatillos/rt3.png';
+import wc1 from '../../Assets/whats-cookin/wc1.png';
+import wc2 from '../../Assets/whats-cookin/wc2.png';
+import wc3 from '../../Assets/whats-cookin/wc3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
