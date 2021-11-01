@@ -47,7 +47,7 @@ const Contact = ({pageMode, pageDesign}) => {
         </div>
       </section>
       <div className={findStyleAndDesign(pageMode, pageDesign, "contact-image-container")}>
-        <img src={valley} className={findStyleAndDesign(pageMode, pageDesign, "contact-image")}></img>
+        <img src={valley} alt="valley landscape of South Africa" className={findStyleAndDesign(pageMode, pageDesign, "contact-image")} />
       </div>
     </div>
   );

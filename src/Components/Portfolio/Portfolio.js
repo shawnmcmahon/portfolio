@@ -1,6 +1,6 @@
 import '../../styles/desktop/Portfolio.scss';
 import Project from '../Project/Project';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import bj1 from '../../Assets/better-jeopardy/bj1.png';
 import bj2 from '../../Assets/better-jeopardy/bj2.png';
 import bj3 from '../../Assets/better-jeopardy/bj3.png';
@@ -18,7 +18,7 @@ import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
 const Portfolio = ({ pageMode, pageDesign }) => {
-  const [portfolio, setPortfolio] = useState([
+  const [portfolio] = useState([
       {
         number: 1, 
         title: 'CodeHerd',
