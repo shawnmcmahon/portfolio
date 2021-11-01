@@ -1,9 +1,8 @@
 import '../../styles/desktop/Header.scss';
 import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
-import { Link }  from 'react-router-dom';
 import sm_logo from '../../Assets/sm_logo.png';
-import brush from '../../Assets/brush.svg';
+// import brush from '../../Assets/brush.svg';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
@@ -21,23 +20,15 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
       window.addEventListener('scroll', changeBackground)
     }
 
-  const handleNavBarDesign = () => {
-    if (navBar) {
-      return findStyleAndDesign(pageMode, pageDesign, 'nav-bar-active')
-    } else {
-      return findStyleAndDesign(pageMode, pageDesign, 'nav-bar')
-    }
-  } 
-
 
   
 
   return (
-    <header className={findStyleAndDesign(pageMode, pageDesign, 'header')}>
-      <nav className={navBar ? 'nav-bar-active' : 'nav-bar'}>
+    <header className={findStyleAndDesign(pageMode, pageDesign, 'header')} tabIndex="-1">
+      <nav className={navBar ? 'nav-bar-active' : 'nav-bar'} tabIndex="-1">
         <div className="logo-container"> 
           <ScrollLink to="/#home"> 
-            <img src={sm_logo} className="home-button" />
+            <img src={sm_logo} alt="home button" className="home-button" />
           </ScrollLink>
         </div>
         <div className="button-container">
@@ -45,12 +36,12 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
           <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
           <div className="switch"></div>
         </label>
-          <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button>
-          <ScrollLink smooth to="/#about" >
+          {/* <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button> */}
+          <ScrollLink smooth to="/#about" tabIndex="-1">
           <button className="nav-button">About</button></ScrollLink>
-          <ScrollLink to="/portfolio/#projects" > 
+          <ScrollLink to="/portfolio/#projects"tabIndex="-1" > 
           <button className="nav-button">Portfolio</button></ScrollLink>
-          <ScrollLink to="/contact/#contact">
+          <ScrollLink to="/contact/#contact" tabIndex="-1">
           <button className="nav-button">Contact</button></ScrollLink>
         </div>
       </nav>

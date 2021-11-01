@@ -3,9 +3,7 @@ import Home from '../Home/Home';
 import Portfolio from '../Portfolio/Portfolio';
 import Error from '../Error/Error';
 import Footer from '../Footer/Footer';
-import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-scroll';
-// import { HashLink } from 'react-router-hash-link';
+import React, { useState } from 'react';
 import Contact from '../Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
 import findStyleAndDesign from '../../findStyleAndDesign';
@@ -95,7 +93,7 @@ const App = () => {
             path='*'
             render={() => {
               return (
-                <Error pageMode={pageMode}/>
+                <Error pageMode={pageMode} pageDesign={pageDesign}/>
                 )
               }}
               />
