@@ -1,6 +1,7 @@
 import city from '../../Assets/city1.jpeg';
 import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
+import '../../styles/phone/Home-phone.scss'
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
