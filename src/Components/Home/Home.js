@@ -7,9 +7,9 @@ import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 const Home = ({ pageMode, pageDesign }) => {
 
-  const openResumeTab = () => {
-    window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing')
-  }
+  // const openResumeTab = () => {
+  //   window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing','_newtab' )
+  // }
 
   
 
@@ -20,7 +20,9 @@ const Home = ({ pageMode, pageDesign }) => {
           <div className="name-container"> 
             <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
             <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
-            <button className={findStyleAndDesign(pageMode, pageDesign, "resume-button")}>Download Resume</button>
+            <a href="https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing"> 
+              <button className={findStyleAndDesign(pageMode, pageDesign, "resume-button")}>Download Resume</button>
+            </a>
           </div>
         </section>
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-inner")} id="about"> 
