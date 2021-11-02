@@ -17,21 +17,25 @@ const Project = ({project, pageMode, pageDesign}) => {
     console.log(event.target.id)
   }
 
-  const visitRepo = () => {
-    window.open(project.githubRepo)
-  }
+  // const visitRepo = () => {
+  //   window.open(project.githubRepo)
+  // }
 
-  const visitSite = () => {
-    window.open(project.deployedSite)
-  }
+  // const visitSite = () => {
+  //   window.open(project.deployedSite)
+  // }
 
   return (
     <article className={findStyleAndDesign(pageMode, pageDesign, "project-outter-container")}>
       <div className="project-description-container"> 
         <h3 className="project-title">{project.title}</h3>
         <div className="project-button-container"> 
-          <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"} onClick={visitRepo}>Github Repo </button>
-          {!!project.deployedSite && <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"} onClick={visitSite}>Deployed Site</button>}
+          <a href={project.githubRepo}> 
+            <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"}>Github Repo </button>
+          </a>
+          <a href={project.deployedSite}>
+            {!!project.deployedSite && <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"}>Deployed Site</button>}
+          </a>
         </div>
         <p className="label">Date Completed</p>
             <p className="value">{project.dateCompleted}</p>
