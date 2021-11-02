@@ -1,0 +1,71 @@
+@import "../../Assets/font-awesome/font-awesome/scss/icons";
+@import '../variables';
+
+
+@media screen and (max-width: 1350px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav-button {
+    width: 20px;
+    height: 50px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+
+  a {
+    height: 35px;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    list-style-type: none; 
+  }
+
+  .button-container {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  .nav-button:hover {
+    background-color: #29f3c3;
+    color: $black;
+    height: 35px;
+  }
+
+  .nav-bar, .nav-bar-active {
+    height: 125px;
+  }
+
+  .home-button {
+    padding-left: none;
+  }
+  
+
+
+
+
+
+
+
+
+}
