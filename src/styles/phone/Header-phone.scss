@@ -2,10 +2,10 @@
 @import '../variables';
 
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 650px) {
   nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .nav-button {
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 25px;
+    padding: 0 15px 25px 0;
   }
 
   .nav-button:hover {
@@ -57,7 +57,15 @@
   }
 
   .home-button {
-    padding-left: none;
+    padding-left: none !important;
+  }
+  
+  .menu-button {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
 
