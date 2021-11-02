@@ -1,4 +1,5 @@
 import '../../styles/desktop/Contact.scss';
+import '../../styles/tablet/Contact-tablet.scss';
 import valley from '../../Assets/valley.jpeg';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
@@ -37,7 +38,7 @@ const Contact = ({pageMode, pageDesign}) => {
                 <li>Github</li>
             </a>
             <a href="https://www.linkedin.com/in/shawnpmcmahon/" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
-                <li >LinkedIn</li>
+                <li>LinkedIn</li>
             </a>
             <a href="https://twitter.com/DOPE_A_MEAN" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
               <li >Twitter</li>
