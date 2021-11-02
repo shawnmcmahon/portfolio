@@ -1,4 +1,6 @@
 import '../../styles/desktop/Portfolio.scss';
+import '../../styles/phone/Portfolio-phone.scss'
+
 import Project from '../Project/Project';
 import { useState, useEffect } from 'react';
 import bj1 from '../../Assets/better-jeopardy/bj1.png';
@@ -28,7 +30,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         collaborators: ['Zach Green, Ashton Huxable, Leigh Pulzone,  Taija Warbelow'],
         technologiesUsed: ['React', 'GraphQL', 'PostgreSQL', 'Cypress', 'CircleCI'], 
         description: 'CodeHerd is a project management app where Turing students can store all the links to their projects. They can keep track of project collaborators and resources they may use for each individual project. And they can go back in time to view resources they have collected for previous projects.',
-        learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data on the backend', '2. Apply continous integration with CircleCI'], 
+        learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data from the backend', '2. Apply continous integration with CircleCI'], 
         pictures: [
         ch1, ch2, ch3],
         githubRepo: 'https://github.com/shawnmcmahon/CodeHerd',
