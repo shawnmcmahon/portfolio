@@ -1,5 +1,9 @@
 @import '../variables';
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -26,12 +30,15 @@
   width: 120px;
   height: 75px;
   cursor: pointer;
+  text-decoration: none;
 
 }
 
 .nav-button:hover {
   background-color: #29f3c3;
   color: $black;
+  width: 120px;
+  height: 75px;
 }
 
 .home-button {
@@ -52,6 +59,8 @@
   align-items: center;
   transition: all .2s linear;
   outline: none;
+  text-decoration: none;
+
 
 
 }
