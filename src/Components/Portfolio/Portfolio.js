@@ -97,11 +97,11 @@ const Portfolio = ({ pageMode, pageDesign }) => {
 
   return (
     <section className={findStyleAndDesign(pageMode, pageDesign, "projects-outter")} id="projects">
-      <h2 className="portfolio-title">PROJECTS</h2>
-      <p className={pageMode === "Light Mode" ? " accent-text-light warning " : "accent-text-dark warning"}>(Please be patient while Heroku loads the deployed sites)</p>
-        <div className='portfolio-container'> 
-          {!!portfolio && projectPreviews}
-        </div>
+        <h2 className="portfolio-title">PROJECTS</h2>
+        <p className={pageMode === "Light Mode" ? " accent-text-light warning " : "accent-text-dark warning"}>(Please be patient while Heroku launches the application)</p>
+          <div className='portfolio-container'> 
+            {!!portfolio && projectPreviews}
+          </div>
     </section>
   );
 }

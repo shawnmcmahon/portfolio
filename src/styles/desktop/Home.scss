@@ -2,6 +2,9 @@
 
 /* */
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
 
 
 .bio-intro {
@@ -95,7 +98,7 @@
   width: 60%;
   // justify-content: flex-start;
   font-size: 18px;
-  padding: 50px 0 50px 0;
+  padding: 100px 0 100px 0;
   @include flex-center(column);
 }
 

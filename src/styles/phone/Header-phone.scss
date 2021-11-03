@@ -7,19 +7,14 @@
     justify-content: space-between;
   }
 
-  .nav-button {
-    width: 20px;
-    height: 40px;
-    margin: 10px 0 10px 0;
-    text-align: center;
-    align-items: center;
-    display: flex;
-  }
+  
+
+  
 
   a {
     height: 35px;
   }
-
+  
   .hamburger {
     background-color: transparent;
     border: 0;
@@ -35,7 +30,7 @@
     padding: 0; 
     list-style-type: none; 
   }
-
+  
   .button-container {
     width: 30%;
     flex-direction: column;
@@ -44,13 +39,21 @@
     align-items: center;
     padding: 0 15px 25px 0;
   }
-
+  
+  .nav-button {
+    width: 50px;
+    height: 40px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
   .nav-button:hover {
     background-color: #29f3c3;
     color: $black;
-    height: 35px;
+    width: 100px;
   }
-
+  
   .nav-bar, .nav-bar-active {
     height: 100px;
   }
