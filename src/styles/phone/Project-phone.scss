@@ -1,0 +1,44 @@
+@import '../variables';
+
+@media screen and (max-width: 650px) {
+
+  .project-outter-container {
+
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    display: contents;
+    border-bottom: 3px solid $black;
+  }
+
+  .project-description-container {
+    width: 90%;
+    display: contents;
+    margin-bottom: 15px;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .project-images-container {
+    padding-top: 25px;
+    width: 90%;
+    display: flex;
+    align-self: center;
+  }
+
+  .project-thumbnail-container {
+    padding: 0;
+  }
+
+  .warning {
+    width: 80%;
+    text-align: center;
+  }
+
+
+
+
+
+}

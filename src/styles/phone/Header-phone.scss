@@ -1,0 +1,80 @@
+@import '../variables';
+
+
+@media screen and (max-width: 650px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+
+  .nav-button {
+    width: 20px;
+    height: 50px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+
+  a {
+    height: 35px;
+  }
+
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    list-style-type: none; 
+  }
+
+  .button-container {
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 25px 0;
+  }
+
+  .nav-button:hover {
+    background-color: #29f3c3;
+    color: $black;
+    height: 35px;
+  }
+
+  .nav-bar, .nav-bar-active {
+    height: 100px;
+  }
+
+  .home-button {
+    padding-left: none !important;
+  }
+  
+  .menu-button {
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+
+
+
+
+
+
+}
