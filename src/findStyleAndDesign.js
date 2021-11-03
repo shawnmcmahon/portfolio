@@ -225,11 +225,11 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
     return 'header'
   } 
 
-  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'header') {
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'header') {
     return 'neo-header'
   }
 
-  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'header') {
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'header') {
     return 'neo-header'
   }
 
@@ -243,27 +243,27 @@ const findStyleAndDesign = (pageMode, pageDesign, cssClass) => {
     return 'nav-bar'
   } 
 
-  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
     return 'nav-bar'
   }
 
-  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
     return 'nav-bar'
   }
 
-  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar' ) {
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar' ) {
     return 'neo-nav-bar'
   }
 
-  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar' ) {
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar' ) {
     return 'neo-nav-bar'
   }  
 
-  if (pageMode = 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+  if (pageMode === 'Light Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
     return 'neo-nav-bar'
   }
 
-  if (pageMode = 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
+  if (pageMode === 'Dark Mode' && pageDesign === 'Neomorphism' && cssClass === 'nav-bar-active' ) {
     return 'neo-nav-bar'
   }  
 

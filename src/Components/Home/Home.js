@@ -43,33 +43,34 @@ const Home = ({ pageMode, pageDesign }) => {
 
           <p className="bio-text center-text"> Front-end</p>
           <div className="icon-container"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" className="tech-icon" />
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" className="tech-icon" />
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" className="tech-icon" />
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" className="tech-icon" />
-            <img src="https://camo.githubusercontent.com/9be0208aa516b4d1976412d27e9f73d851ea253f8ee005a0b600939f841bba8b/68747470733a2f2f7777772e63686172746a732e6f72672f6d656469612f6c6f676f2d7469746c652e737667" className="tech-icon" />
-            <img src="https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667" className="tech-icon" />
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            className="tech-icon" alt="react logo"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" className="tech-icon" alt="javascript logo" />
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" className="tech-icon" alt="html 5 logo" />
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" className="tech-icon" alt="css 3 logo"/>
+            <img src="https://camo.githubusercontent.com/9be0208aa516b4d1976412d27e9f73d851ea253f8ee005a0b600939f841bba8b/68747470733a2f2f7777772e63686172746a732e6f72672f6d656469612f6c6f676f2d7469746c652e737667" className="tech-icon" alt="chart js logo" />
+            <img src="https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667" className="tech-icon" alt="figma logo" />
           </div>
           <p className="bio-text center-text"> Back-End</p>
           <div className="icon-container"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" className="tech-icon" />
-            <img src="https://raw.github.com/devicons/devicon/master/icons/postgresql/postgresql-plain.svg" className="tech-icon" />
-            <img src="https://raw.github.com/devicons/devicon/master/icons/graphql/graphql-plain.svg" className="tech-icon" />
-            <img src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667" className="tech-icon" />
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" className="tech-icon" alt="express logo"/>
+            <img src="https://raw.github.com/devicons/devicon/master/icons/postgresql/postgresql-plain.svg" className="tech-icon" alt="postgre sql logo" />
+            <img src="https://raw.github.com/devicons/devicon/master/icons/graphql/graphql-plain.svg" className="tech-icon" alt="graph ql logo"/>
+            <img src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667" className="tech-icon" alt="postman logo" />
           </div>
           <p className="bio-text center-text"> Testing</p>
           <div className="icon-container"> 
-            <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg" className="tech-icon" />
-            <img src="https://camo.githubusercontent.com/4253eb6921d60a216772940978dea3a0cf2113f2f29b5545720d3b5b6960e467/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6d6f6368616a732f6d6f6368616a732d69636f6e2e737667" className="tech-icon" />
+            <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg" className="tech-icon" alt="cypress logo" />
+            <img src="https://camo.githubusercontent.com/4253eb6921d60a216772940978dea3a0cf2113f2f29b5545720d3b5b6960e467/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6d6f6368616a732f6d6f6368616a732d69636f6e2e737667" className="tech-icon" alt="mocha logo" />
           </div>
           <p className="bio-text center-text"> Hosting</p>
           <div className="icon-container"> 
-            <img src="https://camo.githubusercontent.com/df12cb598044a3f38efc1f45e3580558c324cf8789b79487125044eeebcc4dee/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6865726f6b752f6865726f6b752d69636f6e2e737667" className="tech-icon" />
+            <img src="https://camo.githubusercontent.com/df12cb598044a3f38efc1f45e3580558c324cf8789b79487125044eeebcc4dee/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6865726f6b752f6865726f6b752d69636f6e2e737667" className="tech-icon" alt="heroku logo" />
           </div>
         </section>
       </div>
       <div className="image-container">
-        <img src={city} className="image" />
+        <img src={city} className="image" alt="New York City street at sunset"/>
       </div>
     </section>
   );

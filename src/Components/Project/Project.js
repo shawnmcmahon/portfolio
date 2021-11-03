@@ -8,9 +8,7 @@ import findStyleAndDesign from '../../findStyleAndDesign.js';
 const Project = ({project, pageMode, pageDesign}) => {
   const [photoPreview, setPhotoPreview] = useState(project.pictures[0]);
 
-  // useEffect(() => {
- 
-  // }, [project])
+
 
   const changePhoto = (event) => {
     setPhotoPreview(event.target.id)
@@ -66,16 +64,16 @@ const Project = ({project, pageMode, pageDesign}) => {
       </div>
       <div className="project-images-container"> 
         <div className="photo-display"> 
-          <img src={photoPreview} className="preview-photo" />
+          <img src={photoPreview} alt="project preview" className="preview-photo" />
         </div>
         <div className="project-thumbnail-container">
-            <img src={project.pictures[0]} className="thumbnail" id={project.pictures[0]}  onClick={changePhoto} />
+            <img src={project.pictures[0]} alt="project thumbnail one" className="thumbnail" id={project.pictures[0]}  onClick={changePhoto} />
         </div> 
         <div className="project-thumbnail-container">
-            <img src={project.pictures[1]} className="thumbnail" id={project.pictures[1]}  onClick={changePhoto}  />
+            <img src={project.pictures[1]} alt="project thumbnail two" className="thumbnail" id={project.pictures[1]}  onClick={changePhoto}  />
         </div> 
         <div className="project-thumbnail-container">
-            <img src={project.pictures[2]}  className="thumbnail" id={project.pictures[2]}  onClick={changePhoto}  />
+            <img src={project.pictures[2]}  className="thumbnail" alt="project thumbnail three" id={project.pictures[2]}  onClick={changePhoto}  />
         </div>
       </div>
     </article>

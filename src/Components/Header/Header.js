@@ -3,7 +3,6 @@ import '../../styles/tablet/Header-tablet.scss';
 import '../../styles/phone/Header-phone.scss';
 import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
-import { Link }  from 'react-router-dom';
 import sm_logo from '../../Assets/sm_logo.png';
 import brush from '../../Assets/brush.svg';
 import menu from '../../Assets/menu.svg';
@@ -25,23 +24,15 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
       window.addEventListener('scroll', changeBackground)
     }
 
-  const handleNavBarDesign = () => {
-    if (navBar) {
-      return findStyleAndDesign(pageMode, pageDesign, 'nav-bar-active')
-    } else {
-      return findStyleAndDesign(pageMode, pageDesign, 'nav-bar')
-    }
-  } 
-
 
   
 
   return (
-    <header className={findStyleAndDesign(pageMode, pageDesign, 'header')}>
-      <nav className={navBar ? 'nav-bar-active' : 'nav-bar'}>
+    <header className={findStyleAndDesign(pageMode, pageDesign, 'header')} tabIndex="-1">
+      <nav className={navBar ? 'nav-bar-active' : 'nav-bar'} tabIndex="-1">
         <div className="logo-container"> 
           <ScrollLink to="/#home"> 
-            <img src={sm_logo} className="home-button" />
+            <img src={sm_logo} alt="home button" className="home-button" />
           </ScrollLink>
         </div>
         {window.innerWidth <= 650 && 
