@@ -66,15 +66,15 @@ const Project = ({project, pageMode, pageDesign}) => {
         <div className="photo-display"> 
           <img src={photoPreview} alt="project preview" className="preview-photo" />
         </div>
-        <div className="project-thumbnail-container">
-            <img src={project.pictures[0]} alt="project thumbnail one" className="thumbnail" id={project.pictures[0]}  onClick={changePhoto} />
-        </div> 
-        <div className="project-thumbnail-container">
-            <img src={project.pictures[1]} alt="project thumbnail two" className="thumbnail" id={project.pictures[1]}  onClick={changePhoto}  />
-        </div> 
-        <div className="project-thumbnail-container">
-            <img src={project.pictures[2]}  className="thumbnail" alt="project thumbnail three" id={project.pictures[2]}  onClick={changePhoto}  />
-        </div>
+            <div className="project-thumbnail-container">
+                <img src={project.pictures[0]} alt="project thumbnail one" className="thumbnail" id={project.pictures[0]}  onClick={changePhoto} />
+            </div> 
+            <div className="project-thumbnail-container">
+                <img src={project.pictures[1]} alt="project thumbnail two" className="thumbnail" id={project.pictures[1]}  onClick={changePhoto}  />
+            </div> 
+            <div className="project-thumbnail-container">
+                <img src={project.pictures[2]}  className="thumbnail" alt="project thumbnail three" id={project.pictures[2]}  onClick={changePhoto}  />`
+            </div>
       </div>
     </article>
   );

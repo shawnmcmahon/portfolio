@@ -64,7 +64,7 @@
 
 .project-outter-container {
   width: 100%;
-  height: 125vh;
+  height: 900px;
   /* border: 2px green solid; */
   display: flex;
   flex-direction: row;
@@ -167,4 +167,10 @@
 
 .accent-text-dark {
   color: $seaGreen;
+}
+
+@media screen and (min-width: 2500px) {
+  .project-thumbnail-container {
+    display: none;
+  }
 }
