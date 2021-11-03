@@ -64,7 +64,7 @@
 
 .project-outter-container {
   width: 100%;
-  height: 900px;
+  height: 800px;
   /* border: 2px green solid; */
   display: flex;
   flex-direction: row;
@@ -173,4 +173,17 @@
   .project-thumbnail-container {
     display: none;
   }
+
+  .label {
+    font-size: 1em;
+  }
+
+  .value {
+    font-size: 1em;
+  }  
+
+  .project-outter-container {
+    height: 1250px;
+  }
+  
 }

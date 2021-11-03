@@ -19,7 +19,7 @@
 .portfolio-container {
   /* border: 2px red solid; */
   width: 90%; 
-  height: 4000px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -52,4 +52,11 @@
 
 .accent-text-dark {
   color: $seaGreen;
+}
+
+
+@media screen and (min-width: 2500px) {
+  .portfolio-container {
+    height: auto;
+  }
 }
