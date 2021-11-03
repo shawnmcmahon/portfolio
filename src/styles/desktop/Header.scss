@@ -1,5 +1,9 @@
 @import '../variables';
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
