@@ -29,13 +29,13 @@ const Footer = () => {
         </div>
         <div className="contact-value-container"> 
           <a href="https://github.com/shawnmcmahon">
-            <img src={githubLogo} className="social-logo" /> 
+            <img src={githubLogo} className="social-logo" alt="Github link" /> 
           </a>
           <a href="https://www.linkedin.com/in/shawnpmcmahon/">
-            <img src={linkedInLogo} className="social-logo" /> 
+            <img src={linkedInLogo} className="social-logo" alt="LinkedIn link"  /> 
           </a>
           <a href="https://twitter.com/DOPE_A_MEAN">
-            <img src={twitterLogo} className="social-logo" /> 
+            <img src={twitterLogo} className="social-logo" alt="Twitter link"  /> 
           </a>
         </div>
       </div>
