@@ -73,7 +73,7 @@ const Project = ({project, pageMode, pageDesign}) => {
                 <img src={project.pictures[1]} alt="project thumbnail two" className="thumbnail" id={project.pictures[1]}  onClick={changePhoto}  />
             </div> 
             <div className="project-thumbnail-container">
-                <img src={project.pictures[2]}  className="thumbnail" alt="project thumbnail three" id={project.pictures[2]}  onClick={changePhoto}  />`
+                <img src={project.pictures[2]}  className="thumbnail" alt="project thumbnail three" id={project.pictures[2]}  onClick={changePhoto}  />
             </div>
       </div>
     </article>
