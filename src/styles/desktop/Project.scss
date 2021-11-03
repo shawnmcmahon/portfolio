@@ -169,7 +169,7 @@
   color: $seaGreen;
 }
 
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 1500px) {
   .project-thumbnail-container {
     display: none;
   }
@@ -184,6 +184,22 @@
 
   .project-outter-container {
     height: 1250px;
+    margin-bottom: 25px;
   }
+
+  .project-images-container {
+    /* border: 2px pink dotted; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-title {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+  }
+  
+  
   
 }
