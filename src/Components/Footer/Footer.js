@@ -20,9 +20,6 @@ const Footer = () => {
             <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className="meeting-value accent-text-dark">
               Schedule a Phone Call
             </a>
-            <a href="https://calendly.com/shawnmcmahon/30min" className="meeting-value accent-text-dark">
-              Schedule a Zoom Meeting
-            </a>
         </div>
         <div className="contact-label-container"> 
           FOLLOW SHAWN
