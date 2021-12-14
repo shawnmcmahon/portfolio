@@ -21,6 +21,9 @@ import bap3 from '../../Assets/browse-a-pup/bap3.png';
 import fl1 from '../../Assets/fit-lit/fl1.png';
 import fl2 from '../../Assets/fit-lit/fl2.png';
 import fl3 from '../../Assets/fit-lit/fl3.png';
+import ttt1 from '../../Assets/tic-tac-toe/ttt1.png';
+import ttt2 from '../../Assets/tic-tac-toe/ttt2.png';
+import ttt3 from '../../Assets/tic-tac-toe/ttt3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
@@ -35,7 +38,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         applicationType: 'Fullstack',
         collaborators: ['Zach Green, Ashton Huxable, Leigh Pulzone,  Taija Warbelow'],
         technologiesUsed: ['React', 'GraphQL', 'PostgreSQL', 'Cypress', 'CircleCI'], 
-        description: 'CodeHerd is a project management app where Turing students can store all the links to their projects. They can keep track of project collaborators and resources they may use for each individual project. And they can go back in time to view resources they have collected for previous projects.',
+        description: 'CodeHerd is a project management app where Turing students can store all the links to their projects. They can keep track of project collaborators and resources they may use for each individual project.',
         learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data from the backend', '2. Apply continous integration with CircleCI'], 
         pictures: [
         ch1, ch2, ch3],
@@ -50,7 +53,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         applicationType: 'Fullstack',
         collaborators: ['Dean Cook, Bobby Vasquez'],
         technologiesUsed: ['React', 'Express', 'PostgreSQL', 'Cypress', 'Heroku'], 
-        description: 'Better Jeopardy is a trivia game geared towards users who aren\'t very good at Jeopardy. This nod to the classic game show includes questions from the show. The multiple-choice feature for each question allows users to enjoy the game without needing to be a walking encyclopedia. Users can save their scores and compete for the top spot on the high school board.',
+        description: 'Better Jeopardy is a trivia game geared towards users who aren\'t very good at Jeopardy. This nod to the classic game show includes questions from the show. Users can save their scores and compete for the top spot on the high school board.',
         learningGoals: ['1. Create a custom API utilizing Express JS', '2. Use PostgreSQL to create a database to store questions and saved games'], 
         pictures: [
         bj1, bj2, bj3],
@@ -78,7 +81,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     time: '30 Hours / 1 week',
     dateCompleted: '08/09/2021',
     applicationType: 'Frontend',
-    collaborators: [],
+    collaborators: ['None'],
     technologiesUsed: ['React', 'Router', 'Javascript', 'CSS3', 'Cypress'], 
     description: 'Unsure which doggo is right for you? Browse-a-pup in a 1v1 style game before you adopt!',
     learningGoals: ['1. Create personas and user stories to describe target audience (available on Github projects board)', '2. Application deployment on Heroku.'], 
@@ -116,6 +119,21 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     fl1, fl2, fl3],
     githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
     deployedSite: 'https://fitlit-sm.netlify.app/'
+},
+{
+  number: 7, 
+  title: 'Tic Tac Toe',
+  time: '30 Hours / 1 week',
+  dateCompleted: '03/10/2021',
+  applicationType: 'Frontend',
+  collaborators: ['None'],
+  technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
+  description: 'The timeless classic game, Tic Tac Toe. Pass and play 1v1!',
+  learningGoals: ['1. Learn the fundementals of vanilla Javascript ', '2. Incorporate local storage to have win count persist upon refresh'], 
+  pictures: [
+  ttt1, ttt2, ttt3],
+  githubRepo: 'https://github.com/shawnmcmahon/tic-tac-toe',
+  deployedSite: 'https://shawnmcmahon.github.io/tic-tac-toe/'
 }
 ])
 
