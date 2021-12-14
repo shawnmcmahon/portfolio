@@ -46,7 +46,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         collaborators: ['Zach Green, Ashton Huxable, Leigh Pulzone,  Taija Warbelow'],
         technologiesUsed: ['React', 'GraphQL', 'PostgreSQL', 'Cypress', 'CircleCI'], 
         description: 'CodeHerd is a project management app where Turing students can store all the links to their projects. They can keep track of project collaborators and resources they may use for each individual project.',
-        learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data from the backend', '2. Apply continous integration with CircleCI'], 
+        learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data from the backend.', '2. Apply continous integration with CircleCI.'], 
         pictures: [
         ch1, ch2, ch3],
         githubRepo: 'https://github.com/shawnmcmahon/CodeHerd',
@@ -61,7 +61,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         collaborators: ['Dean Cook, Bobby Vasquez'],
         technologiesUsed: ['React', 'Express', 'PostgreSQL', 'Cypress', 'Heroku'], 
         description: 'Better Jeopardy is a trivia game geared towards users who aren\'t very good at Jeopardy. This nod to the classic game show includes questions from the show. Users can save their scores and compete for the top spot on the high school board.',
-        learningGoals: ['1. Create a custom API utilizing Express JS', '2. Use PostgreSQL to create a database to store questions and saved games'], 
+        learningGoals: ['1. Create a custom API utilizing Express JS.', '2. Use PostgreSQL to create a database to store questions and saved games.'], 
         pictures: [
         bj1, bj2, bj3],
         githubRepo: 'https://github.com/shawnmcmahon/better-jeopardy',
@@ -76,7 +76,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       collaborators: ['Bobby Vasquez'],
       technologiesUsed: ['React', 'CSS3', 'Github', 'Cypress', 'Heroku'], 
       description: 'The goal of this partner project was to create a website where users can view movie information hosted from a Heroku API.',
-      learningGoals: ['1. Build a solid understanding of React fundamentals', '2. Incorporate Cypress to test React components and asynchronous JS'], 
+      learningGoals: ['1. Build a solid understanding of React fundamentals.', '2. Incorporate Cypress to test React components and asynchronous JS.'], 
       pictures: [
       rt1, rt2, rt3],
       githubRepo: 'https://github.com/shawnmcmahon/rancid-tomatillos',
@@ -91,7 +91,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     collaborators: ['None'],
     technologiesUsed: ['React', 'Router', 'Javascript', 'CSS3', 'Cypress'], 
     description: 'Unsure which doggo is right for you? Browse-a-pup in a 1v1 style game before you adopt!',
-    learningGoals: ['1. Create personas and user stories to describe target audience (available on Github projects board)', '2. Application deployment on Heroku.'], 
+    learningGoals: ['1. Create personas and user stories to describe target audience (available on Github projects board).', '2. Application deployment on Heroku.'], 
     pictures: [
     bap1, bap2, bap3],
     githubRepo: 'https://github.com/shawnmcmahon/browse-a-pup',
@@ -106,7 +106,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       collaborators: ['Claire Fields, Lourdes Mendoza'],
       technologiesUsed: ['Javascript', 'Sass', 'Github', 'Mocha', 'Webpack'], 
       description: 'The purpose of the app is to create a recipe helper that assists the user in understanding what they can cook based on the contents of their pantry.',
-      learningGoals: ['1. Refactor a pre-existing, broken code base into a functional application', '2. Incorporate Sass/SCSS framework to dry up CSS'], 
+      learningGoals: ['1. Refactor a pre-existing, broken code base into a functional application.', '2. Incorporate Sass/SCSS framework to dry up CSS.'], 
       pictures: [
       wc1, wc2, wc3],
       githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
@@ -121,7 +121,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     collaborators: ['None'],
     technologiesUsed: ['HTML5', 'CSS', 'Github', 'Mocha', 'Normalize'], 
     description: 'Create a list of the 10 Streamers of all time while replicating a static comp in a short amount of time.',
-    learningGoals: ['1. Replicate a comp as quickly as possible', '2. Render elements more consistently with normalize.css'], 
+    learningGoals: ['1. Replicate a comp as quickly as possible.', '2. Render elements more consistently with normalize.css.'], 
     pictures: [
     sc1, sc2, sc3],
     githubRepo: 'https://github.com/shawnmcmahon/static-comp-2',
@@ -136,7 +136,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   collaborators: ['Peter Muellerleile'],
   technologiesUsed: ['Javascript', 'CSS', 'Github', 'Mocha', 'Chart.js'], 
   description: 'A mobile-friendly fitness app that stores and displays a user\'s hydration, sleep and activity data.',
-  learningGoals: ['1. Study responsive design by creating a mobile-friendly application ', '2. Data visualization of user information with Chart.js'], 
+  learningGoals: ['1. Study responsive design by creating a mobile-friendly application.', '2. Data visualization of user information with Chart.js.'], 
   pictures: [
   fl1, fl2, fl3],
   githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
@@ -151,7 +151,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   collaborators: ['None'],
   technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
   description: 'The timeless classic game, Tic Tac Toe. Pass and play 1v1!',
-  learningGoals: ['1. Learn the fundementals of vanilla Javascript ', '2. Incorporate local storage to have win count persist upon refresh'], 
+  learningGoals: ['1. Learn the fundementals of vanilla Javascript. ', '2. Incorporate local storage to have win count persist upon refresh.'], 
   pictures: [
   ttt1, ttt2, ttt3],
   githubRepo: 'https://github.com/shawnmcmahon/tic-tac-toe',
@@ -165,8 +165,8 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   applicationType: 'Frontend',
   collaborators: ['None'],
   technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
-  description: 'Gain inspiration for mantras and affirmations you can incorporate into your daily life',
-  learningGoals: ['1. Gain experience with Javascript, HTML, and CSS.', '2. Understand the purpose of event listeners'], 
+  description: 'Gain inspiration for mantras and affirmations you can incorporate into your daily life.',
+  learningGoals: ['1. Gain experience with Javascript, HTML, and CSS.', '2. Understand the purpose of event listeners.'], 
   pictures: [
   scc1, scc2, scc3],
   githubRepo: 'https://github.com/shawnmcmahon/self-care-center',
