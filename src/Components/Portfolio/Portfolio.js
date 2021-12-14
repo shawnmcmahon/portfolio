@@ -27,6 +27,9 @@ import ttt3 from '../../Assets/tic-tac-toe/ttt3.png';
 import sc1 from '../../Assets/static-comp/sc1.png';
 import sc2 from '../../Assets/static-comp/sc2.png';
 import sc3 from '../../Assets/static-comp/sc3.png';
+import scc1 from '../../Assets/self-care-center/scc1.png';
+import scc2 from '../../Assets/self-care-center/scc2.png';
+import scc3 from '../../Assets/self-care-center/scc3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 import { jsxElement } from '@babel/types';
 
@@ -153,6 +156,21 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   ttt1, ttt2, ttt3],
   githubRepo: 'https://github.com/shawnmcmahon/tic-tac-toe',
   deployedSite: 'https://shawnmcmahon.github.io/tic-tac-toe/'
+},
+{
+  number: 9, 
+  title: 'Self Care Center',
+  time: '12 Hours / 3 Days',
+  dateCompleted: '02/21/2021',
+  applicationType: 'Frontend',
+  collaborators: ['None'],
+  technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
+  description: 'Gain inspiration for mantras and affirmations you can incorporate into your daily life',
+  learningGoals: ['1. Gain experience with Javascript, HTML, and CSS.', '2. Understand the purpose of event listeners'], 
+  pictures: [
+  scc1, scc2, scc3],
+  githubRepo: 'https://github.com/shawnmcmahon/self-care-center',
+  deployedSite: 'https://shawnmcmahon.github.io/self-care-center/'
 }
 ])
 
