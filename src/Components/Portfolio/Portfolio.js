@@ -18,6 +18,9 @@ import wc3 from '../../Assets/whats-cookin/wc3.png';
 import bap1 from '../../Assets/browse-a-pup/bap1.png';
 import bap2 from '../../Assets/browse-a-pup/bap2.png';
 import bap3 from '../../Assets/browse-a-pup/bap3.png';
+import fl1 from '../../Assets/fit-lit/fl1.png';
+import fl2 from '../../Assets/fit-lit/fl2.png';
+import fl3 from '../../Assets/fit-lit/fl3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
@@ -98,7 +101,22 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       wc1, wc2, wc3],
       githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
       deployedSite: ''
-  }
+  },
+  {
+    number: 6, 
+    title: 'Fit Lit',
+    time: '30 Hours / 1 week',
+    dateCompleted: '04/07/2021',
+    applicationType: 'Frontend',
+    collaborators: ['Peter Muellerleile'],
+    technologiesUsed: ['Javascript', 'CSS', 'Github', 'Mocha', 'Chart.js'], 
+    description: 'A mobile-friendly fitness app that stores and displays a user\'s hydration, sleep and activity data.',
+    learningGoals: ['1. Study responsive design by creating a mobile-friendly application ', '2. Data visualization of user information with Chart.js'], 
+    pictures: [
+    fl1, fl2, fl3],
+    githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
+    deployedSite: 'https://fitlit-sm.netlify.app/'
+}
 ])
 
 
