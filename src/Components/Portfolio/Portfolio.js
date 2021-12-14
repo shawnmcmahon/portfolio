@@ -15,6 +15,9 @@ import rt3 from '../../Assets/rancid-tomatillos/rt3.png';
 import wc1 from '../../Assets/whats-cookin/wc1.png';
 import wc2 from '../../Assets/whats-cookin/wc2.png';
 import wc3 from '../../Assets/whats-cookin/wc3.png';
+import bap1 from '../../Assets/browse-a-pup/bap1.png';
+import bap2 from '../../Assets/browse-a-pup/bap2.png';
+import bap3 from '../../Assets/browse-a-pup/bap3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
@@ -67,7 +70,22 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       deployedSite: 'https://rancid-tomatillos-smbv.herokuapp.com/'
     },
     {
-      number: 4, 
+    number: 4, 
+    title: 'Browse-A-Pup',
+    time: '30 Hours / 1 week',
+    dateCompleted: '08/09/2021',
+    applicationType: 'Frontend',
+    collaborators: [],
+    technologiesUsed: ['React', 'Router', 'Javascript', 'CSS3', 'Cypress'], 
+    description: 'Unsure which doggo is right for you? Browse-a-pup in a 1v1 style game before you adopt!',
+    learningGoals: ['1. Create personas and user stories to describe target audience (available on Github projects board)', '2. Application deployment on Heroku.'], 
+    pictures: [
+    bap1, bap2, bap3],
+    githubRepo: 'https://github.com/shawnmcmahon/browse-a-pup',
+    deployedSite: 'https://browse-a-pup.herokuapp.com/'
+    },
+    {
+      number: 5, 
       title: 'What\'s Cooking?',
       time: '60 Hours / 2 weeks',
       dateCompleted: '06/15/2021',
