@@ -26,9 +26,6 @@ const Contact = ({pageMode, pageDesign}) => {
             <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
                 <li>Schedule a Phone Call</li>
             </a>
-            <a href="https://calendly.com/shawnmcmahon/30min" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
-                <li>Schedule a Zoom Meeting</li>
-            </a>
           </ul>
           <div className="label-container"> 
             SOCIAL MEDIA

@@ -24,7 +24,11 @@ import fl3 from '../../Assets/fit-lit/fl3.png';
 import ttt1 from '../../Assets/tic-tac-toe/ttt1.png';
 import ttt2 from '../../Assets/tic-tac-toe/ttt2.png';
 import ttt3 from '../../Assets/tic-tac-toe/ttt3.png';
+import sc1 from '../../Assets/static-comp/sc1.png';
+import sc2 from '../../Assets/static-comp/sc2.png';
+import sc3 from '../../Assets/static-comp/sc3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
+import { jsxElement } from '@babel/types';
 
 
 
@@ -107,21 +111,36 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   },
   {
     number: 6, 
-    title: 'Fit Lit',
-    time: '30 Hours / 1 week',
-    dateCompleted: '04/07/2021',
+    title: 'Static Comp',
+    time: '6 Hours / 1 day',
+    dateCompleted: '05/30/2021',
     applicationType: 'Frontend',
-    collaborators: ['Peter Muellerleile'],
-    technologiesUsed: ['Javascript', 'CSS', 'Github', 'Mocha', 'Chart.js'], 
-    description: 'A mobile-friendly fitness app that stores and displays a user\'s hydration, sleep and activity data.',
-    learningGoals: ['1. Study responsive design by creating a mobile-friendly application ', '2. Data visualization of user information with Chart.js'], 
+    collaborators: ['None'],
+    technologiesUsed: ['HTML5', 'CSS', 'Github', 'Mocha', 'Normalize'], 
+    description: 'Create a list of the 10 Streamers of all time while replicating a static comp in a short amount of time.',
+    learningGoals: ['1. Replicate a comp as quickly as possible', '2. Render elements more consistently with normalize.css'], 
     pictures: [
-    fl1, fl2, fl3],
-    githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
-    deployedSite: 'https://fitlit-sm.netlify.app/'
+    sc1, sc2, sc3],
+    githubRepo: 'https://github.com/shawnmcmahon/static-comp-2',
+    deployedSite: 'https://shawnmcmahon.github.io/static-comp-2/'
 },
 {
   number: 7, 
+  title: 'Fit Lit',
+  time: '30 Hours / 1 week',
+  dateCompleted: '04/07/2021',
+  applicationType: 'Frontend',
+  collaborators: ['Peter Muellerleile'],
+  technologiesUsed: ['Javascript', 'CSS', 'Github', 'Mocha', 'Chart.js'], 
+  description: 'A mobile-friendly fitness app that stores and displays a user\'s hydration, sleep and activity data.',
+  learningGoals: ['1. Study responsive design by creating a mobile-friendly application ', '2. Data visualization of user information with Chart.js'], 
+  pictures: [
+  fl1, fl2, fl3],
+  githubRepo: 'https://github.com/shawnmcmahon/refactor-tractor-wc',
+  deployedSite: 'https://fitlit-sm.netlify.app/'
+},
+{
+  number: 8, 
   title: 'Tic Tac Toe',
   time: '30 Hours / 1 week',
   dateCompleted: '03/10/2021',
