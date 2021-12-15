@@ -120,7 +120,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     applicationType: 'Frontend',
     collaborators: ['None'],
     technologiesUsed: ['HTML5', 'CSS', 'Github', 'Mocha', 'Normalize'], 
-    description: 'Create a list of the 10 Streamers of all time while replicating a static comp in a short amount of time.',
+    description: 'Create a list of the top 10 Billboard Artist\'s of the 2010 decade while replicating a static comp in a short amount of time.',
     learningGoals: ['1. Replicate a comp as quickly as possible.', '2. Render elements more consistently with normalize.css.'], 
     pictures: [
     sc1, sc2, sc3],
