@@ -24,13 +24,13 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
       window.addEventListener('scroll', changeBackground)
     }
 
-
+// <nav className={navBar ? 'nav-bar-active' : 'nav-bar'} tabIndex="-1">
   
 
   return (
     <div className={pageMode ? "Dark Mode" : "Light Mode"}>
       <header className={findStyleAndDesign(pageMode, pageDesign, 'header')} tabIndex="-1">
-        <nav className={navBar ? 'nav-bar-active' : 'nav-bar'} tabIndex="-1">
+        <nav className={navBar ? '.w-full .h-20 .py-1 .bg-black .flex .items-center' : '.w-full .h-20 .py-1 .bg-black .flex .items-center'} tabIndex="-1">
           <div className="logo-container"> 
             <ScrollLink to="/#home"> 
               <img src={sm_logo} alt="home button" className="home-button" />
