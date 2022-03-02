@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/shawnpmcmahon/">
             <img src={linkedInLogo} className="social-logo" alt="LinkedIn link"  /> 
           </a>
-          <a href="https://twitter.com/DOPE_A_MEAN">
+          <a href="https://twitter.com/shawnmdev">
             <img src={twitterLogo} className="social-logo" alt="Twitter link"  /> 
           </a>
         </div>
