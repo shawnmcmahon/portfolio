@@ -83,22 +83,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       deployedSite: 'https://rancid-tomatillos-smbv.herokuapp.com/'
     },
     {
-    number: 4, 
-    title: 'Browse-A-Pup',
-    time: '30 Hours / 1 week',
-    dateCompleted: '08/09/2021',
-    applicationType: 'Frontend',
-    collaborators: ['None'],
-    technologiesUsed: ['React', 'Router', 'Javascript', 'CSS3', 'Cypress'], 
-    description: 'Unsure which doggo is right for you? Browse-a-pup in a 1v1 style game before you adopt!',
-    learningGoals: ['1. Create personas and user stories to describe target audience (available on Github projects board).', '2. Application deployment on Heroku.'], 
-    pictures: [
-    bap1, bap2, bap3],
-    githubRepo: 'https://github.com/shawnmcmahon/browse-a-pup',
-    deployedSite: 'https://browse-a-pup.herokuapp.com/'
-    },
-    {
-      number: 5, 
+      number: 4, 
       title: 'What\'s Cooking?',
       time: '60 Hours / 2 weeks',
       dateCompleted: '06/15/2021',
@@ -113,7 +98,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       deployedSite: ''
   },
   {
-    number: 6, 
+    number: 5, 
     title: 'Static Comp',
     time: '6 Hours / 1 day',
     dateCompleted: '05/30/2021',
@@ -128,7 +113,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     deployedSite: 'https://shawnmcmahon.github.io/static-comp-2/'
 },
 {
-  number: 7, 
+  number: 6, 
   title: 'Fit Lit',
   time: '30 Hours / 1 week',
   dateCompleted: '04/07/2021',
@@ -143,7 +128,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   deployedSite: 'https://fitlit-sm.netlify.app/'
 },
 {
-  number: 8, 
+  number: 7, 
   title: 'Tic Tac Toe',
   time: '30 Hours / 1 week',
   dateCompleted: '03/10/2021',
@@ -158,7 +143,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   deployedSite: 'https://shawnmcmahon.github.io/tic-tac-toe/'
 },
 {
-  number: 9, 
+  number: 8, 
   title: 'Self Care Center',
   time: '12 Hours / 3 Days',
   dateCompleted: '02/21/2021',
