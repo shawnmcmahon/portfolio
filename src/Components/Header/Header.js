@@ -4,8 +4,6 @@ import '../../styles/phone/Header-phone.scss';
 import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import sm_logo from '../../Assets/sm_logo.png';
-import brush from '../../Assets/brush.svg';
-import menu from '../../Assets/menu.svg';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 

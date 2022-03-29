@@ -15,9 +15,9 @@ import rt3 from '../../Assets/rancid-tomatillos/rt3.png';
 import wc1 from '../../Assets/whats-cookin/wc1.png';
 import wc2 from '../../Assets/whats-cookin/wc2.png';
 import wc3 from '../../Assets/whats-cookin/wc3.png';
-import bap1 from '../../Assets/browse-a-pup/bap1.png';
-import bap2 from '../../Assets/browse-a-pup/bap2.png';
-import bap3 from '../../Assets/browse-a-pup/bap3.png';
+// import bap1 from '../../Assets/browse-a-pup/bap1.png';
+// import bap2 from '../../Assets/browse-a-pup/bap2.png';
+// import bap3 from '../../Assets/browse-a-pup/bap3.png';
 import fl1 from '../../Assets/fit-lit/fl1.png';
 import fl2 from '../../Assets/fit-lit/fl2.png';
 import fl3 from '../../Assets/fit-lit/fl3.png';
@@ -31,7 +31,6 @@ import scc1 from '../../Assets/self-care-center/scc1.png';
 import scc2 from '../../Assets/self-care-center/scc2.png';
 import scc3 from '../../Assets/self-care-center/scc3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
-import { jsxElement } from '@babel/types';
 
 
 

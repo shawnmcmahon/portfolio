@@ -1,7 +1,7 @@
 import '../../styles/desktop/Project.scss';
 import '../../styles/phone/Project-phone.scss'
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
