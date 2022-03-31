@@ -44,11 +44,11 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
               </label>
               <div> 
                 <ScrollLink smooth to="/#about" >
-                <button className="text-white bg-transparent font-Prompt border-none text-base m-8 font-light w-28 h-20 cursor-pointer no-underline  hover:bg-seaGreen">About</button></ScrollLink>
+                <button className="text-white bg-transparent font-Prompt border-none text-lg m-8 font-light w-28 h-20 cursor-pointer no-underline hover:bg-green-200" >About</button></ScrollLink>
                 <ScrollLink to="/portfolio/#projects" > 
-                <button className="nav-button">Portfolio</button></ScrollLink>
+                <button className="text-white bg-transparent font-Prompt border-none text-lg m-8 font-light w-28 h-20 cursor-pointer no-underline hover:bg-green-200">Portfolio</button></ScrollLink>
                 <ScrollLink to="/contact/#contact">
-                <button className="nav-button">Contact</button></ScrollLink>
+                <button className="text-white bg-transparent font-Prompt border-none text-lg m-8 font-light w-28 h-20 cursor-pointer no-underline hover:bg-green-200">Contact</button></ScrollLink>
               </div> 
           </div>
         </nav>
