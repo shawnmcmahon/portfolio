@@ -61,7 +61,7 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
           {window.innerWidth > 650 && */}
             <> 
               <ScrollLink smooth to="/#about" >
-              <button className="nav-button">About</button></ScrollLink>
+              <button className="nav-button text-xl">About</button></ScrollLink>
               <ScrollLink to="/portfolio/#projects" > 
               <button className="nav-button">Portfolio</button></ScrollLink>
               <ScrollLink to="/contact/#contact">

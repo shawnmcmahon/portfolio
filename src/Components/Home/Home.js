@@ -20,7 +20,7 @@ const Home = ({ pageMode, pageDesign }) => {
           <div className="name-container"> 
             <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
             <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Front-End Developer</h3>
-            <a href="https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing"> 
+            <a href="https://docs.google.com/document/d/11ite_mAdxjYxbDNQXdxBqxpPtHTy-JRf/edit?usp=sharing&ouid=117421148088217152052&rtpof=true&sd=true"> 
               <button className={findStyleAndDesign(pageMode, pageDesign, "resume-button")}>Download Resume</button>
             </a>
           </div>
@@ -35,7 +35,7 @@ const Home = ({ pageMode, pageDesign }) => {
     
             <p className="bio-text">I am a front-end developer who specializes in Javascript and loves coding with React. I excel in client-centered, fast-paced environments. I am excited to utilize my past experience in management and real estate to bring results-driven leadership and client-focused interpersonal skills into a new career as a software developer.</p>
                 
-            <p className="bio-text">Let's build something beautiful together. </p>
+            <p className="font-bold underline text-xl">Let's build something beautiful together. </p>
           </div> 
         </section>
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-concave")}> 
