@@ -14,21 +14,14 @@ const Contact = ({pageMode, pageDesign}) => {
           <div className="label-container"> 
             EMAIL
           </div>
-          <div className="contact email">
-            shawnmcmahon17@gmail.com
-          </div>
-          <div className="label-container"> 
-            CONNECT
-          </div>
           <ul> 
-            <a href="https://calendly.com/shawnmcmahon/one-on-one-call" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
-                <li>Schedule a Phone Call</li>
+            <a href="mailto:shawnmcmahon17@gmail.com" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
+                <li>shawnmcmahondev@gmail.com</li>
             </a>
           </ul>
           <div className="label-container"> 
-            SOCIAL MEDIA
+            LINKS
           </div>
-          <div className="contact">
           <ul> 
             <a href="https://github.com/shawnmcmahon" className={pageMode === "Light Mode" ? " accent-text-light contact " : "accent-text-dark contact"}>
                 <li>Github</li>
@@ -37,7 +30,6 @@ const Contact = ({pageMode, pageDesign}) => {
                 <li>LinkedIn</li>
             </a>
           </ul>
-          </div>
         </div>
       </section>
       <div className={findStyleAndDesign(pageMode, pageDesign, "contact-image-container")}>
