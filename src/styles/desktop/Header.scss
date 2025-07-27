@@ -254,57 +254,47 @@ a, a:hover, a:focus, a:active {
   }
 }
 
-/* Switch Component Styles */
-.switch {
-  position: relative;
-  display: inline-block;
+/* Original Switch Component Styles */
+.switch-wrap {
+  align-self: center;
+  cursor: pointer;
+  background: $darkGreen;
+  padding: $padding;
   width: $width;
   height: $height;
-  border-radius: $height;
-  transition: all 0.3s ease;
+  border-radius: $height / 2;
+  
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.switch {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr;
+  transition: 0.2s;
+  
+  /* The moving circle element */
+  &::after {
+    content: '';
+    border-radius: 50%;
+    background: $white;
+    grid-column: 2;
+    transition: background 0.2s;
+  }
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: $height;
-  padding: $padding;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: calc(#{$height} - 2 * #{$padding});
-  width: calc(#{$height} - 2 * #{$padding});
-  left: $padding;
-  bottom: $padding;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: $seaGreen;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px $seaGreen;
-}
-
-input:checked + .slider:before {
-  transform: translateX(calc(#{$width} - #{$height}));
+/* When checked, change the grid layout */
+input:checked + .switch {
+  grid-template-columns: 1fr 1fr 0fr; 
+  
+  &::after {
+    background-color: $seaGreen;
+  }
 }
 
 /* Ensure no max-width constraints */
