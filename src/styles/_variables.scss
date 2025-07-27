@@ -1,21 +1,78 @@
+// Standard Responsive Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Container max-widths
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-xxl: 1320px;
+
 // Mixins 
-@mixin flex-center($direction) {
+@mixin flex-center($direction: row) {
   display: flex; 
   flex-direction: $direction;
   justify-content: center;
 }
 
-@mixin flex-middle($direction) {
+@mixin flex-middle($direction: row) {
   display: flex; 
   flex-direction: $direction;
   justify-content: center;
   align-items: center;
 }
 
+@mixin responsive-spacing($property, $mobile, $tablet: null, $desktop: null) {
+  #{$property}: $mobile;
+  
+  @if $tablet {
+    @media (min-width: $breakpoint-md) {
+      #{$property}: $tablet;
+    }
+  }
+  
+  @if $desktop {
+    @media (min-width: $breakpoint-lg) {
+      #{$property}: $desktop;
+    }
+  }
+}
+
+// Media query mixins
+@mixin mobile-up {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin large-desktop-up {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
 // Fonts 
 @font-face {
   font-family: 'Prompt';
-  src: url('../Assets/fonts/Prompt/Prompt-Regular.ttf') format ('opentype'),
+  src: url('../Assets/fonts/Prompt/Prompt-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 // Colors  

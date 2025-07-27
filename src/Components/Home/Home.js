@@ -12,7 +12,6 @@ import csharpIcon from '../../Assets/icons/csharp-original.svg';
 import mssqlIcon from '../../Assets/icons/microsoftsqlserver-plain-wordmark.svg';
 import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
-import '../../styles/phone/Home-phone.scss'
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 

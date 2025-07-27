@@ -1,226 +1,304 @@
 @import '../variables';
 
-
-.project-description-container {
-  /* border: 2px blue dotted; */
-  width: 45%;
-  height: 100%;
-}
-
-.project-button {
-  border: none;
-  // background-color: $black;
-  // color: $white;
-  width: 150px;
-  height: 50px;
-  margin: 0 25px 0 25px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.project-button:hover {
-  background-color: $seaGreen;
-  color: $black;
-  cursor: pointer;
-}
-
-.project-button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.project-images-container {
-  /* border: 2px pink dotted; */
-  width: 45%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-.preview-photo {
-  width: 100%
-}
-
-.project-thumbnail-container {
-  width: 40%;
-  padding: 20px 10px 20px 10px;
-  height: 100px;
-}
-
-.thumbnail {
-  width: 100%;
-  cursor: pointer;
-  margin: 10px 0 10px 0;
-}
-
-.photo-display {
-  width: 100%;
-}
-
-
+/* Project Container - Mobile First */
 .project-outter-container {
   width: 100%;
-  height: 800px;
-  /* border: 2px green solid; */
+  min-height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 4rem 0 4rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include responsive-spacing(padding, 2rem 1rem, 3rem 1.5rem, 4rem 2rem);
+  border-bottom: 1px solid $black;
+  gap: 2rem;
+  
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 600px;
+    gap: 1.5rem;
+  }
+  
+  @include desktop-up {
+    min-height: 700px;
+    gap: 2rem;
+  }
+  
+  @include large-desktop-up {
+    min-height: 800px;
+  }
 }
 
 .neo-project-outter-container {
   width: 100%;
-  height: 125vh;
-  /* border: 2px green solid; */
+  max-width: 90%;
+  margin: 2rem auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include responsive-spacing(padding, 2rem 1rem, 3rem 1.5rem, 4rem 2rem);
+  border-radius: clamp(25px, 5vw, 50px);
+  background: $grey;
+  box-shadow: inset 5px 5px 15px $shadowGrey, inset -5px -5px 15px $white;
+  gap: 2rem;
+  
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 600px;
+    max-width: 85%;
+    margin: 3rem auto;
+    gap: 1.5rem;
+  }
+  
+  @include desktop-up {
+    min-height: 700px;
+    max-width: 80%;
+    margin: 4rem auto;
+    gap: 2rem;
+  }
+  
+  @include large-desktop-up {
+    min-height: 800px;
+  }
+}
+
+/* Project Description - Responsive */
+.project-description-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  @include responsive-spacing(margin-bottom, 1.5rem, 0, 0);
+  
+  @include tablet-up {
+    width: 45%;
+    max-width: 45%;
+    height: 100%;
+  }
+}
+
+.project-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  @include responsive-spacing(margin, 0.5rem 0, 0.75rem 0, 1rem 0);
+  font-weight: 700;
+  text-align: center;
+  
+  @include tablet-up {
+    text-align: left;
+  }
+}
+
+/* Project Buttons - Responsive */
+.project-button-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 50px 0 50px 0;
-  margin: 50px 0 50px 0;
+  justify-content: center;
+  gap: 1rem;
+  @include responsive-spacing(margin-bottom, 1.5rem, 2rem, 2.5rem);
+  flex-wrap: wrap;
+}
 
-  border-radius: 50px;
-  background: $grey;
-  box-shadow: inset  5px 5px 15px $shadowGrey,
-              inset -5px -5px 15px $white;
+.project-button {
+  border: none;
+  @include responsive-spacing(width, 130px, 140px, 150px);
+  @include responsive-spacing(height, 40px, 45px, 50px);
+  cursor: pointer;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  
+  &:hover {
+    background-color: $seaGreen;
+    color: $black;
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+}
+
+/* Project Images - Responsive */
+.project-images-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+  @include tablet-up {
+    width: 45%;
+    max-width: 45%;
+    height: 100%;
+    @include responsive-spacing(padding-top, 0, 1.5rem, 2rem);
+  }
+}
+
+.preview-photo, .photo-display {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-thumbnail-container {
+  width: 100%;
+  @include responsive-spacing(padding, 1rem 0.5rem, 1.25rem 0.75rem, 1.5rem 1rem);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  
+  @include tablet-up {
+    width: 60%;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  @include desktop-up {
+    gap: 1rem;
+  }
+}
+
+.thumbnail {
+  width: clamp(60px, 15vw, 80px);
+  height: auto;
+  cursor: pointer;
+  @include responsive-spacing(margin, 0.25rem, 0.5rem, 0.75rem);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  
+  &:hover {
+    transform: scale(1.05);
+    border-color: $seaGreen;
+  }
+  
+  @include tablet-up {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Project Details - Responsive */
+.label {
+  font-weight: bold;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  color: inherit;
+  @include responsive-spacing(margin-top, 1rem, 1.25rem, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.tech {
+  display: inline-block;
+  @include responsive-spacing(padding, 0.5rem 0.75rem, 0.6rem 1rem, 0.75rem 1.25rem);
+  @include responsive-spacing(margin, 0.25rem, 0.3rem, 0.4rem);
+  border-radius: clamp(4px, 1vw, 8px);
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  border: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  
+  &:hover {
+    transform: translateY(-1px);
+  }
 }
 
 .project-divider {
   border-top: 1px solid $black;
+  width: 100%;
+  @include responsive-spacing(margin, 2rem 0, 3rem 0, 4rem 0);
 }
 
-.project-title {
-  font-size: 32px;
-  margin: 10px 0 10px 0;
-  font-weight: 700;
-}
-
-.label {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.value {
-  font-size: 16px;
-  margin: 0 0 0 10px;
-  font-weight: normal;
-}
-
+/* Warning Messages */
 .warning {
-  font-size: 16px;
-  font-style: italic;
-  margin-bottom: 50px;
-}
-
-.tech {
-  // background-color: $black;
-  // color: $white;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 90%;
   text-align: center;
-  font-weight: 400;
-  line-height: 1;
-  font-size: 14px;
-  padding: 10px 20px 10px 20px;
-  margin: 5px 0 5px 0;
-  width: 50px;
-}
-
-
-
-
-.tech-stack-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-// Light and Dark mode styles 
-.light-background {
-  background-color: $magnolia;
-  color: $black
-}
-
-.dark-background {
-  background-color: $grey;
-  color: $white;
-}
-
-.light-mode-button {
-  background-color: $black;
-  color: $white;
-}
-
-.dark-mode-button {
-  background-color: $magnolia;
-  color: $black;
-}
-
-.accent-text-light {
-  color: $black;
-}
-
-.accent-text-dark {
-  color: $seaGreen;
-}
-
-@media screen and (min-width: 1500px) {
-  .project-thumbnail-container {
-    display: none;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  @include responsive-spacing(padding, 1rem, 1.25rem, 1.5rem);
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  color: #856404;
+  margin: 1rem auto;
+  
+  @include tablet-up {
+    max-width: 80%;
   }
+}
 
-
+/* Large Desktop Optimizations */
+@include large-desktop-up {
   .project-outter-container {
-    height: 800px;
-    margin-bottom: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+  
+  .neo-project-outter-container {
+    max-width: 1200px;
+  }
+}
 
+/* Ultra-wide Desktop Optimizations */
+@media screen and (min-width: 1600px) {
+  .project-outter-container,
+  .neo-project-outter-container {
+    max-width: 1400px;
+  }
+  
+  .project-description-container,
   .project-images-container {
-    /* border: 2px pink dotted; */
-    display: flex;
+    @include tablet-up {
+      width: 40%;
+      max-width: 40%;
+    }
+  }
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 576px) {
+  .project-button-container {
     flex-direction: column;
     align-items: center;
+    gap: 0.75rem;
   }
-
-  .project-title {
-    font-size: 1.5em;
-    margin-bottom: 25px;
+  
+  .project-button {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .project-thumbnail-container {
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: clamp(50px, 20vw, 70px);
   }
 }
 
-  @media screen and (min-width: 2500px) {
-    .project-thumbnail-container {
-      display: none;
-    }
-  
-    .label {
-      font-size: 1em;
-    }
-  
-    .value {
-      font-size: 1em;
-    }  
-  
-    .project-outter-container {
-      height: 1250px;
-      margin-bottom: 4rem;
-    }
-  
-    .project-images-container {
-      /* border: 2px pink dotted; */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .project-title {
-      font-size: 2.5em;
-      margin-bottom: 25px;
-    }
-  
+/* Print Styles */
+@media print {
+  .project-outter-container,
+  .neo-project-outter-container {
+    break-inside: avoid;
+    padding: 1rem;
+    margin: 1rem 0;
   }
+  
+  .project-button {
+    display: none;
+  }
+}

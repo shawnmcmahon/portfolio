@@ -1,6 +1,4 @@
 import '../../styles/desktop/Header.scss';
-import '../../styles/tablet/Header-tablet.scss';
-import '../../styles/phone/Header-phone.scss';
 import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import sm_logo from '../../Assets/sm_logo.png';
