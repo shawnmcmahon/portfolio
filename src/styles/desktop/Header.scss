@@ -12,6 +12,8 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
   width: 100%;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .neo-header {
@@ -20,13 +22,14 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
   width: 100%;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation Bar - Responsive */
+/* Navigation Bar - Full Width */
 .nav-bar {
   width: 100%;
   @include responsive-spacing(height, 60px, 70px, 80px);
-  @include responsive-spacing(padding, 0.5rem 1rem, 0.75rem 1.5rem, 1rem 2rem);
   background-color: $black;
   display: flex;
   align-items: center;
@@ -36,6 +39,21 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   position: relative;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  /* Internal content padding */
+  > * {
+    @include responsive-spacing(margin, 0 1rem, 0 1.5rem, 0 2rem);
+    
+    &:first-child {
+      @include responsive-spacing(margin-left, 1rem, 1.5rem, 2rem);
+    }
+    
+    &:last-child {
+      @include responsive-spacing(margin-right, 1rem, 1.5rem, 2rem);
+    }
+  }
   
   @include tablet-up {
     height: 80px;
@@ -45,13 +63,27 @@ a, a:hover, a:focus, a:active {
 .nav-bar-active {
   width: 100%;
   @include responsive-spacing(height, 60px, 70px, 80px);
-  @include responsive-spacing(padding, 0.5rem 1rem, 0.75rem 1.5rem, 1rem 2rem);
   background-color: rgba($color: #000000, $alpha: .9);
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all 0.2s ease-out;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  /* Internal content padding */
+  > * {
+    @include responsive-spacing(margin, 0 1rem, 0 1.5rem, 0 2rem);
+    
+    &:first-child {
+      @include responsive-spacing(margin-left, 1rem, 1.5rem, 2rem);
+    }
+    
+    &:last-child {
+      @include responsive-spacing(margin-right, 1rem, 1.5rem, 2rem);
+    }
+  }
   
   @include tablet-up {
     height: 80px;
@@ -61,12 +93,26 @@ a, a:hover, a:focus, a:active {
 .neo-nav-bar {
   width: 100%;
   @include responsive-spacing(height, 70px, 80px, 100px);
-  @include responsive-spacing(padding, 0.5rem 1rem, 0.75rem 1.5rem, 1rem 2rem);
   background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  /* Internal content padding */
+  > * {
+    @include responsive-spacing(margin, 0 1rem, 0 1.5rem, 0 2rem);
+    
+    &:first-child {
+      @include responsive-spacing(margin-left, 1rem, 1.5rem, 2rem);
+    }
+    
+    &:last-child {
+      @include responsive-spacing(margin-right, 1rem, 1.5rem, 2rem);
+    }
+  }
 }
 
 /* Logo/Home Button - Responsive */
@@ -75,12 +121,13 @@ a, a:hover, a:focus, a:active {
   border: none;
   outline: none;
   align-self: center;
-  @include responsive-spacing(padding-left, 1rem, 1.5rem, 2rem);
   display: flex;
   align-items: center;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 0 !important; /* Override the margin from parent */
+  padding: 0;
   
   &:hover {
     transform: scale(1.05);
@@ -90,6 +137,8 @@ a, a:hover, a:focus, a:active {
 .logo-container {
   width: auto;
   flex-shrink: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Buttons Container - Responsive */
@@ -100,13 +149,14 @@ a, a:hover, a:focus, a:active {
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
+  margin: 0 !important; /* Override the margin from parent */
+  padding: 0;
   
   /* Mobile - Show hamburger menu */
   @media (max-width: 767px) {
     width: auto;
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
     gap: 0.5rem;
   }
   
@@ -257,13 +307,13 @@ input:checked + .slider:before {
   transform: translateX(calc(#{$width} - #{$height}));
 }
 
-/* Large Desktop Optimizations */
+/* Ensure no max-width constraints */
 @include large-desktop-up {
   .nav-bar,
   .nav-bar-active,
   .neo-nav-bar {
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
   }
 }
 
