@@ -267,7 +267,7 @@ a, a:hover, a:focus, a:active {
   visibility: hidden;
   transition: all 0.3s ease;
   
-  @include desktop-up {
+  @media (min-width: 769px) {
     display: none;
   }
 }
@@ -286,6 +286,45 @@ a, a:hover, a:focus, a:active {
   height: 100%;
   gap: 2rem;
   padding: 2rem;
+}
+
+/* Mobile Menu Close Button */
+.mobile-menu-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid rgba(#fff, 0.3);
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  
+  &:hover {
+    background-color: $seaGreen;
+    border-color: $seaGreen;
+    color: $black;
+    transform: scale(1.1) rotate(90deg);
+    box-shadow: 0 4px 12px rgba($seaGreen, 0.4);
+  }
+  
+  &:focus {
+    outline: 2px solid $seaGreen;
+    outline-offset: 2px;
+  }
+  
+  &:active {
+    transform: scale(0.95) rotate(90deg);
+  }
 }
 
 /* Mobile Navigation Buttons */
@@ -384,10 +423,22 @@ input:checked + .switch {
   }
 }
 
+/* Mobile close button responsive adjustments */
+@media screen and (max-width: 480px) {
+  .mobile-menu-close {
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+  }
+}
+
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   .nav-button,
   .mobile-nav-button,
+  .mobile-menu-close,
   .home-button,
   .hamburger,
   .hamburger-line,
@@ -399,12 +450,14 @@ input:checked + .switch {
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   .nav-button,
-  .mobile-nav-button {
+  .mobile-nav-button,
+  .mobile-menu-close {
     border: 2px solid currentColor;
   }
   
   .nav-button:hover,
-  .mobile-nav-button:hover {
+  .mobile-nav-button:hover,
+  .mobile-menu-close:hover {
     background-color: currentColor;
     color: white;
   }

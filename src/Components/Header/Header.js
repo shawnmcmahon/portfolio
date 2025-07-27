@@ -79,7 +79,7 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="mobile-menu-overlay">
+        <div className="mobile-menu-overlay mobile-menu-open">
           {/* X Close Button - Top Right */}
           <button 
             className="mobile-menu-close" 
