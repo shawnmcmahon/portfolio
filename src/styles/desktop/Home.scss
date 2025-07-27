@@ -169,7 +169,7 @@ a, a:hover, a:focus, a:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include responsive-spacing(margin-top, 2rem, 3rem, 6rem);
+  margin-top: 0;
 }
 
 .about {
