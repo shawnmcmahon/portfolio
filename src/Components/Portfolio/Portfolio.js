@@ -43,7 +43,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         applicationType: 'Fullstack',
         collaborators: ['Dean Cook, Bobby Vasquez'],
         technologiesUsed: ['React', 'Express', 'PostgreSQL', 'Cypress', 'Heroku'], 
-        description: 'Better Jeopardy is a trivia game geared towards users who aren\'t very good at Jeopardy. This nod to the classic game show includes questions from the show. Users can save their scores and compete for the top spot on the high school board.',
+        description: 'Better Jeopardy is a full-stack trivia game that reimagines the classic game show for users who want a more accessible experience. Built with React frontend and Express backend, this application features a PostgreSQL database storing authentic Jeopardy questions. Users can play through trivia rounds, save their scores, and compete for top positions on the leaderboard. The project demonstrates full-stack development skills including API creation, database management, and user authentication. Collaboratively developed with Dean Cook and Bobby Vasquez over a 2-week sprint, this project showcases modern web development practices with comprehensive testing using Cypress.',
         learningGoals: ['1. Create a custom API utilizing Express JS.', '2. Use PostgreSQL to create a database to store questions and saved games.'], 
         pictures: [
         bj1, bj2, bj3],
@@ -58,7 +58,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       applicationType: 'Frontend',
       collaborators: ['Bobby Vasquez'],
       technologiesUsed: ['React', 'CSS3', 'Github', 'Cypress', 'Heroku'], 
-      description: 'The goal of this partner project was to create a website where users can view movie information hosted from a Heroku API.',
+      description: 'Rancid Tomatillos is a React-based movie browsing application that provides users with comprehensive movie information and ratings. Built as a partner project with Bobby Vasquez, this frontend application consumes a movie API to display detailed film data including ratings, cast information, and movie posters. The project focuses on React fundamentals including component architecture, state management, and asynchronous data fetching. Features include movie search functionality, detailed movie pages, and responsive design. The application demonstrates modern React development practices with comprehensive testing using Cypress and deployment on Vercel.',
       learningGoals: ['1. Build a solid understanding of React fundamentals.', '2. Incorporate Cypress to test React components and asynchronous JS.'], 
       pictures: [
       rt1, rt2, rt3],
@@ -73,7 +73,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       applicationType: 'Fullstack',
       collaborators: ['Zach Green, Ashton Huxable, Leigh Pulzone,  Taija Warbelow'],
       technologiesUsed: ['React', 'GraphQL', 'PostgreSQL', 'Cypress', 'CircleCI'], 
-      description: 'CodeHerd is a project management app where Turing students can store all the links to their projects. They can keep track of project collaborators and resources they may use for each individual project.',
+      description: 'CodeHerd is a comprehensive project management application designed specifically for Turing School students to organize and track their development projects. Built as a collaborative effort with Zach Green, Ashton Huxable, Leigh Pulzone, and Taija Warbelow, this full-stack application features a React frontend with GraphQL integration and PostgreSQL backend. Students can create project profiles, store GitHub links, track collaborators, and maintain resource libraries for each project. The application demonstrates advanced development concepts including GraphQL queries and mutations, continuous integration with CircleCI, and team collaboration workflows. This project showcases the ability to work effectively in larger development teams while implementing modern web technologies.',
       learningGoals: ['1. Utilize Apollo/GraphQL to query and mutate data from the backend.', '2. Apply continous integration with CircleCI.'], 
       pictures: [
       ch1, ch2, ch3],
@@ -88,7 +88,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
       applicationType: 'Frontend',
       collaborators: ['Claire Fields, Lourdes Mendoza'],
       technologiesUsed: ['Javascript', 'Sass', 'Github', 'Mocha', 'Webpack'], 
-      description: 'The purpose of the app is to create a recipe helper that assists the user in understanding what they can cook based on the contents of their pantry.',
+      description: 'What\'s Cooking? is a smart recipe recommendation application that helps users discover meals they can prepare based on available ingredients in their pantry. Developed collaboratively with Claire Fields and Lourdes Mendoza, this JavaScript-based application features a sophisticated ingredient matching algorithm and user-friendly interface. The project involved refactoring and improving an existing codebase, implementing Sass/SCSS for better CSS organization, and creating an intuitive user experience. Users can input their available ingredients and receive personalized recipe suggestions with cooking instructions. The application demonstrates strong JavaScript fundamentals, modern CSS practices with Sass, and the ability to work with and improve existing codebases.',
       learningGoals: ['1. Refactor a pre-existing, broken code base into a functional application.', '2. Incorporate Sass/SCSS framework to dry up CSS.'], 
       pictures: [
       wc1, wc2, wc3],
@@ -103,7 +103,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
     applicationType: 'Frontend',
     collaborators: ['None'],
     technologiesUsed: ['HTML5', 'CSS', 'Github', 'Mocha', 'Normalize'], 
-    description: 'Create a list of the top 10 Billboard Artist\'s of the 2010 decade while replicating a static comp in a short amount of time.',
+    description: 'Static Comp is a rapid-prototyping project that showcases the ability to quickly translate design mockups into functional HTML/CSS implementations. Completed in just 6 hours, this project features a responsive layout displaying the top 10 Billboard artists of the 2010 decade. The project demonstrates proficiency in HTML5, CSS3, and responsive design principles while working under tight time constraints. Key features include semantic HTML structure, modern CSS styling with normalize.css for consistent cross-browser rendering, and mobile-responsive design. This project highlights the ability to work efficiently under pressure while maintaining code quality and design accuracy.',
     learningGoals: ['1. Replicate a comp as quickly as possible.', '2. Render elements more consistently with normalize.css.'], 
     pictures: [
     sc1, sc2, sc3],
@@ -118,7 +118,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   applicationType: 'Frontend',
   collaborators: ['Peter Muellerleile'],
   technologiesUsed: ['Javascript', 'CSS', 'Github', 'Mocha', 'Chart.js'], 
-  description: 'A mobile-friendly fitness app that stores and displays a user\'s hydration, sleep and activity data.',
+  description: 'Fit Lit is a comprehensive fitness tracking application designed for mobile users to monitor their health and wellness data. Developed in collaboration with Peter Muellerleile, this JavaScript-based application features data visualization using Chart.js to display user hydration, sleep patterns, and activity metrics. The project emphasizes responsive design principles, ensuring optimal user experience across all device sizes. Key features include interactive charts for data visualization, local storage for data persistence, and an intuitive mobile-first interface. The application demonstrates strong JavaScript fundamentals, modern data visualization techniques, and responsive web design practices.',
   learningGoals: ['1. Study responsive design by creating a mobile-friendly application.', '2. Data visualization of user information with Chart.js.'], 
   pictures: [
   fl1, fl2, fl3],
@@ -133,7 +133,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   applicationType: 'Frontend',
   collaborators: ['None'],
   technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
-  description: 'The timeless classic game, Tic Tac Toe. Pass and play 1v1!',
+  description: 'Tic Tac Toe is a classic game implementation that demonstrates fundamental JavaScript programming concepts and user interface design. This vanilla JavaScript application features a complete game engine with win detection, turn management, and persistent score tracking using local storage. The project showcases clean code architecture, event handling, and DOM manipulation skills. Players can enjoy pass-and-play 1v1 matches with a clean, intuitive interface. The application demonstrates the ability to build complete game logic from scratch while maintaining code readability and user experience quality.',
   learningGoals: ['1. Learn the fundementals of vanilla Javascript. ', '2. Incorporate local storage to have win count persist upon refresh.'], 
   pictures: [
   ttt1, ttt2, ttt3],
@@ -148,7 +148,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   applicationType: 'Frontend',
   collaborators: ['None'],
   technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
-  description: 'Gain inspiration for mantras and affirmations you can incorporate into your daily life.',
+  description: 'Self Care Center is a wellness application designed to provide users with daily inspiration through mantras and affirmations. This vanilla JavaScript project demonstrates fundamental web development skills including HTML5, CSS3, and JavaScript event handling. The application features a clean, calming interface that randomly generates motivational content to help users maintain positive mental health practices. Key features include dynamic content generation, smooth user interactions, and responsive design. This project showcases the ability to create meaningful applications that serve real user needs while demonstrating solid programming fundamentals.',
   learningGoals: ['1. Gain experience with Javascript, HTML, and CSS.', '2. Understand the purpose of event listeners.'], 
   pictures: [
   scc1, scc2, scc3],

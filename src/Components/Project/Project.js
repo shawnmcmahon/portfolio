@@ -36,44 +36,51 @@ const Project = ({project, pageMode, pageDesign}) => {
         </div>
         <p className="label">Date Completed</p>
             <p className="value">{project.dateCompleted}</p>
-          <p className="label">Project Scope Time</p>
-            <p className="value">{project.time}</p>
           <p className="label">Application Type</p>
             <p className="value">{project.applicationType}</p>
-          <p className="label">Technologies Used</p>
-            <ul className="tech-stack-list">
-              <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[0]}</li>
-              <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[1]}</li>
-              <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[2]}</li>
-              <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[3]}</li>
-              <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[4]}</li>
-            </ul>
           <p className="label">Description</p>
             <p className="value">{project.description}</p>
-          <ul className="label">Learning Goals
-            <li className="value"> 
-              {project.learningGoals[0]}
-            </li>
-            <li className="value"> 
-            {project.learningGoals[1]}
-            </li>
-          </ul>
-          <p className="label">Collaborators</p>
-            <p className="value">{project.collaborators}</p>
       </div>
       <div className="project-images-container"> 
         <div className="photo-display"> 
           <img src={photoPreview} alt="project preview" className="preview-photo" />
         </div>
-            <div className="project-thumbnail-container">
-                <img src={project.pictures[0]} alt="project thumbnail one" className="thumbnail" id={project.pictures[0]}  onClick={changePhoto} />
-            </div> 
-            <div className="project-thumbnail-container">
-                <img src={project.pictures[1]} alt="project thumbnail two" className="thumbnail" id={project.pictures[1]}  onClick={changePhoto}  />
-            </div> 
-            <div className="project-thumbnail-container">
-                <img src={project.pictures[2]}  className="thumbnail" alt="project thumbnail three" id={project.pictures[2]}  onClick={changePhoto}  />
-            </div>
+        <div className="thumbnail-gallery">
+          <p className="thumbnail-label">Click thumbnails to view different screenshots:</p>
+          <div className="thumbnail-container">
+            <img 
+              src={project.pictures[0]} 
+              alt="project thumbnail one" 
+              className={`thumbnail ${photoPreview === project.pictures[0] ? 'thumbnail-active' : ''}`} 
+              id={project.pictures[0]}  
+              onClick={changePhoto} 
+            />
+            <img 
+              src={project.pictures[1]} 
+              alt="project thumbnail two" 
+              className={`thumbnail ${photoPreview === project.pictures[1] ? 'thumbnail-active' : ''}`} 
+              id={project.pictures[1]}  
+              onClick={changePhoto}  
+            />
+            <img 
+              src={project.pictures[2]}  
+              className={`thumbnail ${photoPreview === project.pictures[2] ? 'thumbnail-active' : ''}`} 
+              alt="project thumbnail three" 
+              id={project.pictures[2]}  
+              onClick={changePhoto}  
+            />
+          </div>
+        </div>
+        <div className="tech-section">
+          <p className="label">Technologies Used</p>
+          <ul className="tech-stack-list">
+            <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[0]}</li>
+            <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[1]}</li>
+            <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[2]}</li>
+            <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[3]}</li>
+            <li className={pageMode === "Light Mode" ? " light-mode-button tech " : "dark-mode-button tech"}>{project.technologiesUsed[4]}</li>
+          </ul>
+        </div>
       </div>
     </article>
   );
