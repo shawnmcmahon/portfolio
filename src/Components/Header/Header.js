@@ -1,6 +1,4 @@
 import '../../styles/desktop/Header.scss';
-import '../../styles/tablet/Header-tablet.scss';
-import '../../styles/phone/Header-phone.scss';
 import { useState } from 'react';
 import { HashLink as ScrollLink } from 'react-router-hash-link';
 import sm_logo from '../../Assets/sm_logo.png';
@@ -38,30 +36,32 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
             <img src={sm_logo} alt="home button" className="home-button" />
           </ScrollLink>
         </div>
-        
+
         {/* Mobile Toggle Switch - Shows on small screens */}
         {window.innerWidth <= 650 && 
-          <label className="switch-wrap switch-html">
-            <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
-            <div className="switch"></div>
-          </label>
+          <div className="mobile-switch-container">
+            <label className="switch-wrap switch-html">
+              <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
+              <div className="switch"></div>
+            </label>
+          </div>
         }
 
         {/* Hamburger Menu Button - Shows on mobile/tablet */}
         {window.innerWidth <= 768 && 
           <button 
-            className="hamburger" 
+            className={`hamburger${mobileMenuOpen ? ' hamburger-active' : ''}`} 
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
             aria-expanded={mobileMenuOpen}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
           </button>
         }
         
-        <div className="button-container">
+        <div className={`button-container${window.innerWidth > 768 ? ' desktop-nav' : ''}`}>
           {/* Desktop Toggle Switch */}
           {window.innerWidth > 650 && 
             <label className="switch-wrap switch-html">

@@ -1,34 +1,50 @@
 @import '../variables';
 
-
+/* Portfolio Container - Mobile First */
 .projects-outter {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  font-size: clamp(1.2rem, 4vw, 1.875rem);
   background-color: $magnolia;
+  overflow-x: hidden;
 }
 
 .portfolio-title {
-  margin: 150px 0 50px 0;
+  @include responsive-spacing(margin, 3rem 0 2rem 0, 5rem 0 3rem 0, 8rem 0 4rem 0);
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  line-height: 1.2;
 }
 
-
 .portfolio-container {
-  /* border: 2px red solid; */
-  width: 90%; 
+  width: 100%;
+  max-width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+  @include tablet-up {
+    max-width: 85%;
+  }
+  
+  @include desktop-up {
+    max-width: 80%;
+  }
+  
+  @include large-desktop-up {
+    max-width: 1200px;
+  }
 }
 
-
-// Light and Dark mode styles 
+/* Theme Classes - Light and Dark mode styles */
 .light-background {
   background-color: $magnolia;
-  color: $black
+  color: $black;
 }
 
 .dark-background {
@@ -39,11 +55,25 @@
 .light-mode-button {
   background-color: $black;
   color: $white;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $seaGreen;
+    color: $black;
+    transform: translateY(-2px);
+  }
 }
 
 .dark-mode-button {
   background-color: $magnolia;
   color: $black;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $seaGreen;
+    color: $white;
+    transform: translateY(-2px);
+  }
 }
 
 .accent-text-light {
@@ -54,9 +84,29 @@
   color: $seaGreen;
 }
 
-
-@media screen and (min-width: 1500px) {
+/* Large Desktop Optimizations */
+@include large-desktop-up {
   .portfolio-container {
-    height: auto;
+    max-width: 1200px;
+  }
+}
+
+/* Ultra-wide Desktop Optimizations */
+@media screen and (min-width: 1600px) {
+  .portfolio-container {
+    max-width: 1400px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .projects-outter {
+    background-color: white;
+    color: black;
+  }
+  
+  .portfolio-title {
+    margin: 1rem 0;
+    font-size: 1.5rem;
   }
 }

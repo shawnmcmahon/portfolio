@@ -1,5 +1,4 @@
 import '../../styles/desktop/Portfolio.scss';
-import '../../styles/phone/Portfolio-phone.scss'
 
 import Project from '../Project/Project';
 import { useState } from 'react';
