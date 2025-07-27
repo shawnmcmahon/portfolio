@@ -4,9 +4,9 @@ import { HashLink as ScrollLink } from 'react-router-hash-link';
 import sm_logo from '../../Assets/sm_logo.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
-
 const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
   const [navBar, setNavBar] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const changeBackground = () => {
     if (pageDesign === 'Flat' && window.scrollY >= 50) {
@@ -20,8 +20,13 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
       window.addEventListener('scroll', changeBackground)
     }
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
-  
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className={findStyleAndDesign(pageMode, pageDesign, 'header')} tabIndex="-1">
@@ -31,41 +36,58 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
             <img src={sm_logo} alt="home button" className="home-button" />
           </ScrollLink>
         </div>
-        {window.innerWidth <= 650 && 
-            <label className="switch-wrap switch-html">
-              <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
-              <div className="switch"></div>
-            </label>
-          }
-        <div className="button-container">
-          {window.innerWidth > 650 && 
-            <label className="switch-wrap switch-html">
-              <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
-              <div className="switch"></div>
-            </label>
-          }
-          {/* <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button> */}
-          {/* <button class="hamburger" id="hamburger"> 
-            <i class="fas fa-bars"></i>
-          </button>
-            <ul class="nav-ul" id="nav-ul">
-              <ScrollLink smooth to="/#about" ><li>About</li></ScrollLink> 
-              <ScrollLink to="/portfolio/#projects" ><li>Portfolio</li></ScrollLink>
-              <ScrollLink to="/contact/#contact"><li>Contact </li></ScrollLink>
-            </ul> */}
-          {/* {window.innerWidth <= 650 && 
-            <img src={menu} className="menu-button"/>
-          }
-          {window.innerWidth > 650 && */}
-            <> 
-              <ScrollLink smooth to="/#about" >
-              <button className="nav-button text-xl">About</button></ScrollLink>
-              <ScrollLink to="/portfolio/#projects" > 
-              <button className="nav-button">Portfolio</button></ScrollLink>
-              <ScrollLink to="/contact/#contact">
-              <button className="nav-button">Contact</button></ScrollLink>
-            </> 
-          {/* } */}
+
+        {/* Mobile Toggle Switch - Always visible on mobile */}
+        <div className="mobile-switch-container">
+          <label className="switch-wrap switch-html">
+            <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
+            <div className="switch"></div>
+          </label>
+        </div>
+
+        {/* Hamburger Menu Button - Tablet and Mobile */}
+        <button 
+          className={`hamburger ${mobileMenuOpen ? 'hamburger-active' : ''}`}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+          aria-expanded={mobileMenuOpen}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+
+        {/* Desktop Navigation */}
+        <div className="button-container desktop-nav">
+          <label className="switch-wrap switch-html">
+            <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
+            <div className="switch"></div>
+          </label>
+          
+          <ScrollLink smooth to="/#about">
+            <button className="nav-button">About</button>
+          </ScrollLink>
+          <ScrollLink to="/portfolio/#projects">
+            <button className="nav-button">Portfolio</button>
+          </ScrollLink>
+          <ScrollLink to="/contact/#contact">
+            <button className="nav-button">Contact</button>
+          </ScrollLink>
+        </div>
+
+        {/* Mobile Menu Overlay */}
+        <div className={`mobile-menu-overlay ${mobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+          <nav className="mobile-nav">
+            <ScrollLink smooth to="/#about" onClick={closeMobileMenu}>
+              <button className="mobile-nav-button">About</button>
+            </ScrollLink>
+            <ScrollLink to="/portfolio/#projects" onClick={closeMobileMenu}>
+              <button className="mobile-nav-button">Portfolio</button>
+            </ScrollLink>
+            <ScrollLink to="/contact/#contact" onClick={closeMobileMenu}>
+              <button className="mobile-nav-button">Contact</button>
+            </ScrollLink>
+          </nav>
         </div>
       </nav>
     </header>
