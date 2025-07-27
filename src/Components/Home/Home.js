@@ -30,7 +30,7 @@ const Home = ({ pageMode, pageDesign }) => {
           <div className="name-container"> 
             <h1 className={findStyleAndDesign(pageMode, pageDesign, "name")}>Shawn McMahon</h1>
             <h3 className={pageMode === "Light Mode" ? " accent-text-light tagline " : "accent-text-dark tagline"}>Sofware Engineer</h3>
-            <a href="https://docs.google.com/document/d/11ite_mAdxjYxbDNQXdxBqxpPtHTy-JRf/edit?usp=sharing&ouid=117421148088217152052&rtpof=true&sd=true"> 
+            <a href="/ShawnMcMahon_SoftwareEngineer.pdf" download="ShawnMcMahon_SoftwareEngineer.pdf"> 
               <button className={findStyleAndDesign(pageMode, pageDesign, "resume-button")}>Download Resume</button>
             </a>
           </div>
