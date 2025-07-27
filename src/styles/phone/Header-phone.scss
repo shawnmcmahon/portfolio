@@ -1,16 +1,11 @@
 @import '../variables';
 
-
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
     justify-content: space-between;
     scroll-padding-top: 100px;
   }
-
-  
-
-  
 
   a {
     height: 35px;
@@ -22,6 +17,32 @@
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 2px 0;
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    &:focus {
+      outline: 2px solid $seaGreen;
+      outline-offset: 2px;
+    }
   }
   
   .nav-ul {
@@ -38,7 +59,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 15px 25px 0;
   }
   
   .nav-button {
@@ -49,6 +69,7 @@
     align-items: center;
     display: flex;
   }
+  
   .nav-button:hover {
     background-color: #29f3c3;
     color: $black;
@@ -71,13 +92,109 @@
     justify-content: center;
     align-items: center;
   }
-  
 
+  /* Mobile Menu Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($black, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
 
+  /* X Close Button - Top Right */
+  .mobile-menu-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    &:hover {
+      background-color: $seaGreen;
+      color: $black;
+      transform: rotate(90deg) scale(1.1);
+    }
+    
+    &:focus {
+      outline: 2px solid $seaGreen;
+      outline-offset: 2px;
+    }
+  }
 
+  /* Mobile Navigation */
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
 
+  /* Mobile Navigation Buttons */
+  .mobile-nav-button {
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Prompt', sans-serif;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    min-width: 200px;
+    
+    &:hover {
+      background-color: $seaGreen;
+      color: $black;
+      border-color: $seaGreen;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba($seaGreen, 0.3);
+    }
+    
+    &:focus {
+      outline: 2px solid $seaGreen;
+      outline-offset: 2px;
+    }
+  }
 
-
-
-
+  /* Fade-in animation for mobile menu */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

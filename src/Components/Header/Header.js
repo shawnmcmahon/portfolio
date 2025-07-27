@@ -6,9 +6,9 @@ import { HashLink as ScrollLink } from 'react-router-hash-link';
 import sm_logo from '../../Assets/sm_logo.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
-
 const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, toggleTheme}) => {
   const [navBar, setNavBar] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const changeBackground = () => {
     if (pageDesign === 'Flat' && window.scrollY >= 50) {
@@ -22,8 +22,13 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
       window.addEventListener('scroll', changeBackground)
     }
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
-  
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className={findStyleAndDesign(pageMode, pageDesign, 'header')} tabIndex="-1">
@@ -33,43 +38,81 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
             <img src={sm_logo} alt="home button" className="home-button" />
           </ScrollLink>
         </div>
+        
+        {/* Mobile Toggle Switch - Shows on small screens */}
         {window.innerWidth <= 650 && 
-            <label className="switch-wrap switch-html">
-              <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
-              <div className="switch"></div>
-            </label>
-          }
+          <label className="switch-wrap switch-html">
+            <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
+            <div className="switch"></div>
+          </label>
+        }
+
+        {/* Hamburger Menu Button - Shows on mobile/tablet */}
+        {window.innerWidth <= 768 && 
+          <button 
+            className="hamburger" 
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        }
+        
         <div className="button-container">
+          {/* Desktop Toggle Switch */}
           {window.innerWidth > 650 && 
             <label className="switch-wrap switch-html">
               <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
               <div className="switch"></div>
             </label>
           }
-          {/* <button className="brush" onClick={handleDesignSwitch}><img src={brush} onClick={handleDesignSwitch}/></button> */}
-          {/* <button class="hamburger" id="hamburger"> 
-            <i class="fas fa-bars"></i>
-          </button>
-            <ul class="nav-ul" id="nav-ul">
-              <ScrollLink smooth to="/#about" ><li>About</li></ScrollLink> 
-              <ScrollLink to="/portfolio/#projects" ><li>Portfolio</li></ScrollLink>
-              <ScrollLink to="/contact/#contact"><li>Contact </li></ScrollLink>
-            </ul> */}
-          {/* {window.innerWidth <= 650 && 
-            <img src={menu} className="menu-button"/>
-          }
-          {window.innerWidth > 650 && */}
+          
+          {/* Desktop Navigation - Hidden on mobile/tablet */}
+          {window.innerWidth > 768 && 
             <> 
-              <ScrollLink smooth to="/#about" >
-              <button className="nav-button text-xl">About</button></ScrollLink>
-              <ScrollLink to="/portfolio/#projects" > 
-              <button className="nav-button">Portfolio</button></ScrollLink>
+              <ScrollLink smooth to="/#about">
+                <button className="nav-button">About</button>
+              </ScrollLink>
+              <ScrollLink to="/portfolio/#projects"> 
+                <button className="nav-button">Portfolio</button>
+              </ScrollLink>
               <ScrollLink to="/contact/#contact">
-              <button className="nav-button">Contact</button></ScrollLink>
+                <button className="nav-button">Contact</button>
+              </ScrollLink>
             </> 
-          {/* } */}
+          }
         </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div className="mobile-menu-overlay">
+          {/* X Close Button - Top Right */}
+          <button 
+            className="mobile-menu-close" 
+            onClick={closeMobileMenu}
+            aria-label="Close mobile menu"
+          >
+            ×
+          </button>
+          
+          {/* Mobile Navigation */}
+          <nav className="mobile-nav">
+            <ScrollLink smooth to="/#about" onClick={closeMobileMenu}>
+              <button className="mobile-nav-button">About</button>
+            </ScrollLink>
+            <ScrollLink to="/portfolio/#projects" onClick={closeMobileMenu}>
+              <button className="mobile-nav-button">Portfolio</button>
+            </ScrollLink>
+            <ScrollLink to="/contact/#contact" onClick={closeMobileMenu}>
+              <button className="mobile-nav-button">Contact</button>
+            </ScrollLink>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
