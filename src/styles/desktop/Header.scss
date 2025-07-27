@@ -146,7 +146,7 @@ a, a:hover, a:focus, a:active {
   display: none;
   margin: 0 !important;
   
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -167,7 +167,7 @@ a, a:hover, a:focus, a:active {
   padding: 0;
   transition: all 0.3s ease;
   
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     display: flex;
   }
   
@@ -217,7 +217,7 @@ a, a:hover, a:focus, a:active {
   margin: 0 !important;
   padding: 0;
   
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
     display: none;
   }
   

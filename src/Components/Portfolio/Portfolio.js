@@ -34,6 +34,7 @@ import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
 const Portfolio = ({ pageMode, pageDesign }) => {
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const [portfolio] = useState([
     {
         number: 1, 
@@ -157,25 +158,40 @@ const Portfolio = ({ pageMode, pageDesign }) => {
 }
 ])
 
+  const handleProjectNavigation = (index) => {
+    setCurrentProjectIndex(index);
+  };
 
-  const projectPreviews = portfolio.map((currentProject, index) => {
-    return (
-      <Project 
-        project={currentProject}
-        key={index}
-        pageMode={pageMode}
-        pageDesign={pageDesign}
-      />
-    )
-  })
+  const currentProject = portfolio[currentProjectIndex];
 
   return (
     <section className={findStyleAndDesign(pageMode, pageDesign, "projects-outter")} id="projects">
         <h2 className="portfolio-title">PROJECTS</h2>
-        {/* <p className={pageMode === "Light Mode" ? " accent-text-light warning " : "accent-text-dark warning"}>(Please be patient while Heroku launches the application)</p> */}
-          <div className='portfolio-container'> 
-            {!!portfolio && projectPreviews}
-          </div>
+        
+        {/* Project Navigation */}
+        <div className="project-navigation">
+          {portfolio.map((project, index) => (
+            <button
+              key={index}
+              onClick={() => handleProjectNavigation(index)}
+              className={`project-nav-button ${currentProjectIndex === index ? 'active' : ''} ${pageMode === "Light Mode" ? "light-mode-button" : "dark-mode-button"}`}
+            >
+              {project.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Current Project Display */}
+        <div className='portfolio-container'> 
+          {currentProject && (
+            <Project 
+              project={currentProject}
+              key={currentProjectIndex}
+              pageMode={pageMode}
+              pageDesign={pageDesign}
+            />
+          )}
+        </div>
     </section>
   );
 }

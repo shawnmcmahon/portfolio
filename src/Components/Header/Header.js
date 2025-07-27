@@ -38,52 +38,42 @@ const Header = ({ pageMode, pageDesign, handleModeSwitch, handleDesignSwitch, to
         </div>
 
         {/* Mobile Toggle Switch - Shows on small screens */}
-        {window.innerWidth <= 650 && 
-          <div className="mobile-switch-container">
-            <label className="switch-wrap switch-html">
-              <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
-              <div className="switch"></div>
-            </label>
-          </div>
-        }
+        <div className="mobile-switch-container">
+          <label className="switch-wrap switch-html">
+            <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
+            <div className="switch"></div>
+          </label>
+        </div>
 
         {/* Hamburger Menu Button - Shows on mobile/tablet */}
-        {window.innerWidth <= 768 && 
-          <button 
-            className={`hamburger${mobileMenuOpen ? ' hamburger-active' : ''}`} 
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-            aria-expanded={mobileMenuOpen}
-          >
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-            <span className="hamburger-line"></span>
-          </button>
-        }
+        <button 
+          className={`hamburger${mobileMenuOpen ? ' hamburger-active' : ''}`} 
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+          aria-expanded={mobileMenuOpen}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
         
-        <div className={`button-container${window.innerWidth > 768 ? ' desktop-nav' : ''}`}>
+        <div className="button-container desktop-nav">
           {/* Desktop Toggle Switch */}
-          {window.innerWidth > 650 && 
-            <label className="switch-wrap switch-html">
-              <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
-              <div className="switch"></div>
-            </label>
-          }
+          <label className="switch-wrap switch-html">
+            <input type="checkbox" value={pageMode} onChange={toggleTheme} checked={pageMode === "Dark Mode" ? true : false}/>
+            <div className="switch"></div>
+          </label>
           
           {/* Desktop Navigation - Hidden on mobile/tablet */}
-          {window.innerWidth > 768 && 
-            <> 
-              <ScrollLink smooth to="/#about">
-                <button className="nav-button">About</button>
-              </ScrollLink>
-              <ScrollLink to="/portfolio/#projects"> 
-                <button className="nav-button">Portfolio</button>
-              </ScrollLink>
-              <ScrollLink to="/contact/#contact">
-                <button className="nav-button">Contact</button>
-              </ScrollLink>
-            </> 
-          }
+          <ScrollLink smooth to="/#about">
+            <button className="nav-button">About</button>
+          </ScrollLink>
+          <ScrollLink to="/portfolio/#projects"> 
+            <button className="nav-button">Portfolio</button>
+          </ScrollLink>
+          <ScrollLink to="/contact/#contact">
+            <button className="nav-button">Contact</button>
+          </ScrollLink>
         </div>
       </nav>
 
