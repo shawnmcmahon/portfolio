@@ -68,6 +68,15 @@ const Home = ({ pageMode, pageDesign }) => {
       </div>
       <div className="image-container">
         <img src={city} className="image" alt="New York City street at sunset"/>
+        <a 
+          href="https://unsplash.com/photos/low-light-photography-of-vehicle-crossing-road-between-high-rise-buildings-enGr5YbjQKQ" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="credit-link"
+          aria-label="View photo on Unsplash"
+        >
+          <span className="credit-text">Photo by Malte Schmidt on Unsplash</span>
+        </a>
       </div>
     </section>
   );

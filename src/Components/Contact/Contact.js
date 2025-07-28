@@ -32,8 +32,17 @@ const Contact = ({pageMode, pageDesign}) => {
           </ul>
         </div>
       </section>
-      <div className={findStyleAndDesign(pageMode, pageDesign, "contact-image-container")}>
-        <img src={valley} alt="valley landscape of South Africa" className={findStyleAndDesign(pageMode, pageDesign, "contact-image")} />
+      <div className="image-container">
+        <img src={valley} className="image" alt="Mountain valley landscape"/>
+          <a 
+          href="https://www.istockphoto.com/photo/blyde-river-canyon-gm178925984-26592892" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="credit-link"
+          aria-label="View photo on istockphoto"
+        >
+          <span className="credit-text">Photo by demerzel21 on istockphoto</span>
+        </a>
       </div>
     </div>
   );
