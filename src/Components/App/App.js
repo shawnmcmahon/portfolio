@@ -5,7 +5,7 @@ import Error from '../Error/Error';
 import Footer from '../Footer/Footer';
 import React, { useState } from 'react';
 import Contact from '../Contact/Contact';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import findStyleAndDesign from '../../findStyleAndDesign';
 
 import '../../styles/desktop/App.scss';
@@ -60,44 +60,24 @@ const App = () => {
       <div className={findStyleAndDesign(pageMode, pageDesign, "app")}>
         <GlobalStyles />
         <Header pageMode={pageMode} pageDesign={pageDesign} handleDesignSwitch={handleDesignSwitch} toggleTheme={toggleTheme} /> 
-        <Switch> 
+        <Routes> 
           <Route
-            exact
             path='/'
-            render={() => {
-              return (
-                <Home pageMode={pageMode} pageDesign={pageDesign} />
-                )
-              }}
-              />
+            element={<Home pageMode={pageMode} pageDesign={pageDesign} />}
+          />
           <Route
-            exact
             path='/portfolio/'
-            render={() => {
-              return (
-                <Portfolio pageMode={pageMode} pageDesign={pageDesign}/>
-                )
-              }}
-              />
+            element={<Portfolio pageMode={pageMode} pageDesign={pageDesign}/>}
+          />
           <Route
-            exact
             path='/contact/'
-            render={() => {
-              return (
-                <Contact pageMode={pageMode} pageDesign={pageDesign}/>
-                )
-              }}
-              />
+            element={<Contact pageMode={pageMode} pageDesign={pageDesign}/>}
+          />
           <Route
-            exact
             path='*'
-            render={() => {
-              return (
-                <Error pageMode={pageMode} pageDesign={pageDesign}/>
-                )
-              }}
-              />
-          </Switch>
+            element={<Error pageMode={pageMode} pageDesign={pageDesign}/>}
+          />
+        </Routes>
           <Footer />
       </div>
     </ThemeProvider>
