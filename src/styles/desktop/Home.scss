@@ -250,6 +250,7 @@ a, a:hover, a:focus, a:active {
   @include responsive-spacing(width, 160px, 180px, 200px);
   @include responsive-spacing(height, 40px, 45px, 50px);
   border: none;
+  border-radius: clamp(4px, 1vw, 8px);
   text-decoration: none;
   transition: all 0.3s ease;
   
