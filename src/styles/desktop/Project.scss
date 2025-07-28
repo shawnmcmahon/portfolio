@@ -120,6 +120,9 @@
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   transition: all 0.3s ease;
   white-space: nowrap;
+  border-radius: clamp(4px, 1vw, 8px);
+  background-color: $white;
+  color: $black;
   
   @include responsive-spacing(width, 130px, 140px, 150px);
   @include responsive-spacing(height, 40px, 45px, 50px);
@@ -129,6 +132,15 @@
     color: $black;
     cursor: pointer;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($seaGreen, 0.3);
+  }
+}
+
+/* Dark mode overrides */
+.dark-background {
+  .project-button {
+    background-color: $white;
+    color: $black;
   }
 }
 
