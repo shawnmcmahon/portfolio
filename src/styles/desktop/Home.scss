@@ -1,4 +1,4 @@
-@import '../variables';
+@use '../variables' as *;
 
 /* Global link styles */
 a, a:hover, a:focus, a:active {

@@ -1,4 +1,4 @@
-@import '../variables';
+@use '../variables' as *;
 
 /* Global link styles for header */
 a, a:hover, a:focus, a:active {
@@ -368,7 +368,7 @@ a, a:hover, a:focus, a:active {
   padding: $padding;
   width: $width;
   height: $height;
-  border-radius: $height / 2;
+  border-radius: calc($height / 2);
   
   input {
     position: absolute;
