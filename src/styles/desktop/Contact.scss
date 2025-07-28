@@ -55,6 +55,7 @@
   line-height: 1.2;
   width: 100%;
   @include responsive-spacing(margin-top, 1rem, 2rem, 3rem);
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -63,6 +64,11 @@
     width: 50%;
     text-align: left;
     justify-content: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 2rem;
   }
 }
 
@@ -89,6 +95,53 @@
   @include desktop-up {
     padding-left: 3rem;
   }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    
+    @include tablet-up {
+      margin-bottom: 2rem;
+    }
+    
+    @include desktop-up {
+      margin-bottom: 2.5rem;
+    }
+    
+    li {
+      padding: 0.5rem 0;
+      margin-bottom: 0.5rem;
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+      line-height: 1.4;
+      
+      @include tablet-up {
+        padding: 0.75rem 0;
+        margin-bottom: 0.75rem;
+      }
+      
+      @include desktop-up {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    a {
+      display: block;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
 }
 
 /* Contact Labels and Content */
@@ -98,9 +151,17 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
   
   @include tablet-up {
     align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -109,12 +170,28 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: inherit;
+  
+  @include tablet-up {
+    margin-bottom: 0.75rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 1rem;
+  }
 }
 
 .contact-value {
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   line-height: 1.4;
   margin-bottom: 1rem;
+  
+  @include tablet-up {
+    margin-bottom: 1.5rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Contact Links */
@@ -140,6 +217,13 @@
   
   @include tablet-up {
     justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  @include desktop-up {
+    gap: 2rem;
+    margin-top: 2rem;
   }
 }
 
@@ -158,6 +242,14 @@
 .phone-container,
 .location-container {
   margin-bottom: 1.5rem;
+  
+  @include tablet-up {
+    margin-bottom: 2rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .email-text,
@@ -166,6 +258,15 @@
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   line-height: 1.4;
   word-break: break-word;
+  margin-bottom: 0.5rem;
+  
+  @include tablet-up {
+    margin-bottom: 0.75rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Contact Lists */
@@ -173,24 +274,66 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 1.5rem;
+  
+  @include tablet-up {
+    margin-bottom: 2rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 2.5rem;
+  }
   
   li {
     list-style-position: inside;
     margin: 0;
-    @include responsive-spacing(padding, 0.5rem 0, 0.75rem 0, 1rem 0);
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    line-height: 1.4;
+    
+    @include tablet-up {
+      padding: 0.75rem 0;
+      margin-bottom: 0.75rem;
+    }
+    
+    @include desktop-up {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
   }
 }
 
 .contact-list-style {
   list-style: disc;
   padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  
+  @include tablet-up {
+    margin-bottom: 2rem;
+  }
+  
+  @include desktop-up {
+    margin-bottom: 2.5rem;
+  }
   
   li {
     list-style-position: inside;
     margin: 0;
-    @include responsive-spacing(padding, 0.5rem 0, 0.75rem 0, 1rem 0);
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    line-height: 1.4;
+    
+    @include tablet-up {
+      padding: 0.75rem 0;
+      margin-bottom: 0.75rem;
+    }
+    
+    @include desktop-up {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
   }
 }
 

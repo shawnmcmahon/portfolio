@@ -46,7 +46,7 @@ const Home = ({ pageMode, pageDesign }) => {
 
             <p className="bio-text">Throughout my career, I've demonstrated a unique ability to bridge technical complexity with user-centric design, ensuring that every solution not only meets functional requirements but also exceeds user expectations. My experience in client-facing roles has honed my ability to translate business needs into elegant technical solutions, while my leadership background enables me to mentor junior developers and contribute to team growth.</p>
                 
-            <p className="font-bold underline text-xl">Let's build something beautiful together. </p>
+            <p className="bio-text bio-cta">Let's build something beautiful together. </p>
           </div> 
         </section>
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container-concave")}> 
