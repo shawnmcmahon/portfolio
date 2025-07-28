@@ -89,4 +89,4 @@ $lightGrey: #7A7C80;
 // Switch 
 $width: 60px;
 $padding: 7px;
-$height: $width / 2 + $padding;
+$height: calc($width / 2) + $padding;
