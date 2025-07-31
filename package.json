@@ -16,6 +16,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.3",
     "sass": "^1.89.2",
+    "sharp": "^0.34.3",
     "styled-components": "^6.1.19",
     "web-vitals": "^1.1.2"
   },
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "optimize-images": "node scripts/simple-optimize.js"
   },
   "eslintConfig": {
     "extends": [

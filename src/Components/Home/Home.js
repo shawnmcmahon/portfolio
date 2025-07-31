@@ -14,7 +14,10 @@ import csharpIcon from '../../Assets/icons/csharp-original.svg';
 import mssqlIcon from '../../Assets/icons/microsoftsqlserver-plain-wordmark.svg';
 import '../../styles/desktop/Home.scss';
 import '../../styles/desktop/App.scss';
+import '../../styles/desktop/ImageOptimizer.scss';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
+import ImageOptimizer from '../ImageOptimizer';
+import ImagePreloader from '../ImagePreloader';
 
 
 const Home = ({ pageMode, pageDesign }) => {
@@ -23,10 +26,12 @@ const Home = ({ pageMode, pageDesign }) => {
   //   window.open('https://drive.google.com/file/d/1VfROQKUVu3f8b2sRP3eUIkWAxM9QQEMc/view?usp=sharing','_newtab' )
   // }
 
-  
+  // Preload critical images
+  const criticalImages = [city];
 
   return (
     <section className="home-container" id="home">
+      <ImagePreloader images={criticalImages} />
       <div className={findStyleAndDesign(pageMode, pageDesign, "introduction-container")}>
         <section className={findStyleAndDesign(pageMode, pageDesign, "section-container")}> 
           <div className="name-container"> 
@@ -78,7 +83,12 @@ const Home = ({ pageMode, pageDesign }) => {
         </section>
       </div>
       <div className="image-container">
-        <img src={city} className="image" alt="New York City street at sunset"/>
+        <ImageOptimizer 
+          src={city} 
+          className="image" 
+          alt="New York City street at sunset"
+          priority={true}
+        />
         <a 
           href="https://unsplash.com/photos/low-light-photography-of-vehicle-crossing-road-between-high-rise-buildings-enGr5YbjQKQ" 
           target="_blank" 

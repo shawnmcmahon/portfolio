@@ -1,7 +1,9 @@
 import '../../styles/desktop/Portfolio.scss';
+import '../../styles/desktop/ImageOptimizer.scss';
 
 import Project from '../Project/Project';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import ImagePreloader from '../ImagePreloader';
 import bj1 from '../../Assets/better-jeopardy/bj1.png';
 import bj2 from '../../Assets/better-jeopardy/bj2.png';
 import bj3 from '../../Assets/better-jeopardy/bj3.png';
@@ -164,8 +166,12 @@ const Portfolio = ({ pageMode, pageDesign }) => {
 
   const currentProject = portfolio[currentProjectIndex];
 
+  // Collect all project images for preloading
+  const allProjectImages = portfolio.flatMap(project => project.pictures);
+
   return (
     <section className={findStyleAndDesign(pageMode, pageDesign, "projects-outter")} id="projects">
+      <ImagePreloader images={allProjectImages} />
         <h2 className="portfolio-title">PROJECTS</h2>
         
         {/* Project Navigation */}

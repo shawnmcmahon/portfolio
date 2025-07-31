@@ -1,7 +1,9 @@
 import '../../styles/desktop/Project.scss';
+import '../../styles/desktop/ImageOptimizer.scss';
 
 import { useState } from 'react';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
+import ImageOptimizer from '../ImageOptimizer';
 
 
 const Project = ({project, pageMode, pageDesign}) => {
@@ -43,26 +45,31 @@ const Project = ({project, pageMode, pageDesign}) => {
       </div>
       <div className="project-images-container"> 
         <div className="photo-display"> 
-          <img src={photoPreview} alt="project preview" className="preview-photo" />
+          <ImageOptimizer 
+            src={photoPreview} 
+            alt="project preview" 
+            className="preview-photo"
+            priority={true}
+          />
         </div>
         <div className="thumbnail-gallery">
           <p className="thumbnail-label">Click thumbnails to view different screenshots:</p>
           <div className="thumbnail-container">
-            <img 
+            <ImageOptimizer 
               src={project.pictures[0]} 
               alt="project thumbnail one" 
               className={`thumbnail ${photoPreview === project.pictures[0] ? 'thumbnail-active' : ''}`} 
               id={project.pictures[0]}  
               onClick={changePhoto} 
             />
-            <img 
+            <ImageOptimizer 
               src={project.pictures[1]} 
               alt="project thumbnail two" 
               className={`thumbnail ${photoPreview === project.pictures[1] ? 'thumbnail-active' : ''}`} 
               id={project.pictures[1]}  
               onClick={changePhoto}  
             />
-            <img 
+            <ImageOptimizer 
               src={project.pictures[2]}  
               className={`thumbnail ${photoPreview === project.pictures[2] ? 'thumbnail-active' : ''}`} 
               alt="project thumbnail three" 
