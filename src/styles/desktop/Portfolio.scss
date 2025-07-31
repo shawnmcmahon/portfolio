@@ -100,7 +100,7 @@
   &.active {
     border-color: $seaGreen;
     background-color: $seaGreen !important;
-    color: $black !important;
+    color: $black-light !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba($seaGreen, 0.3);
   }
@@ -131,7 +131,7 @@
 /* Theme Classes - Light and Dark mode styles */
 .light-background {
   background-color: $magnolia;
-  color: $black;
+  color: $black-light;
 }
 
 .dark-background {
@@ -140,20 +140,20 @@
 }
 
 .light-mode-button {
-  background-color: $black;
+  background-color: $black-light;
   color: $white;
   transition: all 0.3s ease;
   
   &:hover {
     background-color: $seaGreen;
-    color: $black;
+    color: $black-light;
     transform: translateY(-2px);
   }
 }
 
 .dark-mode-button {
   background-color: $magnolia;
-  color: $black;
+  color: $black-light;
   transition: all 0.3s ease;
   
   &:hover {
@@ -164,7 +164,7 @@
 }
 
 .accent-text-light {
-  color: $black;
+  color: $black-light;
 }
 
 .accent-text-dark {

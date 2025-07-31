@@ -306,6 +306,7 @@ a, a:hover, a:focus, a:active {
   background-color: inherit;
   font-family: 'Prompt', sans-serif;
   border: none;
+  outline: none;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
   @include responsive-spacing(margin, 0.5rem, 1rem, 1.5rem);
   font-weight: 300;
@@ -319,11 +320,22 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
   transition: all 0.3s ease;
   white-space: nowrap;
+  border-radius: 0;
+  box-shadow: none;
   
   &:hover {
     background-color: $seaGreen;
-    color: $black;
+    color: $black-light;
     transform: translateY(-2px);
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 }
 
@@ -386,7 +398,7 @@ a, a:hover, a:focus, a:active {
   &:hover {
     background-color: $seaGreen;
     border-color: $seaGreen;
-    color: $black;
+    color: $black-light;
     transform: scale(1.1) rotate(90deg);
     box-shadow: 0 4px 12px rgba($seaGreen, 0.4);
   }
@@ -422,7 +434,7 @@ a, a:hover, a:focus, a:active {
   
   &:hover {
     background-color: $seaGreen;
-    color: $black;
+    color: $black-light;
     border-color: $seaGreen;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba($seaGreen, 0.3);

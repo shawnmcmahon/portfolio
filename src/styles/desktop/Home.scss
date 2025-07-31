@@ -92,6 +92,26 @@ a, a:hover, a:focus, a:active {
   }
 }
 
+.tech-icon-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  flex-shrink: 0;
+  
+  @include tablet-up {
+    margin: 0.75rem;
+  }
+  
+  @include desktop-up {
+    margin: 1rem;
+  }
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .icon-container {
   @include flex-middle(row);
   flex-wrap: wrap;
@@ -256,7 +276,7 @@ a, a:hover, a:focus, a:active {
   
   &:hover {
     background-color: $seaGreen;
-    color: $black;
+    color: $black-light;
     cursor: pointer;
     transform: translateY(-2px);
   }
@@ -265,7 +285,7 @@ a, a:hover, a:focus, a:active {
 .social-button {
   border: none;
   background: none;
-  background-color: $black;
+  background-color: $black-light;
   color: $white;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   @include responsive-spacing(margin, 0.75rem, 1rem, 1.25rem);
@@ -278,7 +298,7 @@ a, a:hover, a:focus, a:active {
   
   &:hover {
     background-color: $seaGreen;
-    color: $black;
+    color: $black-light;
     transform: translateY(-2px);
   }
 }
@@ -289,6 +309,20 @@ a, a:hover, a:focus, a:active {
   @include responsive-spacing(height, 300px, 400px, 500px);
   overflow: hidden;
   position: relative;
+  
+  /* Show credit on hover for desktop */
+  @media (min-width: 769px) {
+    &:hover .credit-link {
+      opacity: 1;
+    }
+  }
+  
+  /* Always show credit on mobile/tablet */
+  @media (max-width: 768px) {
+    .credit-link {
+      opacity: 1;
+    }
+  }
 }
 
 .credit-link {
@@ -337,7 +371,7 @@ a, a:hover, a:focus, a:active {
 /* Theme Classes - Light and Dark mode styles */
 .light-background {
   background-color: $magnolia;
-  color: $black;
+  color: $black-light;
 }
 
 .dark-background {
@@ -346,13 +380,13 @@ a, a:hover, a:focus, a:active {
 }
 
 .light-mode-button {
-  background-color: $black;
+  background-color: $black-light;
   color: $white;
 }
 
 .dark-mode-button {
   background-color: $magnolia;
-  color: $black;
+  color: $black-light;
 }
 
 .accent-text-light {
@@ -492,7 +526,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .light-flat-text {
-  color: $black;
+  color: $black-light;
 }
 
 .dark-flat-text {

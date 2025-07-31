@@ -23,6 +23,20 @@
   @include responsive-spacing(height, 300px, 400px, 500px);
   overflow: hidden;
   position: relative;
+  
+  /* Show credit on hover for desktop */
+  @media (min-width: 769px) {
+    &:hover .credit-link {
+      opacity: 1;
+    }
+  }
+  
+  /* Always show credit on mobile/tablet */
+  @media (max-width: 768px) {
+    .credit-link {
+      opacity: 1;
+    }
+  }
 }
 
 .credit-link {
