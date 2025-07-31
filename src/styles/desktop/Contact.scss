@@ -16,6 +16,14 @@
     min-height: 500px;
     gap: 3rem;
   }
+  
+  /* Ensure proper flex layout on very tall portrait screens (like 1080x1920) */
+  @media screen and (min-height: 1400px) and (max-width: 1200px) {
+    flex: 1;
+    min-height: calc(100vh - 300px); /* Subtract footer height */
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 }
 
 .image-container {
@@ -36,6 +44,13 @@
     .credit-link {
       opacity: 1;
     }
+  }
+  
+  /* Expand image to touch footer on very tall portrait screens (like 1080x1920) */
+  @media screen and (min-height: 1400px) and (max-width: 1200px) {
+    flex: 1;
+    height: auto;
+    min-height: 500px;
   }
 }
 
@@ -130,6 +145,13 @@
   
   @include desktop-up {
     margin-bottom: 2rem;
+  }
+  
+  /* Adjust spacing to match right side text on very tall portrait screens (like 1080x1920) */
+  @media screen and (min-height: 1400px) and (max-width: 1200px) {
+    padding-left: 2rem;
+    text-align: left;
+    justify-content: flex-start;
   }
 }
 
