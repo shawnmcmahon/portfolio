@@ -2,7 +2,7 @@ import '../../styles/desktop/Portfolio.scss';
 import '../../styles/desktop/ImageOptimizer.scss';
 
 import Project from '../Project/Project';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ImagePreloader from '../ImagePreloader';
 import bj1 from '../../Assets/better-jeopardy/bj1.png';
 import bj2 from '../../Assets/better-jeopardy/bj2.png';
