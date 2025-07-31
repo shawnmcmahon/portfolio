@@ -1,4 +1,4 @@
-import city from '../../Assets/city1.jpeg';
+import city from '../../Assets/city1.webp';
 import reactIcon from '../../Assets/icons/react-original-wordmark.svg';
 import javascriptIcon from '../../Assets/icons/javascript-original.svg';
 import html5Icon from '../../Assets/icons/html5-original-wordmark.svg';

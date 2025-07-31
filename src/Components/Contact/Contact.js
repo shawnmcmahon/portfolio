@@ -1,6 +1,8 @@
 import '../../styles/desktop/Contact.scss';
-import valley from '../../Assets/valley.jpeg';
+import '../../styles/desktop/ImageOptimizer.scss';
+import valley from '../../Assets/valley.webp';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
+import ImageOptimizer from '../ImageOptimizer';
 
 
 const Contact = ({pageMode, pageDesign}) => {
@@ -33,7 +35,12 @@ const Contact = ({pageMode, pageDesign}) => {
         </div>
       </section>
       <div className="image-container">
-        <img src={valley} className="image" alt="Mountain valley landscape"/>
+        <ImageOptimizer 
+          src={valley} 
+          className="image" 
+          alt="Mountain valley landscape"
+          priority={true}
+        />
           <a 
           href="https://www.istockphoto.com/photo/blyde-river-canyon-gm178925984-26592892" 
           target="_blank" 
