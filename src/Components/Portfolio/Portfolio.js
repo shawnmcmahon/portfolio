@@ -51,7 +51,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
         pictures: [
         bj1, bj2, bj3],
         githubRepo: 'https://github.com/shawnmcmahon/better-jeopardy',
-        deployedSite: 'https://better-jeopardy.herokuapp.com/'
+        deployedSite: 'https://better-jeopardy.netlify.app/'
     }, 
     {
       number: 2, 

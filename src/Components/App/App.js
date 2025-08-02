@@ -17,7 +17,7 @@ import { lightTheme, darkTheme } from '../theme';
 import { GlobalStyles } from '../global';
 
 const App = () => {
-  const [pageMode, setPageMode] = useState(localStorage.getItem('pageMode') || 'Dark Mode');
+  const [pageMode, setPageMode] = useState(localStorage.getItem('pageMode') || 'Light Mode');
   const [pageDesign, setPageDesign] = useState(localStorage.getItem('pageDesign') || 'Flat')
 
   // const handleModeSwitch = (event) => {

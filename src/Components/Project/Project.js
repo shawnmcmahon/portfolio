@@ -33,7 +33,7 @@ const Project = ({project, pageMode, pageDesign}) => {
             <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"}>Github Repo </button>
           </a>
           <a href={project.deployedSite}>
-            {!!project.deployedSite && <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"}>Launch App</button>}
+            {!!project.deployedSite && project.title !== 'CodeHerd' && <button className={pageMode === "Light Mode" ? " light-mode-button project-button " : "dark-mode-background project-button"}>Launch App</button>}
           </a>
         </div>
         <p className="label">Date Completed</p>

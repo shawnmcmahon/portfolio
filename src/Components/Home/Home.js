@@ -1,13 +1,16 @@
 import city from '../../Assets/city1.webp';
 import reactIcon from '../../Assets/icons/react-original-wordmark.svg';
-import javascriptIcon from '../../Assets/icons/javascript-original.svg';
-import html5Icon from '../../Assets/icons/html5-original-wordmark.svg';
-import css3Icon from '../../Assets/icons/css3-original-wordmark.svg';
+import nextjsIcon from '../../Assets/icons/nextjs-original-wordmark.svg';
+import javascriptIcon from '../../Assets/icons/javascript-plain.svg';
+import typescriptIcon from '../../Assets/icons/typescript-plain.svg';
+import html5Icon from '../../Assets/icons/html5-plain.svg';
+import css3Icon from '../../Assets/icons/css3-plain.svg';
 import cypressIcon from '../../Assets/icons/cypressio-original-wordmark.svg';
-import mochaIcon from '../../Assets/icons/mocha-original.svg';
+import mochaIcon from '../../Assets/icons/mocha-plain.svg';
 import nodejsIcon from '../../Assets/icons/nodejs-original-wordmark.svg';
 import expressIcon from '../../Assets/icons/express-original-wordmark.svg';
 import awsIcon from '../../Assets/icons/aws.png';
+import awsModernIcon from '../../Assets/icons/amazonwebservices-original-wordmark.svg';
 import postgresIcon from '../../Assets/icons/postgresql-original-wordmark.svg';
 import dotnetIcon from '../../Assets/icons/dot-net-plain-wordmark.svg';
 import csharpIcon from '../../Assets/icons/csharp-original.svg';
@@ -60,17 +63,20 @@ const Home = ({ pageMode, pageDesign }) => {
           <p className={pageMode === "Light Mode" ? " accent-text-light bio-intro-second center-text" : "accent-text-dark bio-intro-second center-text"}> Technical Expertise</p>
           <div className="icon-container"> 
             <img src={reactIcon} className="tech-icon" alt="react logo"/>
+            <img src={nextjsIcon} className="tech-icon" alt="next.js logo" />
             <img src={javascriptIcon} className="tech-icon" alt="javascript logo" />
+            <img src={typescriptIcon} className="tech-icon" alt="typescript logo" />
             <img src={cypressIcon} className="tech-icon" alt="cypress logo" />
             <img src={mochaIcon} className="tech-icon" alt="mocha logo" />
             <img src={html5Icon} className="tech-icon" alt="html 5 logo" />
             <img src={css3Icon} className="tech-icon" alt="css 3 logo"/>
-            <img src={nodejsIcon} className="tech-icon" alt="node.js logo" />
+            <img src={nodejsIcon} className="tech-icon tech-icon-normalize" alt="node.js logo" />
             <img src={expressIcon} className="tech-icon" alt="express logo"/>
             <img src={csharpIcon} className="tech-icon" alt="c# logo" />
             <img src={dotnetIcon} className="tech-icon" alt="dotnet logo" />
             <img src={mssqlIcon} className="tech-icon" alt="mssql logo" />
             <img src={postgresIcon} className="tech-icon" alt="postgre sql logo" />
+            <img src={awsModernIcon} className="tech-icon" alt="aws logo" />
             <a 
               href="https://www.credly.com/badges/256655d2-7c58-4e2f-93e5-f950ccc4b281/embedded" 
               target="_blank" 
