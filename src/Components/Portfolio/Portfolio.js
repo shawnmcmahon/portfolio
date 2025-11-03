@@ -31,6 +31,9 @@ import sc3 from '../../Assets/static-comp/sc3.png';
 import scc1 from '../../Assets/self-care-center/scc1.png';
 import scc2 from '../../Assets/self-care-center/scc2.png';
 import scc3 from '../../Assets/self-care-center/scc3.png';
+import smlss1 from '../../Assets/smlss/smlss-1.png';
+import smlss2 from '../../Assets/smlss/smlss-2.png';
+import smlss3 from '../../Assets/smlss/smlss-3.png';
 import findStyleAndDesign from '../../findStyleAndDesign.js';
 
 
@@ -143,20 +146,35 @@ const Portfolio = ({ pageMode, pageDesign }) => {
   githubRepo: 'https://github.com/shawnmcmahon/tic-tac-toe',
   deployedSite: 'https://shawnmcmahon.github.io/tic-tac-toe/'
 },
+  {
+    number: 8, 
+    title: 'Self Care Center',
+    time: '12 Hours / 3 Days',
+    dateCompleted: '02/21/2021',
+    applicationType: 'Frontend',
+    collaborators: ['None'],
+    technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
+    description: 'Self Care Center is a wellness application designed to provide users with daily inspiration through mantras and affirmations. This vanilla JavaScript project demonstrates fundamental web development skills including HTML5, CSS3, and JavaScript event handling. The application features a clean, calming interface that randomly generates motivational content to help users maintain positive mental health practices. Key features include dynamic content generation, smooth user interactions, and responsive design. This project showcases the ability to create meaningful applications that serve real user needs while demonstrating solid programming fundamentals.',
+    learningGoals: ['1. Gain experience with Javascript, HTML, and CSS.', '2. Understand the purpose of event listeners.'], 
+    pictures: [
+    scc1, scc2, scc3],
+    githubRepo: 'https://github.com/shawnmcmahon/self-care-center',
+    deployedSite: 'https://shawnmcmahon.github.io/self-care-center/'
+},
 {
-  number: 8, 
-  title: 'Self Care Center',
-  time: '12 Hours / 3 Days',
-  dateCompleted: '02/21/2021',
-  applicationType: 'Frontend',
+  number: 9, 
+  title: 'Link Shortening Service (SMLSS)',
+  time: '6 hours / 1 day',
+  dateCompleted: '11/02/2025',
+  applicationType: 'Fullstack',
   collaborators: ['None'],
-  technologiesUsed: ['Javascript', 'CSS3', 'Github', 'Git', 'HTML5'], 
-  description: 'Self Care Center is a wellness application designed to provide users with daily inspiration through mantras and affirmations. This vanilla JavaScript project demonstrates fundamental web development skills including HTML5, CSS3, and JavaScript event handling. The application features a clean, calming interface that randomly generates motivational content to help users maintain positive mental health practices. Key features include dynamic content generation, smooth user interactions, and responsive design. This project showcases the ability to create meaningful applications that serve real user needs while demonstrating solid programming fundamentals.',
-  learningGoals: ['1. Gain experience with Javascript, HTML, and CSS.', '2. Understand the purpose of event listeners.'], 
+  technologiesUsed: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS', 'Vercel'], 
+  description: 'Link Shortening Service (SMLSS) is a modern, full-featured URL shortener built with Next.js, Firebase, and Tailwind CSS. This full-stack application enables users to create, manage, and track shortened links with comprehensive real-time analytics. Key features include custom alias creation, automatic short code generation, click tracking with detailed analytics, and secure user authentication via Google Sign-In or email/password. The application demonstrates advanced full-stack development skills including Next.js App Router implementation, Firebase Firestore database management, real-time data synchronization, and responsive design with Tailwind CSS. Users can view click statistics, daily breakdowns, and individual click timestamps for each shortened link, providing valuable insights into link performance.',
+  learningGoals: ['1. Build a production-ready full-stack application with Next.js and Firebase.', '2. Implement real-time analytics and data tracking with Firestore.'], 
   pictures: [
-  scc1, scc2, scc3],
-  githubRepo: 'https://github.com/shawnmcmahon/self-care-center',
-  deployedSite: 'https://shawnmcmahon.github.io/self-care-center/'
+  smlss1, smlss2, smlss3],
+  githubRepo: 'https://github.com/shawnmcmahon/link-shortening-service',
+  deployedSite: 'https://smlss.vercel.app'
 }
 ])
 
@@ -182,7 +200,7 @@ const Portfolio = ({ pageMode, pageDesign }) => {
               onClick={() => handleProjectNavigation(index)}
               className={`project-nav-button ${currentProjectIndex === index ? 'active' : ''} ${pageMode === "Light Mode" ? "light-mode-button" : "dark-mode-button"}`}
             >
-              {project.title}
+              {project.title === 'Link Shortening Service (SMLSS)' ? 'SMLSS' : project.title}
             </button>
           ))}
         </div>

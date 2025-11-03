@@ -61,8 +61,12 @@
   transition: all 0.3s ease;
   text-align: center;
   white-space: nowrap;
-  flex: 1 1 auto;
+  flex: 1 1 0;
   min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
   
   /* Very small screens: 1 button per line (stacked) */
   @media screen and (max-width: 480px) {
@@ -73,21 +77,25 @@
   
   /* Small screens: 2 buttons per line (4 lines of 2) */
   @media screen and (min-width: 481px) and (max-width: 768px) {
-    flex: 1 1 calc(50% - 0.2rem);
+    flex: 0 1 calc(50% - 0.2rem);
+    min-width: calc(50% - 0.2rem);
+    max-width: calc(50% - 0.2rem);
     font-size: 0.7rem;
     padding: 0.45rem 0.65rem;
   }
   
   /* Medium screens: 4 buttons per line (2 lines of 4) */
   @media screen and (min-width: 769px) and (max-width: 1200px) {
-    flex: 1 1 calc(25% - 0.45rem);
+    flex: 0 1 calc(25% - 0.45rem);
+    min-width: calc(25% - 0.45rem);
+    max-width: calc(25% - 0.45rem);
     font-size: 0.75rem;
     padding: 0.5rem 0.75rem;
   }
   
-  /* Large screens: 8 buttons per line (1 line) */
+  /* Large screens: 9 buttons per line (1 line) */
   @media screen and (min-width: 1201px) {
-    flex: 1 1 calc(12.5% - 0.67rem);
+    flex: 1 1 0;
     font-size: 0.8rem;
     padding: 0.55rem 0.8rem;
   }
